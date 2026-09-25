@@ -19,7 +19,8 @@
 
 | AI | 做法 |
 |---|---|
-| Claude（claude.ai、Claude Code） | 把整個資料夾當作 skill 安裝。Claude Code 放在 `~/.claude/skills/jizura-preset/` |
+| Claude Code | `git clone https://github.com/Zaious/jizura-helper-skill.git ~/.claude/skills/jizura-preset`（資料夾名稱要是 `jizura-preset`，和 skill 名稱相同） |
+| claude.ai | 把整個資料夾當作自訂 skill 上傳（skill 名稱是 `jizura-preset`） |
 | ChatGPT | 建立自訂 GPT，把 `SKILL.md`、`references/format.md`、`references/catalog.md` 上傳為知識檔，並把 `SKILL.md` 的內容貼進指示欄 |
 | 其他 AI | 在對話開頭依序貼上 `SKILL.md`、`references/format.md`，再貼 `references/catalog.md` 裡需要的段落 |
 
