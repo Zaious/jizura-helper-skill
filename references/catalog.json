@@ -1,0 +1,10952 @@
+{
+ "commit": "94413f7",
+ "projectFields": [
+  "version",
+  "title",
+  "artist",
+  "lyrics",
+  "style",
+  "mood",
+  "extra",
+  "wa",
+  "lang",
+  "keyBg",
+  "unify",
+  "typeset",
+  "centerDir",
+  "centerFree",
+  "seed",
+  "aspect",
+  "res",
+  "fps",
+  "fx",
+  "enabled",
+  "timing",
+  "overrides",
+  "colors",
+  "fonts",
+  "userFonts"
+ ],
+ "styles": [
+  {
+   "key": "noir",
+   "zh": "暗黑色差",
+   "zhDesc": "黑底、白字、青色／琥珀色的色彩錯位",
+   "en": "Noir Chroma",
+   "ja": "ノワール・クロマ",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "gothic_black",
+     "dela",
+     "zenkaku"
+    ],
+    "serif": [
+     "mincho_light",
+     "mincho"
+    ],
+    "body": [
+     "gothic_med"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#060607",
+   "flags": []
+  },
+  {
+   "key": "crimson",
+   "zh": "深紅訊號",
+   "zhDesc": "深紅底、黑白雙層排版、資料毀損",
+   "en": "Crimson Signal",
+   "ja": "クリムゾン・シグナル",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "gothic_black",
+     "zenkaku"
+    ],
+    "serif": [
+     "mincho"
+    ],
+    "body": [
+     "gothic_med",
+     "sansui"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#C8103F",
+   "flags": []
+  },
+  {
+   "key": "caution",
+   "zh": "警示",
+   "zhDesc": "黃色底、紅藍強調色、儀表介面",
+   "en": "Caution",
+   "ja": "コーション",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "mincho_black",
+     "gothic_black"
+    ],
+    "serif": [
+     "mincho_black",
+     "mincho_bold"
+    ],
+    "body": [
+     "gothic_bold"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#F4D21F",
+   "flags": []
+  },
+  {
+   "key": "magenta",
+   "zh": "普普洋紅",
+   "zhDesc": "螢光粉紅×白、粗圓體、標示引線",
+   "en": "Pop Magenta",
+   "ja": "ポップ・マゼンタ",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "round",
+     "pop",
+     "gothic_black"
+    ],
+    "serif": [
+     "mincho_bold"
+    ],
+    "body": [
+     "round",
+     "gothic_bold"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#FF0A8C",
+   "flags": []
+  },
+  {
+   "key": "paper",
+   "zh": "紙與墨",
+   "zhDesc": "紙張質感、靛藍與洋紅、明體殘影",
+   "en": "Paper and Ink",
+   "ja": "ペーパー・インク",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "mincho_black",
+     "tokumin"
+    ],
+    "serif": [
+     "mincho_black",
+     "mincho_bold"
+    ],
+    "body": [
+     "mincho"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#ECE9E3",
+   "flags": []
+  },
+  {
+   "key": "hud",
+   "zh": "暗色 HUD",
+   "zhDesc": "炭灰底、細線框、橘色點綴、日蝕",
+   "en": "Dark HUD",
+   "ja": "ダークHUD",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "gothic_black",
+     "zenkaku"
+    ],
+    "serif": [
+     "mincho_bold",
+     "mincho_light"
+    ],
+    "body": [
+     "gothic_med"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#131315",
+   "flags": []
+  },
+  {
+   "key": "mint",
+   "zh": "薄荷終端機",
+   "zhDesc": "黑×青綠×萊姆綠、標籤貼紙、狹縫掃描",
+   "en": "Mint Terminal",
+   "ja": "ミント・ターミナル",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "gothic_black",
+     "dela"
+    ],
+    "serif": [
+     "mincho"
+    ],
+    "body": [
+     "gothic_med",
+     "sansui"
+    ],
+    "mono": [
+     "mono",
+     "dot"
+    ]
+   },
+   "bg": "#0A0E0D",
+   "flags": []
+  },
+  {
+   "key": "specimen",
+   "zh": "字型樣本",
+   "zhDesc": "墨色底、明體、辭典註解與引線",
+   "en": "Type Specimen",
+   "ja": "スペシメン",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "mincho_bold",
+     "mincho_black"
+    ],
+    "serif": [
+     "mincho",
+     "mincho_light"
+    ],
+    "body": [
+     "mincho"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#1B1A1C",
+   "flags": []
+  },
+  {
+   "key": "transit",
+   "zh": "交通指標",
+   "zhDesc": "橄欖綠×黃色、箭頭與標誌、網點",
+   "en": "Transit",
+   "ja": "トランジット",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "zenkaku",
+     "gothic_black"
+    ],
+    "serif": [
+     "mincho_bold"
+    ],
+    "body": [
+     "gothic_bold"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#5B582B",
+   "flags": []
+  },
+  {
+   "key": "blueprint",
+   "zh": "藍圖",
+   "zhDesc": "鮮藍×白×黑、圖形拼貼、斜帶",
+   "en": "Blueprint",
+   "ja": "ブループリント",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "dela",
+     "gothic_black"
+    ],
+    "serif": [
+     "mincho_bold"
+    ],
+    "body": [
+     "gothic_bold"
+    ],
+    "mono": [
+     "mono",
+     "dot"
+    ]
+   },
+   "bg": "#1B1BE8",
+   "flags": []
+  },
+  {
+   "key": "rouge",
+   "zh": "胭脂漸層",
+   "zhDesc": "淺灰底、紅色漸層、膠囊",
+   "en": "Rouge Gradient",
+   "ja": "ルージュ・グラデ",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "gothic_black",
+     "dela"
+    ],
+    "serif": [
+     "mincho_black"
+    ],
+    "body": [
+     "gothic_med"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#E4E2E0",
+   "flags": []
+  },
+  {
+   "key": "mono",
+   "zh": "單色 RGB",
+   "zhDesc": "灰色空間、白色明體、強烈 RGB 分離、座標圓",
+   "en": "Mono RGB",
+   "ja": "モノ・RGB",
+   "moods": [],
+   "fonts": {
+    "display": [
+     "mincho_black",
+     "mincho_bold"
+    ],
+    "serif": [
+     "mincho_bold"
+    ],
+    "body": [
+     "mincho"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#3B3D41",
+   "flags": []
+  },
+  {
+   "key": "sakura",
+   "zh": "櫻花",
+   "zhDesc": "淡櫻色、深梅紫、夜櫻、圓體與明體",
+   "en": "Sakura",
+   "ja": "サクラ",
+   "moods": [
+    "emotional",
+    "calm"
+   ],
+   "fonts": {
+    "display": [
+     "kiwi",
+     "shippori"
+    ],
+    "serif": [
+     "shippori",
+     "mincho_light"
+    ],
+    "body": [
+     "kiwi"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#F8E4EB",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "ocean",
+   "zh": "深海",
+   "zhDesc": "深藍的深海、青色螢光、泡泡與細黑體",
+   "en": "Deep Sea",
+   "ja": "深海",
+   "moods": [
+    "calm",
+    "emotional"
+   ],
+   "fonts": {
+    "display": [
+     "gothic_light",
+     "zenkaku"
+    ],
+    "serif": [
+     "mincho_light",
+     "mincho"
+    ],
+    "body": [
+     "sansui"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#031A2E",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "sunset",
+   "zh": "夕陽漸層",
+   "zhDesc": "橘到紫羅蘭的漸層、粗明體、逆光",
+   "en": "Sunset Gradient",
+   "ja": "夕焼けグラデ",
+   "moods": [
+    "emotional",
+    "pop"
+   ],
+   "fonts": {
+    "display": [
+     "tokumin",
+     "mincho_black",
+     "dela"
+    ],
+    "serif": [
+     "mincho_black",
+     "shippori"
+    ],
+    "body": [
+     "gothic_med"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#2A0F44",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "forest",
+   "zh": "森林手帖",
+   "zhDesc": "苔綠與米白、樹皮棕、鉛筆手寫字",
+   "en": "Forest Notebook",
+   "ja": "森の手帖",
+   "moods": [
+    "calm",
+    "editorial",
+    "emotional"
+   ],
+   "fonts": {
+    "display": [
+     "klee",
+     "shippori"
+    ],
+    "serif": [
+     "shippori",
+     "mincho"
+    ],
+    "body": [
+     "klee"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#1D291B",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "vapor",
+   "zh": "蒸氣波",
+   "zhDesc": "淡紫與粉彩粉紅／水藍、明體、VHS 暈染",
+   "en": "Vaporwave",
+   "ja": "ヴェイパー",
+   "moods": [
+    "pop",
+    "emotional",
+    "glitch"
+   ],
+   "fonts": {
+    "display": [
+     "mincho",
+     "dot",
+     "mincho_black"
+    ],
+    "serif": [
+     "mincho_light",
+     "mincho"
+    ],
+    "body": [
+     "sansui"
+    ],
+    "mono": [
+     "dot",
+     "mono"
+    ]
+   },
+   "bg": "#3A2A6E",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "newsprint",
+   "zh": "報紙",
+   "zhDesc": "灰色新聞紙、墨黑與紅、標題明體、CMY 套印錯位與網點",
+   "en": "Newsprint",
+   "ja": "新聞",
+   "moods": [
+    "editorial",
+    "graphic"
+   ],
+   "fonts": {
+    "display": [
+     "mincho_black",
+     "gothic_bold"
+    ],
+    "serif": [
+     "mincho_bold",
+     "mincho"
+    ],
+    "body": [
+     "mincho"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#E6E5E0",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "synth80",
+   "zh": "合成器 80s",
+   "zhDesc": "黑底霓虹洋紅／青色、立體字、掃描線",
+   "en": "Synth 80s",
+   "ja": "シンセ80s",
+   "moods": [
+    "pop",
+    "glitch",
+    "emotional"
+   ],
+   "fonts": {
+    "display": [
+     "rampart",
+     "dela"
+    ],
+    "serif": [
+     "mincho_bold"
+    ],
+    "body": [
+     "gothic_bold"
+    ],
+    "mono": [
+     "mono",
+     "dot"
+    ]
+   },
+   "bg": "#0B0414",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "kraft",
+   "zh": "牛皮紙",
+   "zhDesc": "牛皮紙與米白、朱紅與靛藍印章、紙膠帶",
+   "en": "Kraft Paper",
+   "ja": "クラフト紙",
+   "moods": [
+    "pop",
+    "editorial",
+    "graphic"
+   ],
+   "fonts": {
+    "display": [
+     "dela",
+     "zenkaku"
+    ],
+    "serif": [
+     "tokumin",
+     "mincho_bold"
+    ],
+    "body": [
+     "klee"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#C49A6C",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "candy",
+   "zh": "糖果",
+   "zhDesc": "薄荷／草莓／檸檬／葡萄的粉彩色、圓潤跳動的文字",
+   "en": "Candy",
+   "ja": "キャンディ",
+   "moods": [
+    "pop"
+   ],
+   "fonts": {
+    "display": [
+     "potta",
+     "pop",
+     "round"
+    ],
+    "serif": [
+     "kiwi"
+    ],
+    "body": [
+     "round",
+     "kiwi"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#BDF0E2",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "acid",
+   "zh": "酸性",
+   "zhDesc": "黑×酸性綠×洋紅、粗糙字型與故障畫面",
+   "en": "Acid",
+   "ja": "アシッド",
+   "moods": [
+    "glitch",
+    "graphic"
+   ],
+   "fonts": {
+    "display": [
+     "reggae",
+     "dot",
+     "dela"
+    ],
+    "serif": [
+     "mincho_black"
+    ],
+    "body": [
+     "sansui"
+    ],
+    "mono": [
+     "dot",
+     "mono"
+    ]
+   },
+   "bg": "#050505",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "sumi",
+   "zh": "墨與朱",
+   "zhDesc": "和紙米白、毛筆墨字、朱紅落款",
+   "en": "Ink and Vermilion",
+   "ja": "墨と朱",
+   "moods": [
+    "calm",
+    "emotional",
+    "editorial"
+   ],
+   "fonts": {
+    "display": [
+     "brush",
+     "mincho_black"
+    ],
+    "serif": [
+     "brush",
+     "shippori"
+    ],
+    "body": [
+     "klee"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#EFE5CF",
+   "flags": [
+    "extra"
+   ]
+  },
+  {
+   "key": "gold",
+   "zh": "金夜",
+   "zhDesc": "漆黑與金箔、象牙色明體、閃爍光芒",
+   "en": "Golden Night",
+   "ja": "金夜",
+   "moods": [
+    "emotional",
+    "calm",
+    "editorial"
+   ],
+   "fonts": {
+    "display": [
+     "shippori",
+     "mincho_light"
+    ],
+    "serif": [
+     "shippori",
+     "mincho_light"
+    ],
+    "body": [
+     "mincho_light"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#0A0907",
+   "flags": [
+    "extra"
+   ]
+  }
+ ],
+ "moods": [
+  {
+   "key": "glitch",
+   "zh": "故障風",
+   "en": "Glitch",
+   "ja": "グリッチ",
+   "fx": {
+    "motion": [
+     0.6,
+     0.9
+    ],
+    "glitch": [
+     0.75,
+     1
+    ],
+    "chroma": [
+     0.75,
+     1
+    ],
+    "decor": [
+     0.3,
+     0.6
+    ],
+    "density": [
+     0.6,
+     0.9
+    ],
+    "texture": [
+     0.5,
+     0.9
+    ],
+    "bgSwitch": [
+     0.3,
+     0.6
+    ]
+   },
+   "layout": [
+    "center",
+    "condensed",
+    "huge",
+    "tile",
+    "marquee",
+    "vcols",
+    "scatter",
+    "stack"
+   ],
+   "enter": [
+    "slice",
+    "scramble",
+    "assemble",
+    "flicker",
+    "zoom",
+    "stretch"
+   ],
+   "exit": [
+    "glitch",
+    "slice",
+    "explode",
+    "fall"
+   ],
+   "styles": [
+    "noir",
+    "crimson",
+    "mint",
+    "mono",
+    "hud"
+   ],
+   "noHold": []
+  },
+  {
+   "key": "calm",
+   "zh": "沉靜",
+   "en": "Gentle",
+   "ja": "しっとり",
+   "fx": {
+    "motion": [
+     0.3,
+     0.55
+    ],
+    "glitch": [
+     0.05,
+     0.25
+    ],
+    "chroma": [
+     0.2,
+     0.5
+    ],
+    "decor": [
+     0.2,
+     0.5
+    ],
+    "density": [
+     0.25,
+     0.45
+    ],
+    "texture": [
+     0.5,
+     0.85
+    ],
+    "bgSwitch": [
+     0.1,
+     0.3
+    ]
+   },
+   "layout": [
+    "center",
+    "vcols",
+    "gloss",
+    "stack",
+    "circle",
+    "type",
+    "mixed"
+   ],
+   "enter": [
+    "blur",
+    "type",
+    "wipe",
+    "assemble"
+   ],
+   "exit": [
+    "blur",
+    "drift",
+    "wipe",
+    "shrink"
+   ],
+   "styles": [
+    "specimen",
+    "paper",
+    "hud",
+    "noir"
+   ],
+   "noHold": [
+    "glitchtick",
+    "jitter"
+   ]
+  },
+  {
+   "key": "pop",
+   "zh": "普普",
+   "en": "Pop",
+   "ja": "ポップ",
+   "fx": {
+    "motion": [
+     0.7,
+     1
+    ],
+    "glitch": [
+     0.1,
+     0.35
+    ],
+    "chroma": [
+     0.3,
+     0.6
+    ],
+    "decor": [
+     0.6,
+     1
+    ],
+    "density": [
+     0.5,
+     0.8
+    ],
+    "texture": [
+     0.2,
+     0.5
+    ],
+    "bgSwitch": [
+     0.4,
+     0.8
+    ]
+   },
+   "layout": [
+    "mixed",
+    "scatter",
+    "wave",
+    "labels",
+    "pill",
+    "ring",
+    "huge",
+    "diag",
+    "center"
+   ],
+   "enter": [
+    "pop",
+    "drop",
+    "spin",
+    "stretch",
+    "zoom"
+   ],
+   "exit": [
+    "scatter",
+    "shrink",
+    "stretch",
+    "blur"
+   ],
+   "styles": [
+    "magenta",
+    "caution",
+    "transit",
+    "blueprint",
+    "rouge"
+   ],
+   "noHold": []
+  },
+  {
+   "key": "graphic",
+   "zh": "圖形感",
+   "en": "Graphic",
+   "ja": "グラフィック",
+   "fx": {
+    "motion": [
+     0.5,
+     0.8
+    ],
+    "glitch": [
+     0.2,
+     0.5
+    ],
+    "chroma": [
+     0.4,
+     0.7
+    ],
+    "decor": [
+     0.7,
+     1
+    ],
+    "density": [
+     0.5,
+     0.8
+    ],
+    "texture": [
+     0.4,
+     0.7
+    ],
+    "bgSwitch": [
+     0.3,
+     0.7
+    ]
+   },
+   "layout": [
+    "diag",
+    "labels",
+    "marquee",
+    "tile",
+    "condensed",
+    "huge",
+    "circle",
+    "pill"
+   ],
+   "enter": [
+    "wipe",
+    "slice",
+    "stretch",
+    "zoom"
+   ],
+   "exit": [
+    "wipe",
+    "slice",
+    "stretch"
+   ],
+   "styles": [
+    "blueprint",
+    "caution",
+    "rouge",
+    "mint",
+    "transit"
+   ],
+   "noHold": []
+  },
+  {
+   "key": "editorial",
+   "zh": "編輯排版",
+   "en": "Editorial",
+   "ja": "エディトリアル",
+   "fx": {
+    "motion": [
+     0.4,
+     0.65
+    ],
+    "glitch": [
+     0.1,
+     0.3
+    ],
+    "chroma": [
+     0.2,
+     0.45
+    ],
+    "decor": [
+     0.4,
+     0.7
+    ],
+    "density": [
+     0.35,
+     0.6
+    ],
+    "texture": [
+     0.6,
+     0.9
+    ],
+    "bgSwitch": [
+     0.2,
+     0.4
+    ]
+   },
+   "layout": [
+    "gloss",
+    "vcols",
+    "mixed",
+    "stack",
+    "type",
+    "center",
+    "circle"
+   ],
+   "enter": [
+    "type",
+    "blur",
+    "wipe",
+    "assemble"
+   ],
+   "exit": [
+    "blur",
+    "drift",
+    "wipe"
+   ],
+   "styles": [
+    "specimen",
+    "paper",
+    "noir",
+    "mono",
+    "hud"
+   ],
+   "noHold": []
+  },
+  {
+   "key": "emotional",
+   "zh": "感性",
+   "en": "Emotional",
+   "ja": "エモーショナル",
+   "fx": {
+    "motion": [
+     0.55,
+     0.85
+    ],
+    "glitch": [
+     0.3,
+     0.6
+    ],
+    "chroma": [
+     0.5,
+     0.85
+    ],
+    "decor": [
+     0.3,
+     0.6
+    ],
+    "density": [
+     0.4,
+     0.7
+    ],
+    "texture": [
+     0.6,
+     1
+    ],
+    "bgSwitch": [
+     0.2,
+     0.5
+    ]
+   },
+   "layout": [
+    "huge",
+    "center",
+    "vcols",
+    "stack",
+    "condensed",
+    "mixed",
+    "circle"
+   ],
+   "enter": [
+    "assemble",
+    "blur",
+    "zoom",
+    "wipe",
+    "slice"
+   ],
+   "exit": [
+    "drift",
+    "explode",
+    "fall",
+    "blur"
+   ],
+   "styles": [
+    "noir",
+    "paper",
+    "hud",
+    "mono",
+    "crimson"
+   ],
+   "noHold": []
+  },
+  {
+   "key": "chaos",
+   "zh": "全都來",
+   "en": "Anything goes",
+   "ja": "全部入り",
+   "fx": {
+    "motion": [
+     0.5,
+     1
+    ],
+    "glitch": [
+     0.3,
+     1
+    ],
+    "chroma": [
+     0.4,
+     1
+    ],
+    "decor": [
+     0.4,
+     1
+    ],
+    "density": [
+     0.45,
+     0.9
+    ],
+    "texture": [
+     0.3,
+     1
+    ],
+    "bgSwitch": [
+     0.3,
+     0.9
+    ]
+   },
+   "layout": [],
+   "enter": [],
+   "exit": [],
+   "styles": [],
+   "noHold": []
+  }
+ ],
+ "fonts": [
+  {
+   "key": "gothic_black",
+   "label": "Noto Sans JP Black",
+   "kind": "gothic",
+   "weight": 900
+  },
+  {
+   "key": "gothic_bold",
+   "label": "Noto Sans JP Bold",
+   "kind": "gothic",
+   "weight": 700
+  },
+  {
+   "key": "gothic_med",
+   "label": "Noto Sans JP Medium",
+   "kind": "gothic",
+   "weight": 500
+  },
+  {
+   "key": "gothic_light",
+   "label": "Noto Sans JP Light",
+   "kind": "gothic",
+   "weight": 300
+  },
+  {
+   "key": "dela",
+   "label": "Dela Gothic One",
+   "kind": "display",
+   "weight": 400
+  },
+  {
+   "key": "zenkaku",
+   "label": "Zen Kaku Gothic New Black",
+   "kind": "gothic",
+   "weight": 900
+  },
+  {
+   "key": "mincho_black",
+   "label": "Zen Old Mincho Black",
+   "kind": "mincho",
+   "weight": 900
+  },
+  {
+   "key": "mincho_bold",
+   "label": "Noto Serif JP Bold",
+   "kind": "mincho",
+   "weight": 700
+  },
+  {
+   "key": "mincho",
+   "label": "Noto Serif JP Medium",
+   "kind": "mincho",
+   "weight": 500
+  },
+  {
+   "key": "mincho_light",
+   "label": "Noto Serif JP Light",
+   "kind": "mincho",
+   "weight": 300
+  },
+  {
+   "key": "tokumin",
+   "label": "Kaisei Tokumin",
+   "kind": "mincho",
+   "weight": 800
+  },
+  {
+   "key": "round",
+   "label": "M PLUS Rounded 1c",
+   "kind": "round",
+   "weight": 800
+  },
+  {
+   "key": "pop",
+   "label": "Mochiy Pop One",
+   "kind": "display",
+   "weight": 400
+  },
+  {
+   "key": "dot",
+   "label": "DotGothic16",
+   "kind": "pixel",
+   "weight": 400
+  },
+  {
+   "key": "brush",
+   "label": "Yuji Syuku",
+   "kind": "brush",
+   "weight": 400
+  },
+  {
+   "key": "mono",
+   "label": "IBM Plex Mono",
+   "kind": "mono",
+   "weight": 500
+  },
+  {
+   "key": "reggae",
+   "label": "Reggae One",
+   "kind": "display",
+   "weight": 400
+  },
+  {
+   "key": "rampart",
+   "label": "Rampart One",
+   "kind": "display",
+   "weight": 400
+  },
+  {
+   "key": "potta",
+   "label": "Potta One",
+   "kind": "brush",
+   "weight": 400
+  },
+  {
+   "key": "kiwi",
+   "label": "Kiwi Maru",
+   "kind": "round",
+   "weight": 500
+  },
+  {
+   "key": "klee",
+   "label": "Klee One",
+   "kind": "hand",
+   "weight": 600
+  },
+  {
+   "key": "shippori",
+   "label": "Shippori Mincho B1",
+   "kind": "mincho",
+   "weight": 800
+  },
+  {
+   "key": "sansui",
+   "label": "IBM Plex Sans JP",
+   "kind": "gothic",
+   "weight": 500
+  }
+ ],
+ "parts": {
+  "layout": [
+   {
+    "key": "center",
+    "zh": "置中",
+    "zhHans": "居中",
+    "en": "Center",
+    "ja": "中央",
+    "tags": [
+     "glitch",
+     "calm",
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "mixed",
+    "zh": "大小混排",
+    "zhHans": "大小混排",
+    "en": "Mixed",
+    "ja": "大小ミックス",
+    "tags": [
+     "calm",
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "vcols",
+    "zh": "直書",
+    "zhHans": "竖排",
+    "en": "Vertical text",
+    "ja": "縦書き",
+    "tags": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "marquee",
+    "zh": "流動橫幅",
+    "zhHans": "流动横幅",
+    "en": "Scrolling banner",
+    "ja": "流れる帯",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tile",
+    "zh": "滿版鋪排",
+    "zhHans": "满版平铺",
+    "en": "Tiled text",
+    "ja": "敷き詰め",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scatter",
+    "zh": "散落",
+    "zhHans": "散落",
+    "en": "Scatter",
+    "ja": "散らし",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "ring",
+    "zh": "環形",
+    "zhHans": "环形",
+    "en": "Ring",
+    "ja": "円環",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wave",
+    "zh": "波浪軌跡",
+    "zhHans": "波浪轨迹",
+    "en": "Wave",
+    "ja": "波の軌跡",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "huge",
+    "zh": "超出畫面",
+    "zhHans": "超出画面",
+    "en": "Oversized text",
+    "ja": "画面突き抜け",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "labels",
+    "zh": "標籤貼",
+    "zhHans": "标签贴",
+    "en": "Labels",
+    "ja": "ラベル貼り",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "condensed",
+    "zh": "瘦長壓縮",
+    "zhHans": "瘦长压缩",
+    "en": "Condensed",
+    "ja": "縦長圧縮",
+    "tags": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gloss",
+    "zh": "註解",
+    "zhHans": "注解",
+    "en": "Annotation",
+    "ja": "注釈",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "type",
+    "zh": "打字",
+    "zhHans": "打字",
+    "en": "Type",
+    "ja": "タイプ",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "diag",
+    "zh": "斜帶",
+    "zhHans": "斜带",
+    "en": "Diagonal band",
+    "ja": "斜め帯",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "circle",
+    "zh": "圓窗",
+    "zhHans": "圆窗",
+    "en": "Circle",
+    "ja": "円窓",
+    "tags": [
+     "calm",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stack",
+    "zh": "殘影堆疊",
+    "zhHans": "残影堆叠",
+    "en": "Echo stack",
+    "ja": "残像スタック",
+    "tags": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "pill",
+    "zh": "膠囊",
+    "zhHans": "胶囊",
+    "en": "Pill",
+    "ja": "カプセル",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "lowerThird",
+    "zh": "下方字卡",
+    "zhHans": "下方字幕条",
+    "en": "Lower third",
+    "ja": "下部テロップ",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "corners",
+    "zh": "對角配置",
+    "zhHans": "对角配置",
+    "en": "Opposite corners",
+    "ja": "対角配置",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "staircase",
+    "zh": "階梯",
+    "zhHans": "阶梯",
+    "en": "Staircase",
+    "ja": "階段",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zigzag",
+    "zh": "鋸齒",
+    "zhHans": "锯齿",
+    "en": "Zigzag",
+    "ja": "ジグザグ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "arcTop",
+    "zh": "彩虹弧",
+    "zhHans": "彩虹弧",
+    "en": "Rainbow arc",
+    "ja": "虹の弧",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spiral",
+    "zh": "螺旋",
+    "zhHans": "螺旋",
+    "en": "Spiral",
+    "ja": "螺旋",
+    "tags": [
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gridCells",
+    "zh": "方格",
+    "zhHans": "方格",
+    "en": "Grid cells",
+    "ja": "升目",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dropCap",
+    "zh": "首字放大",
+    "zhHans": "首字放大",
+    "en": "Drop cap",
+    "ja": "大きな頭文字",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "justified",
+    "zh": "版心",
+    "zhHans": "版心",
+    "en": "Justified",
+    "ja": "版面",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "frameBox",
+    "zh": "畫框",
+    "zhHans": "画框",
+    "en": "Picture frame",
+    "ja": "額縁",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bubble",
+    "zh": "對話框",
+    "zhHans": "对话框",
+    "en": "Bubble",
+    "ja": "吹き出し",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "subtitleBar",
+    "zh": "字幕條",
+    "zhHans": "字幕条",
+    "en": "Subtitle bar",
+    "ja": "字幕帯",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "ticker",
+    "zh": "新聞跑馬燈",
+    "zhHans": "新闻跑马灯",
+    "en": "Ticker",
+    "ja": "ティッカー",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitScreen",
+    "zh": "二分割",
+    "zhHans": "二分割",
+    "en": "Split screen",
+    "ja": "二分割",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "mirror",
+    "zh": "鏡像",
+    "zhHans": "镜像",
+    "en": "Mirror",
+    "ja": "鏡像",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "sideways",
+    "zh": "橫躺直書",
+    "zhHans": "横躺竖排",
+    "en": "Sideways text",
+    "ja": "縦倒し",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "edgeFrame",
+    "zh": "沿邊環繞",
+    "zhHans": "沿边环绕",
+    "en": "Edge frame",
+    "ja": "外周",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "perspective",
+    "zh": "景深",
+    "zhHans": "景深",
+    "en": "Perspective",
+    "ja": "奥行き",
+    "tags": [
+     "graphic",
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hanko",
+    "zh": "落款",
+    "zhHans": "落款",
+    "en": "Signature seal",
+    "ja": "落款",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "wa"
+    ]
+   },
+   {
+    "key": "genkou",
+    "zh": "稿紙",
+    "zhHans": "稿纸",
+    "en": "Manuscript paper",
+    "ja": "原稿用紙",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "wa"
+    ]
+   },
+   {
+    "key": "panels",
+    "zh": "漫畫分格",
+    "zhHans": "漫画分格",
+    "en": "Comic panels",
+    "ja": "コマ割り",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "filmstrip",
+    "zh": "底片",
+    "zhHans": "胶片",
+    "en": "Filmstrip",
+    "ja": "フィルム",
+    "tags": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "quote",
+    "zh": "引用",
+    "zhHans": "引用",
+    "en": "Quote",
+    "ja": "引用",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "ruler",
+    "zh": "尺寸線",
+    "zhHans": "尺寸线",
+    "en": "Dimension lines",
+    "ja": "寸法線",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "searchBar",
+    "zh": "搜尋框",
+    "zhHans": "搜索框",
+    "en": "Search bar",
+    "ja": "検索窓",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "chat",
+    "zh": "聊天",
+    "zhHans": "聊天",
+    "en": "Chat",
+    "ja": "チャット",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "notification",
+    "zh": "通知",
+    "zhHans": "通知",
+    "en": "Notification",
+    "ja": "通知",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "ticket",
+    "zh": "票券",
+    "zhHans": "票券",
+    "en": "Ticket",
+    "ja": "チケット",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rain",
+    "zh": "文字雨",
+    "zhHans": "文字雨",
+    "en": "Letter rain",
+    "ja": "文字の雨",
+    "tags": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hanging",
+    "zh": "吊掛",
+    "zhHans": "吊挂",
+    "en": "Hanging",
+    "ja": "吊り下げ",
+    "tags": [
+     "pop",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "orbit",
+    "zh": "環繞",
+    "zhHans": "环绕",
+    "en": "Orbit",
+    "ja": "周回",
+    "tags": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tunnel",
+    "zh": "隧道",
+    "zhHans": "隧道",
+    "en": "Tunnel",
+    "ja": "トンネル",
+    "tags": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wordCloud",
+    "zh": "文字雲",
+    "zhHans": "文字云",
+    "en": "Word cloud",
+    "ja": "ワードクラウド",
+    "tags": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bounceLine",
+    "zh": "彈跳",
+    "zhHans": "弹跳",
+    "en": "Bouncing line",
+    "ja": "跳ねる",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "elastic",
+    "zh": "橡皮筋",
+    "zhHans": "橡皮筋",
+    "en": "Elastic",
+    "ja": "ゴム",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "crossBands",
+    "zh": "交叉帶",
+    "zhHans": "交叉带",
+    "en": "Crossing bands",
+    "ja": "交差帯",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stickerBomb",
+    "zh": "貼紙",
+    "zhHans": "贴纸",
+    "en": "Sticker collage",
+    "ja": "ステッカー",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "neon",
+    "zh": "霓虹",
+    "zhHans": "霓虹",
+    "en": "Neon",
+    "ja": "ネオン",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "keycaps",
+    "zh": "鍵帽",
+    "zhHans": "键帽",
+    "en": "Keycaps",
+    "ja": "キーキャップ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bubbles",
+    "zh": "泡泡",
+    "zhHans": "泡泡",
+    "en": "Bubbles",
+    "ja": "泡",
+    "tags": [
+     "pop",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slotMachine",
+    "zh": "拉霸機",
+    "zhHans": "老虎机",
+    "en": "Slot machine",
+    "ja": "スロット",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flipBoard",
+    "zh": "翻牌看板",
+    "zhHans": "翻牌看板",
+    "en": "Flip board",
+    "ja": "パタパタ",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "credits",
+    "zh": "片尾名單",
+    "zhHans": "片尾字幕",
+    "en": "End credits",
+    "ja": "エンドロール",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomRepeat",
+    "zh": "連續放大",
+    "zhHans": "连续放大",
+    "en": "Zoom repeat",
+    "ja": "連続拡大",
+    "tags": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitHalves",
+    "zh": "上下分割",
+    "zhHans": "上下分割",
+    "en": "Split halves",
+    "ja": "上下割り",
+    "tags": [
+     "graphic",
+     "glitch",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "columnsBig",
+    "zh": "大小直排",
+    "zhHans": "大小竖排",
+    "en": "Contrasting columns",
+    "ja": "大小縦組",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "circleWords",
+    "zh": "同心圓",
+    "zhHans": "同心圆",
+    "en": "Concentric words",
+    "ja": "同心円",
+    "tags": [
+     "graphic",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dotMatrix",
+    "zh": "點陣顯示",
+    "zhHans": "点阵显示",
+    "en": "Dot matrix",
+    "ja": "ドット表示",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "depthStack",
+    "zh": "景深重疊",
+    "zhHans": "景深重叠",
+    "en": "Depth stack",
+    "ja": "奥行き重ね",
+    "tags": [
+     "graphic",
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "typeSpecimen",
+    "zh": "字型樣本",
+    "zhHans": "字体样本",
+    "en": "Type specimen",
+    "ja": "書体見本",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "kanjiFocus",
+    "zh": "單字強調",
+    "zhHans": "单字强调",
+    "en": "Character focus",
+    "ja": "一字強調",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "halfVertical",
+    "zh": "直橫混排",
+    "zhHans": "直横混排",
+    "en": "Mixed vertical type",
+    "ja": "縦横混植",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "curtain",
+    "zh": "布幕",
+    "zhHans": "布幕",
+    "en": "Curtain",
+    "ja": "幕",
+    "tags": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "equalizer",
+    "zh": "等化器",
+    "zhHans": "等化器",
+    "en": "Equalizer",
+    "ja": "イコライザー",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tape",
+    "zh": "膠帶",
+    "zhHans": "胶带",
+    "en": "Tape",
+    "ja": "テープ",
+    "tags": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "magazine",
+    "zh": "雜誌跨頁",
+    "zhHans": "杂志跨页",
+    "en": "Magazine spread",
+    "ja": "見開き",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "headlineDeck",
+    "zh": "標題與導言",
+    "zhHans": "标题与导言",
+    "en": "Headline and deck",
+    "ja": "見出しとリード",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "contents",
+    "zh": "目錄",
+    "zhHans": "目录",
+    "en": "Contents",
+    "ja": "目次",
+    "tags": [
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "footnote",
+    "zh": "註腳",
+    "zhHans": "注脚",
+    "en": "Footnote",
+    "ja": "脚注",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "proofread",
+    "zh": "校樣",
+    "zhHans": "校样",
+    "en": "Proof sheet",
+    "ja": "校正刷り",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "numbered",
+    "zh": "編號",
+    "zhHans": "编号",
+    "en": "Numbered",
+    "ja": "番号付き",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "poster",
+    "zh": "海報",
+    "zhHans": "海报",
+    "en": "Poster",
+    "ja": "ポスター",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "swissGrid",
+    "zh": "瑞士網格",
+    "zhHans": "瑞士网格",
+    "en": "Swiss grid",
+    "ja": "スイスグリッド",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dictionary",
+    "zh": "辭典",
+    "zhHans": "辞典",
+    "en": "Dictionary",
+    "ja": "辞書",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ema",
+    "zh": "繪馬",
+    "zhHans": "绘马",
+    "en": "Ema wish plaque",
+    "ja": "絵馬",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "ransom",
+    "zh": "剪報字",
+    "zhHans": "剪报字",
+    "en": "Cutout letters",
+    "ja": "切り抜き文字",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "newspaper",
+    "zh": "報紙",
+    "zhHans": "报纸",
+    "en": "Newspaper",
+    "ja": "新聞",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vinyl",
+    "zh": "黑膠唱片",
+    "zhHans": "黑胶唱片",
+    "en": "Vinyl record",
+    "ja": "レコード",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cassette",
+    "zh": "卡帶",
+    "zhHans": "卡带",
+    "en": "Cassette",
+    "ja": "カセット",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bookSpine",
+    "zh": "書背",
+    "zhHans": "书背",
+    "en": "Book spine",
+    "ja": "背表紙",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "polaroid",
+    "zh": "拍立得",
+    "zhHans": "拍立得",
+    "en": "Polaroid",
+    "ja": "ポラロイド",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stampSheet",
+    "zh": "郵票版張",
+    "zhHans": "邮票版张",
+    "en": "Stamp sheet",
+    "ja": "切手シート",
+    "tags": [
+     "pop",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "postcard",
+    "zh": "明信片",
+    "zhHans": "明信片",
+    "en": "Postcard",
+    "ja": "はがき",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "letterPaper",
+    "zh": "信紙",
+    "zhHans": "信纸",
+    "en": "Letter paper",
+    "ja": "便箋",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "calendar",
+    "zh": "月曆",
+    "zhHans": "月历",
+    "en": "Calendar",
+    "ja": "カレンダー",
+    "tags": [
+     "pop",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "chochin",
+    "zh": "燈籠",
+    "zhHans": "灯笼",
+    "en": "Paper lantern",
+    "ja": "提灯",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "routeMap",
+    "zh": "路線圖",
+    "zhHans": "路线图",
+    "en": "Route map",
+    "ja": "路線図",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stationSign",
+    "zh": "站名牌",
+    "zhHans": "站名牌",
+    "en": "Station sign",
+    "ja": "駅名標",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "noren",
+    "zh": "暖簾",
+    "zhHans": "暖帘",
+    "en": "Noren curtain",
+    "ja": "暖簾",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "tanzaku",
+    "zh": "短籤",
+    "zhHans": "短签",
+    "en": "Wish strip",
+    "ja": "短冊",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "omikuji",
+    "zh": "御神籤",
+    "zhHans": "御神签",
+    "en": "Fortune slip",
+    "ja": "おみくじ",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "kakejiku",
+    "zh": "掛軸",
+    "zhHans": "挂轴",
+    "en": "Hanging scroll",
+    "ja": "掛け軸",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "shoji",
+    "zh": "障子",
+    "zhHans": "障子",
+    "en": "Shoji screen",
+    "ja": "障子",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "clapper",
+    "zh": "場記板",
+    "zhHans": "场记板",
+    "en": "Clapperboard",
+    "ja": "カチンコ",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "warningLabel",
+    "zh": "警告標籤",
+    "zhHans": "警告标签",
+    "en": "Warning label",
+    "ja": "警告ラベル",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "priceTag",
+    "zh": "價格標籤",
+    "zhHans": "价格标签",
+    "en": "Price tag",
+    "ja": "値札",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "nameTag",
+    "zh": "名牌",
+    "zhHans": "名牌",
+    "en": "Name tag",
+    "ja": "名札",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stickyNotes",
+    "zh": "便利貼",
+    "zhHans": "便利贴",
+    "en": "Sticky notes",
+    "ja": "付箋",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "karuta",
+    "zh": "歌牌",
+    "zhHans": "歌牌",
+    "en": "Karuta card",
+    "ja": "かるた札",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "cube",
+    "zh": "立方體",
+    "zhHans": "立方体",
+    "en": "Cube",
+    "ja": "立方体",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cylinder",
+    "zh": "圓柱",
+    "zhHans": "圆柱",
+    "en": "Cylinder",
+    "ja": "円筒",
+    "tags": [
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flipCards",
+    "zh": "翻卡",
+    "zhHans": "翻卡",
+    "en": "Flipping cards",
+    "ja": "カードめくり",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "accordion",
+    "zh": "風琴摺",
+    "zhHans": "风琴折",
+    "en": "Accordion",
+    "ja": "蛇腹",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flag",
+    "zh": "飄揚的旗",
+    "zhHans": "飘扬的旗",
+    "en": "Flag",
+    "ja": "はためく旗",
+    "tags": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ribbon",
+    "zh": "緞帶",
+    "zhHans": "缎带",
+    "en": "Ribbon",
+    "ja": "リボン",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pendulum",
+    "zh": "鐘擺",
+    "zhHans": "钟摆",
+    "en": "Pendulum",
+    "ja": "振り子",
+    "tags": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pile",
+    "zh": "文字堆",
+    "zhHans": "文字堆",
+    "en": "Letter pile",
+    "ja": "文字の山",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "blocks",
+    "zh": "積木",
+    "zhHans": "积木",
+    "en": "Blocks",
+    "ja": "積み木",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "balloons",
+    "zh": "文字氣球",
+    "zhHans": "文字气球",
+    "en": "Letter balloons",
+    "ja": "文字風船",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "magnets",
+    "zh": "磁鐵",
+    "zhHans": "磁铁",
+    "en": "Magnets",
+    "ja": "マグネット",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tiles",
+    "zh": "文字磁磚",
+    "zhHans": "文字磁砖",
+    "en": "Letter tiles",
+    "ja": "文字タイル",
+    "tags": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bulbs",
+    "zh": "燈泡招牌",
+    "zhHans": "灯泡招牌",
+    "en": "Marquee bulbs",
+    "ja": "電球サイン",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ledScroll",
+    "zh": "電子跑馬燈",
+    "zhHans": "电子跑马灯",
+    "en": "LED ticker",
+    "ja": "電光掲示板",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "billboard",
+    "zh": "看板",
+    "zhHans": "广告牌",
+    "en": "Billboard",
+    "ja": "看板",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "crowdBubbles",
+    "zh": "對話框群",
+    "zhHans": "对话框群",
+    "en": "Speech bubble crowd",
+    "ja": "吹き出しの群れ",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "crossword",
+    "zh": "填字遊戲",
+    "zhHans": "填字游戏",
+    "en": "Crossword",
+    "ja": "クロスワード",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "wordSearch",
+    "zh": "找字遊戲",
+    "zhHans": "找字游戏",
+    "en": "Word search",
+    "ja": "文字探し",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "puzzle",
+    "zh": "拼圖",
+    "zhHans": "拼图",
+    "en": "Puzzle",
+    "ja": "パズル",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shadowPlay",
+    "zh": "皮影戲",
+    "zhHans": "皮影戏",
+    "en": "Shadow puppets",
+    "ja": "影絵",
+    "tags": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "kaleido",
+    "zh": "萬花筒",
+    "zhHans": "万花筒",
+    "en": "Kaleidoscope",
+    "ja": "万華鏡",
+    "tags": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dominoes",
+    "zh": "骨牌",
+    "zhHans": "骨牌",
+    "en": "Dominoes",
+    "ja": "ドミノ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "burst",
+    "zh": "爆炸",
+    "zhHans": "爆炸",
+    "en": "Burst",
+    "ja": "ドカン",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fisheye",
+    "zh": "魚眼鏡頭",
+    "zhHans": "鱼眼镜头",
+    "en": "Fisheye lens",
+    "ja": "魚眼レンズ",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "wall",
+    "zh": "牆面透視",
+    "zhHans": "墙面透视",
+    "en": "Perspective wall",
+    "ja": "壁面パース",
+    "tags": [
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "origami",
+    "zh": "摺紙",
+    "zhHans": "折纸",
+    "en": "Origami",
+    "ja": "折り紙",
+    "tags": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "zipper",
+    "zh": "拉鍊",
+    "zhHans": "拉链",
+    "en": "Zipper",
+    "ja": "ジッパー",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sliceStack",
+    "zh": "切片堆疊",
+    "zhHans": "切片堆叠",
+    "en": "Sliced layers",
+    "ja": "スライス積層",
+    "tags": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glitchGrid",
+    "zh": "故障網格",
+    "zhHans": "故障网格",
+    "en": "Glitch grid",
+    "ja": "グリッチ格子",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "mosaicTiles",
+    "zh": "磁磚拼畫",
+    "zhHans": "磁砖拼画",
+    "en": "Mosaic tiles",
+    "ja": "タイル画",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "maskReveal",
+    "zh": "文字窗",
+    "zhHans": "文字窗",
+    "en": "Text window",
+    "ja": "文字窓",
+    "tags": [
+     "graphic",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "contour",
+    "zh": "等高線",
+    "zhHans": "等高线",
+    "en": "Contour",
+    "ja": "等高線",
+    "tags": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "halftoneBig",
+    "zh": "網點巨字",
+    "zhHans": "网点巨字",
+    "en": "Oversized halftone text",
+    "ja": "網点巨大文字",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stencil",
+    "zh": "鏤空模板",
+    "zhHans": "镂空模板",
+    "en": "Stencil",
+    "ja": "ステンシル",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "enter": [
+   {
+    "key": "cut",
+    "zh": "直切",
+    "zhHans": "直切",
+    "en": "Cut",
+    "ja": "カット",
+    "tags": [],
+    "flags": []
+   },
+   {
+    "key": "assemble",
+    "zh": "分解→聚合",
+    "zhHans": "分解→聚合",
+    "en": "Break apart and assemble",
+    "ja": "分解→集合",
+    "tags": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slice",
+    "zh": "切片",
+    "zhHans": "切片",
+    "en": "Slice",
+    "ja": "スライス",
+    "tags": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "type",
+    "zh": "打字",
+    "zhHans": "打字",
+    "en": "Type",
+    "ja": "タイプ",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "pop",
+    "zh": "彈出",
+    "zhHans": "弹出",
+    "en": "Pop",
+    "ja": "ポップ",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "drop",
+    "zh": "落下",
+    "zhHans": "落下",
+    "en": "Drop",
+    "ja": "落下",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stretch",
+    "zh": "伸縮",
+    "zhHans": "伸缩",
+    "en": "Stretch",
+    "ja": "伸縮",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wipe",
+    "zh": "擦除",
+    "zhHans": "擦除",
+    "en": "Wipe",
+    "ja": "ワイプ",
+    "tags": [
+     "calm",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blur",
+    "zh": "模糊",
+    "zhHans": "模糊",
+    "en": "Blur",
+    "ja": "ブラー",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spin",
+    "zh": "旋轉",
+    "zhHans": "旋转",
+    "en": "Spin",
+    "ja": "回転",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flicker",
+    "zh": "閃爍",
+    "zhHans": "闪烁",
+    "en": "Flicker",
+    "ja": "点滅",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scramble",
+    "zh": "亂碼",
+    "zhHans": "乱码",
+    "en": "Scramble",
+    "ja": "スクランブル",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoom",
+    "zh": "縮放",
+    "zhHans": "缩放",
+    "en": "Zoom",
+    "ja": "ズーム",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "riseMask",
+    "zh": "由下浮現",
+    "zhHans": "由下浮现",
+    "en": "Reveal from below",
+    "ja": "下から出現",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dropMask",
+    "zh": "由上浮現",
+    "zhHans": "由上浮现",
+    "en": "Reveal from above",
+    "ja": "上から出現",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slideL",
+    "zh": "從左滑入",
+    "zhHans": "从左滑入",
+    "en": "Slide from left",
+    "ja": "左からスライド",
+    "tags": [
+     "editorial",
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slideR",
+    "zh": "從右滑入",
+    "zhHans": "从右滑入",
+    "en": "Slide from right",
+    "ja": "右からスライド",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slideWhole",
+    "zh": "整體滑入",
+    "zhHans": "整体滑入",
+    "en": "Slide in together",
+    "ja": "全体スライド",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flipX",
+    "zh": "縱軸翻轉",
+    "zhHans": "纵轴翻转",
+    "en": "Flip on vertical axis",
+    "ja": "縦軸フリップ",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flipY",
+    "zh": "橫軸翻轉",
+    "zhHans": "横轴翻转",
+    "en": "Flip on horizontal axis",
+    "ja": "横軸フリップ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "domino",
+    "zh": "骨牌",
+    "zhHans": "骨牌",
+    "en": "Domino",
+    "ja": "ドミノ",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "fold",
+    "zh": "摺疊展開",
+    "zhHans": "折叠展开",
+    "en": "Fold",
+    "ja": "折り開き",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "unroll",
+    "zh": "捲軸展開",
+    "zhHans": "卷轴展开",
+    "en": "Unroll",
+    "ja": "巻き開き",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "strokeDraw",
+    "zh": "線稿到上色",
+    "zhHans": "线稿到上色",
+    "en": "Draw outlines, then fill",
+    "ja": "線画から塗り",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "outlineFill",
+    "zh": "輪廓→填色",
+    "zhHans": "轮廓→填色",
+    "en": "Outline to fill",
+    "ja": "輪郭→塗り",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitJoin",
+    "zh": "上下合體",
+    "zhHans": "上下合体",
+    "en": "Join from top and bottom",
+    "ja": "上下合体",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "vSlice",
+    "zh": "縱向切片",
+    "zhHans": "纵向切片",
+    "en": "Vertical slices",
+    "ja": "縦スライス",
+    "tags": [
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shutter",
+    "zh": "快門",
+    "zhHans": "快门",
+    "en": "Shutter",
+    "ja": "シャッター",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "iris",
+    "zh": "光圈",
+    "zhHans": "光圈",
+    "en": "Iris",
+    "ja": "アイリス",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "diagWipe",
+    "zh": "斜向擦除",
+    "zhHans": "斜向擦除",
+    "en": "Diagonal wipe",
+    "ja": "斜めワイプ",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blinds",
+    "zh": "百葉窗",
+    "zhHans": "百叶窗",
+    "en": "Blinds",
+    "ja": "ブラインド",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "checker",
+    "zh": "棋盤格",
+    "zhHans": "棋盘格",
+    "en": "Checker",
+    "ja": "市松",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "randomOrder",
+    "zh": "隨機順序",
+    "zhHans": "随机顺序",
+    "en": "Random letter order",
+    "ja": "ランダム順",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bounceBig",
+    "zh": "大跳躍",
+    "zhHans": "大跳跃",
+    "en": "Big bounce",
+    "ja": "大ジャンプ",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "squashDrop",
+    "zh": "壓扁著地",
+    "zhHans": "压扁着地",
+    "en": "Squash landing",
+    "ja": "潰れて着地",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rubber",
+    "zh": "橡皮拉伸",
+    "zhHans": "橡皮拉伸",
+    "en": "Rubber",
+    "ja": "ゴム伸び",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitchIn",
+    "zh": "故障浮現",
+    "zhHans": "故障浮现",
+    "en": "Glitch in",
+    "ja": "グリッチ出現",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "echoIn",
+    "zh": "殘影聚合",
+    "zhHans": "残影聚合",
+    "en": "Echoes converge",
+    "ja": "残像集束",
+    "tags": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "whip",
+    "zh": "急甩",
+    "zhHans": "急甩",
+    "en": "Whip",
+    "ja": "ホイップ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "skewIn",
+    "zh": "傾斜",
+    "zhHans": "倾斜",
+    "en": "Skew in",
+    "ja": "スキュー",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "trackIn",
+    "zh": "字距收攏",
+    "zhHans": "字距收拢",
+    "en": "Tighten letter spacing",
+    "ja": "字間収束",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "trackOut",
+    "zh": "字距擴張",
+    "zhHans": "字距扩张",
+    "en": "Expand letter spacing",
+    "ja": "字間拡張",
+    "tags": [
+     "calm",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blurStagger",
+    "zh": "模糊錯落",
+    "zhHans": "模糊错落",
+    "en": "Staggered blur",
+    "ja": "ブラー段差",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "fadeStagger",
+    "zh": "逐字淡入",
+    "zhHans": "逐字淡入",
+    "en": "Letter by letter fade",
+    "ja": "字ごとフェード",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "waveIn",
+    "zh": "波浪起伏",
+    "zhHans": "波浪起伏",
+    "en": "Wave in",
+    "ja": "波立ち",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spiralIn",
+    "zh": "螺旋聚合",
+    "zhHans": "螺旋聚合",
+    "en": "Spiral assembly",
+    "ja": "螺旋集合",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomOut",
+    "zh": "巨大→原尺寸",
+    "zhHans": "巨大→原尺寸",
+    "en": "Oversized to normal",
+    "ja": "巨大→等倍",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "resolve",
+    "zh": "解碼",
+    "zhHans": "解码",
+    "en": "Resolve",
+    "ja": "解読",
+    "tags": [
+     "glitch",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "magnet",
+    "zh": "磁吸",
+    "zhHans": "磁吸",
+    "en": "Magnet",
+    "ja": "磁石",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "inkBleed",
+    "zh": "暈染",
+    "zhHans": "晕染",
+    "en": "Ink bleed",
+    "ja": "にじみ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "neonOn",
+    "zh": "霓虹點亮",
+    "zhHans": "霓虹点亮",
+    "en": "Neon on",
+    "ja": "ネオン点灯",
+    "tags": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "cursorSweep",
+    "zh": "游標掃過",
+    "zhHans": "光标扫过",
+    "en": "Cursor sweep",
+    "ja": "カーソル掃引",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stamp",
+    "zh": "蓋章",
+    "zhHans": "盖章",
+    "en": "Stamp",
+    "ja": "スタンプ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "springIn",
+    "zh": "彈簧",
+    "zhHans": "弹簧",
+    "en": "Spring in",
+    "ja": "バネ",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pendulum",
+    "zh": "鐘擺",
+    "zhHans": "钟摆",
+    "en": "Pendulum",
+    "ja": "振り子",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rollIn",
+    "zh": "滾入",
+    "zhHans": "滚入",
+    "en": "Roll in",
+    "ja": "転がり",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "slingshot",
+    "zh": "彈弓",
+    "zhHans": "弹弓",
+    "en": "Slingshot",
+    "ja": "パチンコ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rockSettle",
+    "zh": "搖晃著地",
+    "zhHans": "摇晃着地",
+    "en": "Wobble to rest",
+    "ja": "ぐらぐら着地",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bounceBall",
+    "zh": "彈跳球",
+    "zhHans": "弹跳球",
+    "en": "Bounce ball",
+    "ja": "バウンドボール",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "snapRail",
+    "zh": "吸附對齊",
+    "zhHans": "吸附对齐",
+    "en": "Snap into alignment",
+    "ja": "スナップ整列",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fanOpen",
+    "zh": "扇子展開",
+    "zhHans": "扇子展开",
+    "en": "Folding fan opens",
+    "ja": "扇開き",
+    "tags": [
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "cylinder",
+    "zh": "圓柱旋轉",
+    "zhHans": "圆柱旋转",
+    "en": "Cylinder",
+    "ja": "円筒回転",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shuffle",
+    "zh": "洗牌",
+    "zhHans": "洗牌",
+    "en": "Shuffle",
+    "ja": "シャッフル",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stopMotion",
+    "zh": "定格動畫",
+    "zhHans": "定格动画",
+    "en": "Stop motion",
+    "ja": "コマ撮り",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ripple",
+    "zh": "漣漪",
+    "zhHans": "涟漪",
+    "en": "Ripple",
+    "ja": "波紋",
+    "tags": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zipper",
+    "zh": "拉鍊",
+    "zhHans": "拉链",
+    "en": "Zipper",
+    "ja": "ジッパー",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zoomAlt",
+    "zh": "交錯縮放",
+    "zhHans": "交错缩放",
+    "en": "Zoom alt",
+    "ja": "交互ズーム",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tiltUp",
+    "zh": "站起",
+    "zhHans": "站起",
+    "en": "Tilt up",
+    "ja": "起立",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stickerPeel",
+    "zh": "貼上貼紙",
+    "zhHans": "贴上贴纸",
+    "en": "Apply sticker",
+    "ja": "シール貼り",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "crumple",
+    "zh": "揉皺還原",
+    "zhHans": "揉皱还原",
+    "en": "Uncrumple",
+    "ja": "くしゃ戻り",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "noteUnfold",
+    "zh": "展開信紙",
+    "zhHans": "展开信纸",
+    "en": "Unfold letter",
+    "ja": "手紙開き",
+    "tags": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tornJoin",
+    "zh": "撕紙拼合",
+    "zhHans": "撕纸拼合",
+    "en": "Join torn pieces",
+    "ja": "破れ合わせ",
+    "tags": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "splitFlap",
+    "zh": "翻牌",
+    "zhHans": "翻牌",
+    "en": "Split flap display",
+    "ja": "パタパタ",
+    "tags": [
+     "glitch",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "overexpose",
+    "zh": "過曝",
+    "zhHans": "过曝",
+    "en": "Overexpose",
+    "ja": "露出オーバー",
+    "tags": [
+     "emotional",
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glint",
+    "zh": "反光一閃",
+    "zhHans": "反光一闪",
+    "en": "Glint",
+    "ja": "グリント",
+    "tags": [
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "loupe",
+    "zh": "放大鏡",
+    "zhHans": "放大镜",
+    "en": "Loupe",
+    "ja": "ルーペ",
+    "tags": [
+     "editorial",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "filmFeed",
+    "zh": "底片捲動",
+    "zhHans": "胶片滚动",
+    "en": "Film feed",
+    "ja": "フィルム送り",
+    "tags": [
+     "emotional",
+     "glitch",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "backlight",
+    "zh": "逆光",
+    "zhHans": "逆光",
+    "en": "Backlight",
+    "ja": "逆光",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "lightLeak",
+    "zh": "漏光",
+    "zhHans": "漏光",
+    "en": "Light leak",
+    "ja": "光漏れ",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "heatHaze",
+    "zh": "熱浪扭曲",
+    "zhHans": "热浪扭曲",
+    "en": "Heat haze",
+    "ja": "陽炎",
+    "tags": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "crtOn",
+    "zh": "CRT 開機",
+    "zhHans": "CRT 开机",
+    "en": "CRT powers on",
+    "ja": "CRT電源",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "interlace",
+    "zh": "交錯掃描",
+    "zhHans": "交错扫描",
+    "en": "Interlace",
+    "ja": "インターレース",
+    "tags": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "loadingBar",
+    "zh": "載入條",
+    "zhHans": "加载条",
+    "en": "Loading bar",
+    "ja": "ローディング",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dither",
+    "zh": "遞色",
+    "zhHans": "抖动",
+    "en": "Dither",
+    "ja": "ディザ",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "odometer",
+    "zh": "數字滾輪",
+    "zhHans": "数字滚轮",
+    "en": "Rolling number drum",
+    "ja": "ドラム回転",
+    "tags": [
+     "glitch",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "matrixRain",
+    "zh": "資料雨",
+    "zhHans": "数据雨",
+    "en": "Data rain",
+    "ja": "データ降下",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "hatchFill",
+    "zh": "斜線→實心",
+    "zhHans": "斜线→实心",
+    "en": "Hatch fill",
+    "ja": "ハッチ→ベタ",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "brushReveal",
+    "zh": "筆觸掃出",
+    "zhHans": "笔触扫出",
+    "en": "Brush reveal",
+    "ja": "筆払い",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "inkDrop",
+    "zh": "墨滴",
+    "zhHans": "墨滴",
+    "en": "Ink drop",
+    "ja": "インク滴",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "quarters",
+    "zh": "四方聚合",
+    "zhHans": "四方聚合",
+    "en": "Converge from four sides",
+    "ja": "四方集結",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "invertBox",
+    "zh": "反轉挖空",
+    "zhHans": "反转挖空",
+    "en": "Invert box",
+    "ja": "反転抜け",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "printRegister",
+    "zh": "套印錯位",
+    "zhHans": "套印错位",
+    "en": "Color plates align",
+    "ja": "版ズレ",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "echoCount",
+    "zh": "數拍進場",
+    "zhHans": "数拍进场",
+    "en": "Count in",
+    "ja": "カウントイン",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "liquidFill",
+    "zh": "水位上升",
+    "zhHans": "水位上升",
+    "en": "Liquid rises",
+    "ja": "水位上昇",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "windBlown",
+    "zh": "乘風而來",
+    "zhHans": "乘风而来",
+    "en": "Wind blown",
+    "ja": "風に乗って",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "strokeOrder",
+    "zh": "逐筆書寫",
+    "zhHans": "逐笔书写",
+    "en": "Stroke by stroke",
+    "ja": "一画ずつ",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "clockWipe",
+    "zh": "順時針",
+    "zhHans": "顺时针",
+    "en": "Clock wipe",
+    "ja": "時計回り",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shadowFirst",
+    "zh": "影子先落",
+    "zhHans": "影子先落",
+    "en": "Shadow first",
+    "ja": "影落とし",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bubbles",
+    "zh": "泡泡",
+    "zhHans": "泡泡",
+    "en": "Bubbles",
+    "ja": "泡",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tokoroten",
+    "zh": "擠壓成條",
+    "zhHans": "挤压成条",
+    "en": "Extruded noodles",
+    "ja": "ところてん",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "hold": [
+   {
+    "key": "still",
+    "zh": "靜止",
+    "zhHans": "静止",
+    "en": "Still",
+    "ja": "静止",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "jitter",
+    "zh": "抖動",
+    "zhHans": "抖动",
+    "en": "Jitter",
+    "ja": "ジッター",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "drift",
+    "zh": "漂移",
+    "zhHans": "漂移",
+    "en": "Drift",
+    "ja": "ドリフト",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "breathe",
+    "zh": "呼吸",
+    "zhHans": "呼吸",
+    "en": "Breathe",
+    "ja": "呼吸",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wave",
+    "zh": "波浪",
+    "zhHans": "波浪",
+    "en": "Wave",
+    "ja": "ウェーブ",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitchtick",
+    "zh": "故障",
+    "zhHans": "故障",
+    "en": "Glitch tick",
+    "ja": "グリッチ",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "float",
+    "zh": "輕飄飄",
+    "zhHans": "轻飘飘",
+    "en": "Float",
+    "ja": "ふわふわ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "sway",
+    "zh": "搖曳",
+    "zhHans": "摇曳",
+    "en": "Sway",
+    "ja": "ゆらぎ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "pulse",
+    "zh": "脈動",
+    "zhHans": "脉动",
+    "en": "Pulse",
+    "ja": "脈動",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shimmer",
+    "zh": "閃耀",
+    "zhHans": "闪耀",
+    "en": "Shimmer",
+    "ja": "きらめき",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "colorRun",
+    "zh": "流動色彩",
+    "zhHans": "流动色彩",
+    "en": "Traveling color",
+    "ja": "色が走る",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rotateSlow",
+    "zh": "緩慢旋轉",
+    "zhHans": "缓慢旋转",
+    "en": "Rotate slow",
+    "ja": "ゆっくり回転",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "trackBreathe",
+    "zh": "字距呼吸",
+    "zhHans": "字距呼吸",
+    "en": "Breathing letter spacing",
+    "ja": "字間の呼吸",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "skewWobble",
+    "zh": "斜向搖晃",
+    "zhHans": "斜向摇晃",
+    "en": "Skew wobble",
+    "ja": "斜め揺れ",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "beatHop",
+    "zh": "隨拍跳動",
+    "zhHans": "随拍跳动",
+    "en": "Hop to the beat",
+    "ja": "拍で跳ねる",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hWave",
+    "zh": "橫向波浪",
+    "zhHans": "横向波浪",
+    "en": "Horizontal wave",
+    "ja": "横波",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "heartbeat",
+    "zh": "心跳",
+    "zhHans": "心跳",
+    "en": "Heartbeat",
+    "ja": "鼓動",
+    "tags": [
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "orbitSmall",
+    "zh": "小圓周運動",
+    "zhHans": "小圆周运动",
+    "en": "Small orbit",
+    "ja": "小さな円運動",
+    "tags": [
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "jelly",
+    "zh": "果凍",
+    "zhHans": "果冻",
+    "en": "Jelly",
+    "ja": "ゼリー",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scanBand",
+    "zh": "掃描帶",
+    "zhHans": "扫描带",
+    "en": "Scanning band",
+    "ja": "走査帯",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "noiseDrift",
+    "zh": "雜訊漂移",
+    "zhHans": "噪点漂移",
+    "en": "Drifting noise",
+    "ja": "ノイズ漂流",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tilt",
+    "zh": "翹翹板",
+    "zhHans": "翘翘板",
+    "en": "Tilt",
+    "ja": "シーソー",
+    "tags": [
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomSlow",
+    "zh": "緩慢推近",
+    "zhHans": "缓慢推近",
+    "en": "Slow push",
+    "ja": "じわ寄り",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stretchPulse",
+    "zh": "隨拍橫向拉伸",
+    "zhHans": "随拍横向拉伸",
+    "en": "Stretch to the beat",
+    "ja": "横伸び拍",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitchJump",
+    "zh": "偶爾錯位",
+    "zhHans": "偶尔错位",
+    "en": "Occasional glitch jump",
+    "ja": "時々ずれる",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "echoTrail",
+    "zh": "殘影拖尾",
+    "zhHans": "残影拖尾",
+    "en": "Echo trail",
+    "ja": "残像を引く",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glowFlicker",
+    "zh": "燭火搖曳",
+    "zhHans": "烛火摇曳",
+    "en": "Flickering glow",
+    "ja": "灯火のゆらぎ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "windGust",
+    "zh": "陣風",
+    "zhHans": "阵风",
+    "en": "Wind gust",
+    "ja": "突風",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dangle",
+    "zh": "懸吊",
+    "zhHans": "悬吊",
+    "en": "Dangle",
+    "ja": "ぶら下がり",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "eqBounce",
+    "zh": "隨音量伸縮",
+    "zhHans": "随音量伸缩",
+    "en": "Audio level bounce",
+    "ja": "音圧で伸びる",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flashBox",
+    "zh": "隨拍反轉",
+    "zhHans": "随拍反转",
+    "en": "Invert to the beat",
+    "ja": "拍で反転",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glintSweep",
+    "zh": "光澤掃過",
+    "zhHans": "光泽扫过",
+    "en": "Passing highlight",
+    "ja": "光沢",
+    "tags": [
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flipSwap",
+    "zh": "偶爾翻面",
+    "zhHans": "偶尔翻面",
+    "en": "Occasional flip",
+    "ja": "時々裏返る",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shadowSway",
+    "zh": "影子搖晃",
+    "zhHans": "影子摇晃",
+    "en": "Swaying shadow",
+    "ja": "影が揺れる",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "magnetJiggle",
+    "zh": "磁力",
+    "zhHans": "磁力",
+    "en": "Magnet jiggle",
+    "ja": "磁力",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "typeRattle",
+    "zh": "打字震動",
+    "zhHans": "打字震动",
+    "en": "Typewriter rattle",
+    "ja": "タイプの震え",
+    "tags": [
+     "editorial",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "focusRack",
+    "zh": "移焦",
+    "zhHans": "移焦",
+    "en": "Rack focus",
+    "ja": "ピント送り",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pluckString",
+    "zh": "撥弦",
+    "zhHans": "拨弦",
+    "en": "Plucked string",
+    "ja": "弦の振動",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "exit": [
+   {
+    "key": "cut",
+    "zh": "直切",
+    "zhHans": "直切",
+    "en": "Cut",
+    "ja": "カット",
+    "tags": [],
+    "flags": []
+   },
+   {
+    "key": "explode",
+    "zh": "爆散",
+    "zhHans": "爆散",
+    "en": "Explode",
+    "ja": "爆散",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "fall",
+    "zh": "崩落",
+    "zhHans": "崩落",
+    "en": "Crumble and fall",
+    "ja": "崩落",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "drift",
+    "zh": "霧散",
+    "zhHans": "雾散",
+    "en": "Drift away",
+    "ja": "霧散",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slice",
+    "zh": "切片退場",
+    "zhHans": "切片退场",
+    "en": "Slice",
+    "ja": "スライス退場",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wipe",
+    "zh": "擦除退場",
+    "zhHans": "擦除退场",
+    "en": "Wipe",
+    "ja": "ワイプ退場",
+    "tags": [
+     "calm",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shrink",
+    "zh": "收縮",
+    "zhHans": "收缩",
+    "en": "Shrink",
+    "ja": "収縮",
+    "tags": [
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blur",
+    "zh": "模糊退場",
+    "zhHans": "模糊退场",
+    "en": "Blur",
+    "ja": "ブラー退場",
+    "tags": [
+     "calm",
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stretch",
+    "zh": "伸縮退場",
+    "zhHans": "伸缩退场",
+    "en": "Stretch",
+    "ja": "伸縮退場",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scatter",
+    "zh": "飛散",
+    "zhHans": "飞散",
+    "en": "Scatter",
+    "ja": "飛散",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitch",
+    "zh": "故障退場",
+    "zhHans": "故障退场",
+    "en": "Glitch",
+    "ja": "グリッチ退場",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "sinkMask",
+    "zh": "下沉",
+    "zhHans": "下沉",
+    "en": "Sink out",
+    "ja": "沈む",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "riseOut",
+    "zh": "向上消失",
+    "zhHans": "向上消失",
+    "en": "Rise out",
+    "ja": "上へ抜ける",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slideOutL",
+    "zh": "向左滑出",
+    "zhHans": "向左滑出",
+    "en": "Slide left",
+    "ja": "左へ流れる",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slideOutR",
+    "zh": "向右滑出",
+    "zhHans": "向右滑出",
+    "en": "Slide right",
+    "ja": "右へ流れる",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flipOutX",
+    "zh": "關門",
+    "zhHans": "关门",
+    "en": "Doors close",
+    "ja": "扉が閉まる",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flipOutY",
+    "zh": "啪地倒下",
+    "zhHans": "啪地倒下",
+    "en": "Flip down",
+    "ja": "パタン倒れ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "foldOut",
+    "zh": "摺疊收起",
+    "zhHans": "折叠收起",
+    "en": "Fold out",
+    "ja": "折り畳み",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "squash",
+    "zh": "壓扁",
+    "zhHans": "压扁",
+    "en": "Squash",
+    "ja": "潰れる",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "trackOutWide",
+    "zh": "字距散開",
+    "zhHans": "字距散开",
+    "en": "Spread letter spacing",
+    "ja": "字間が開く",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "collapse",
+    "zh": "吸入",
+    "zhHans": "吸入",
+    "en": "Collapse inward",
+    "ja": "吸い込み",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomThrough",
+    "zh": "衝向鏡頭",
+    "zhHans": "冲向镜头",
+    "en": "Zoom through",
+    "ja": "手前へ抜ける",
+    "tags": [
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomFar",
+    "zh": "退向遠方",
+    "zhHans": "退向远方",
+    "en": "Recede into distance",
+    "ja": "奥へ遠ざかる",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spinOut",
+    "zh": "旋轉消失",
+    "zhHans": "旋转消失",
+    "en": "Spin away",
+    "ja": "回って消える",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "twist",
+    "zh": "扭轉",
+    "zhHans": "扭转",
+    "en": "Twist",
+    "ja": "ねじれ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "waveOut",
+    "zh": "波浪崩解",
+    "zhHans": "波浪崩解",
+    "en": "Wave out",
+    "ja": "波で崩れる",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blurOutStagger",
+    "zh": "逐字模糊",
+    "zhHans": "逐字模糊",
+    "en": "Blur letters in sequence",
+    "ja": "字ごとボケ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "undraw",
+    "zh": "回到線稿",
+    "zhHans": "回到线稿",
+    "en": "Return to outlines",
+    "ja": "線に戻る",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "outlineOut",
+    "zh": "填色褪去",
+    "zhHans": "填色褪去",
+    "en": "Fill fades to outline",
+    "ja": "塗りが抜ける",
+    "tags": [
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "irisClose",
+    "zh": "光圈",
+    "zhHans": "光圈",
+    "en": "Iris closes",
+    "ja": "アイリス",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "diagWipeOut",
+    "zh": "斜向擦除",
+    "zhHans": "斜向擦除",
+    "en": "Diag wipe out",
+    "ja": "斜めワイプ",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blindsClose",
+    "zh": "百葉窗",
+    "zhHans": "百叶窗",
+    "en": "Blinds close",
+    "ja": "ブラインド",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "checkerOut",
+    "zh": "棋盤格",
+    "zhHans": "棋盘格",
+    "en": "Checker out",
+    "ja": "市松",
+    "tags": [
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitApart",
+    "zh": "上下裂開",
+    "zhHans": "上下裂开",
+    "en": "Split top and bottom",
+    "ja": "上下に割れる",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "vSliceDrop",
+    "zh": "縱向切片掉落",
+    "zhHans": "纵向切片掉落",
+    "en": "Vertical slices fall",
+    "ja": "縦スライス落下",
+    "tags": [
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "melt",
+    "zh": "融化",
+    "zhHans": "融化",
+    "en": "Melt",
+    "ja": "溶ける",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dissolve",
+    "zh": "碎散",
+    "zhHans": "碎散",
+    "en": "Crumble away",
+    "ja": "ほろほろ",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "backspace",
+    "zh": "退格刪除",
+    "zhHans": "退格删除",
+    "en": "Backspace",
+    "ja": "バックスペース",
+    "tags": [
+     "editorial",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scrambleOut",
+    "zh": "變成符號",
+    "zhHans": "变成符号",
+    "en": "Become symbols",
+    "ja": "記号化",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitchDissolve",
+    "zh": "化為方塊",
+    "zhHans": "化为方块",
+    "en": "Glitch into blocks",
+    "ja": "ブロック化",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "echoOut",
+    "zh": "殘響",
+    "zhHans": "残响",
+    "en": "Echo out",
+    "ja": "残響",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "whipOut",
+    "zh": "急甩",
+    "zhHans": "急甩",
+    "en": "Whip out",
+    "ja": "ホイップ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gravity",
+    "zh": "重力墜落",
+    "zhHans": "重力坠落",
+    "en": "Fall with gravity",
+    "ja": "重力落下",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "popOut",
+    "zh": "迸裂",
+    "zhHans": "迸裂",
+    "en": "Pop out",
+    "ja": "弾ける",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "burn",
+    "zh": "燒毀",
+    "zhHans": "烧毁",
+    "en": "Burn away",
+    "ja": "焼失",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "sweepCover",
+    "zh": "橫條遮蓋",
+    "zhHans": "横条遮盖",
+    "en": "Covered by a bar",
+    "ja": "バーで隠す",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shatterLite",
+    "zh": "四分飛散",
+    "zhHans": "四分飞散",
+    "en": "Shatter into quarters",
+    "ja": "四分割飛散",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "peelOff",
+    "zh": "撕下貼紙",
+    "zhHans": "撕下贴纸",
+    "en": "Peel off sticker",
+    "ja": "ステッカー剥がし",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "crumpleOut",
+    "zh": "揉成紙團丟掉",
+    "zhHans": "揉成纸团丢掉",
+    "en": "Crumple and toss",
+    "ja": "丸めて捨てる",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tearOut",
+    "zh": "撕掉",
+    "zhHans": "撕掉",
+    "en": "Tear away",
+    "ja": "破り捨て",
+    "tags": [
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "scorchOut",
+    "zh": "燒焦消失",
+    "zhHans": "烧焦消失",
+    "en": "Scorch away",
+    "ja": "焦げて消える",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "overexposeOut",
+    "zh": "過曝泛白",
+    "zhHans": "过曝泛白",
+    "en": "Blow out to white",
+    "ja": "白飛び",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "scanOut",
+    "zh": "掃描線消除",
+    "zhHans": "扫描线消除",
+    "en": "Scanline erase",
+    "ja": "走査線消去",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stripesOut",
+    "zh": "條紋消除",
+    "zhHans": "条纹消除",
+    "en": "Stripes out",
+    "ja": "ストライプ消去",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "halftoneOut",
+    "zh": "化為網點",
+    "zhHans": "化为网点",
+    "en": "Dissolve to halftone",
+    "ja": "網点に消える",
+    "tags": [
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "eraserOut",
+    "zh": "黑板擦擦掉",
+    "zhHans": "黑板擦擦掉",
+    "en": "Chalkboard erase",
+    "ja": "黒板消し",
+    "tags": [
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vacuumOut",
+    "zh": "吸入一點",
+    "zhHans": "吸入一点",
+    "en": "Vacuum to a point",
+    "ja": "一点に吸われる",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sandOut",
+    "zh": "化沙飛散",
+    "zhHans": "化沙飞散",
+    "en": "Scatter as sand",
+    "ja": "砂になって飛ぶ",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shredOut",
+    "zh": "碎紙機",
+    "zhHans": "碎纸机",
+    "en": "Shred out",
+    "ja": "シュレッダー",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dominoOut",
+    "zh": "骨牌倒下",
+    "zhHans": "骨牌倒下",
+    "en": "Domino out",
+    "ja": "ドミノ倒し",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "hingeOut",
+    "zh": "單邊脫落",
+    "zhHans": "单边脱落",
+    "en": "Loose hinge",
+    "ja": "片留めが外れる",
+    "tags": [
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rocketOff",
+    "zh": "發射升空",
+    "zhHans": "发射升空",
+    "en": "Rocket away",
+    "ja": "打ち上げ",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bounceOff",
+    "zh": "彈跳離開",
+    "zhHans": "弹跳离开",
+    "en": "Bounce off",
+    "ja": "弾んで去る",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "balloonOff",
+    "zh": "氣球飛走",
+    "zhHans": "气球飞走",
+    "en": "Float off like a balloon",
+    "ja": "風船で飛ぶ",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "deflateOut",
+    "zh": "洩氣飛走",
+    "zhHans": "泄气飞走",
+    "en": "Deflate and fly",
+    "ja": "しぼんで飛ぶ",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "hazeOut",
+    "zh": "消失於熱浪",
+    "zhHans": "消失于热浪",
+    "en": "Haze out",
+    "ja": "陽炎に消える",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glassBreak",
+    "zh": "玻璃碎裂",
+    "zhHans": "玻璃碎裂",
+    "en": "Break like glass",
+    "ja": "ガラス割れ",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zipOut",
+    "zh": "拉鍊",
+    "zhHans": "拉链",
+    "en": "Zip out",
+    "ja": "ジッパー",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "clapShut",
+    "zh": "中央閉合",
+    "zhHans": "中央闭合",
+    "en": "Close at center",
+    "ja": "中央で閉じる",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "lampOff",
+    "zh": "熄燈",
+    "zhHans": "熄灯",
+    "en": "Lights out",
+    "ja": "消灯",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "slotOut",
+    "zh": "拉霸轉動",
+    "zhHans": "老虎机转动",
+    "en": "Slot out",
+    "ja": "スロット回転",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "clockOut",
+    "zh": "時鐘擦除",
+    "zhHans": "时钟擦除",
+    "en": "Clock out",
+    "ja": "時計ワイプ",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "matrixOut",
+    "zh": "數位雨",
+    "zhHans": "数字雨",
+    "en": "Digital rain",
+    "ja": "デジタル雨",
+    "tags": [
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tornadoOut",
+    "zh": "龍捲風",
+    "zhHans": "龙卷风",
+    "en": "Tornado",
+    "ja": "竜巻",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rollUpOut",
+    "zh": "捲起",
+    "zhHans": "卷起",
+    "en": "Roll up out",
+    "ja": "巻き取る",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "snakeOut",
+    "zh": "排隊離開",
+    "zhHans": "排队离开",
+    "en": "Leave in a line",
+    "ja": "列になって去る",
+    "tags": [
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flutterOut",
+    "zh": "飄落",
+    "zhHans": "飘落",
+    "en": "Flutter down",
+    "ja": "ひらひら落ちる",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rollOff",
+    "zh": "滾走",
+    "zhHans": "滚走",
+    "en": "Roll off",
+    "ja": "転がって去る",
+    "tags": [
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fanClose",
+    "zh": "收起扇子",
+    "zhHans": "收起扇子",
+    "en": "Folding fan closes",
+    "ja": "扇を閉じる",
+    "tags": [
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "rgbSplitOut",
+    "zh": "分色",
+    "zhHans": "分色",
+    "en": "Split into RGB",
+    "ja": "色分解",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shockOut",
+    "zh": "衝擊波",
+    "zhHans": "冲击波",
+    "en": "Shockwave",
+    "ja": "衝撃波",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "floodOut",
+    "zh": "淹沒",
+    "zhHans": "淹没",
+    "en": "Submerge",
+    "ja": "水没",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "slashOut",
+    "zh": "一刀兩斷",
+    "zhHans": "一刀两断",
+    "en": "Sliced in two",
+    "ja": "一刀両断",
+    "tags": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "mosaicOut",
+    "zh": "馬賽克",
+    "zhHans": "马赛克",
+    "en": "Mosaic out",
+    "ja": "モザイク",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "scribbleOut",
+    "zh": "亂塗抹消",
+    "zhHans": "乱涂抹消",
+    "en": "Scribble away",
+    "ja": "ぐしゃぐしゃ消し",
+    "tags": [
+     "editorial",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "candleOut",
+    "zh": "吹熄",
+    "zhHans": "吹熄",
+    "en": "Blow out",
+    "ja": "吹き消す",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "decor": [
+   {
+    "key": "brackets",
+    "zh": "框角標記",
+    "zhHans": "框角标记",
+    "en": "Corner marks",
+    "ja": "枠マーク",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rings",
+    "zh": "座標圓",
+    "zhHans": "座标圆",
+    "en": "Coordinate rings",
+    "ja": "座標の円",
+    "tags": [
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dots",
+    "zh": "點狀圓環",
+    "zhHans": "点状圆环",
+    "en": "Dotted ring",
+    "ja": "ドットの輪",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "arrows",
+    "zh": "箭頭",
+    "zhHans": "箭头",
+    "en": "Arrows",
+    "ja": "矢印",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slash",
+    "zh": "斜線",
+    "zhHans": "斜线",
+    "en": "Slash",
+    "ja": "スラッシュ",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "sparks",
+    "zh": "火花",
+    "zhHans": "火花",
+    "en": "Sparks",
+    "ja": "スパーク",
+    "tags": [
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "leaders",
+    "zh": "引線",
+    "zhHans": "引线",
+    "en": "Leader lines",
+    "ja": "引き出し線",
+    "tags": [
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "waveform",
+    "zh": "波形",
+    "zhHans": "波形",
+    "en": "Waveform",
+    "ja": "波形",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "barcode",
+    "zh": "條碼",
+    "zhHans": "条码",
+    "en": "Barcode",
+    "ja": "バーコード",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "grid",
+    "zh": "網格",
+    "zhHans": "网格",
+    "en": "Grid",
+    "ja": "グリッド",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stripes",
+    "zh": "條紋",
+    "zhHans": "条纹",
+    "en": "Stripes",
+    "ja": "ストライプ",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blobs",
+    "zh": "墨漬",
+    "zhHans": "墨渍",
+    "en": "Ink stains",
+    "ja": "インクの染み",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bars",
+    "zh": "粗糙色帶",
+    "zhHans": "粗糙色带",
+    "en": "Rough bands",
+    "ja": "荒い帯",
+    "tags": [
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shapes",
+    "zh": "幾何圖形",
+    "zhHans": "几何图形",
+    "en": "Shapes",
+    "ja": "図形",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "counter",
+    "zh": "大數字",
+    "zhHans": "大数字",
+    "en": "Large numbers",
+    "ja": "大きな数字",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "crosshair",
+    "zh": "十字準線",
+    "zhHans": "十字准线",
+    "en": "Crosshair",
+    "ja": "照準線",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "cropMarks",
+    "zh": "裁切標記",
+    "zhHans": "裁切标记",
+    "en": "Crop marks",
+    "ja": "トンボ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "reticle",
+    "zh": "鎖定框",
+    "zhHans": "锁定框",
+    "en": "Reticle",
+    "ja": "ロックオン",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "radar",
+    "zh": "雷達",
+    "zhHans": "雷达",
+    "en": "Radar",
+    "ja": "レーダー",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "progressRing",
+    "zh": "進度環",
+    "zhHans": "进度环",
+    "en": "Progress ring",
+    "ja": "進行リング",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "timecodeBar",
+    "zh": "時間碼",
+    "zhHans": "时间码",
+    "en": "Timecode bar",
+    "ja": "タイムコード",
+    "tags": [
+     "editorial",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rulerEdge",
+    "zh": "邊緣尺規",
+    "zhHans": "边缘尺规",
+    "en": "Ruler edge",
+    "ja": "端の定規",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dimension",
+    "zh": "尺寸線",
+    "zhHans": "尺寸线",
+    "en": "Dimension",
+    "ja": "寸法線",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "indexNum",
+    "zh": "流水號",
+    "zhHans": "流水号",
+    "en": "Sequence number",
+    "ja": "通し番号",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dateStamp",
+    "zh": "相片日期",
+    "zhHans": "相片日期",
+    "en": "Photo date stamp",
+    "ja": "日付写真",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "qrBlock",
+    "zh": "QR 風格方塊",
+    "zhHans": "QR 风格方块",
+    "en": "QR inspired blocks",
+    "ja": "QR風ブロック",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glitchRects",
+    "zh": "故障碎片",
+    "zhHans": "故障碎片",
+    "en": "Glitch rects",
+    "ja": "グリッチ片",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "concentricSquares",
+    "zh": "同心方框",
+    "zhHans": "同心方框",
+    "en": "Concentric squares",
+    "ja": "同心四角",
+    "tags": [
+     "graphic",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "triangleSpin",
+    "zh": "旋轉三角",
+    "zhHans": "旋转三角",
+    "en": "Triangle spin",
+    "ja": "回転三角",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "lineBurst",
+    "zh": "放射線",
+    "zhHans": "放射线",
+    "en": "Line burst",
+    "ja": "放射線",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "plusGrid",
+    "zh": "十字網格",
+    "zhHans": "十字网格",
+    "en": "Plus grid",
+    "ja": "プラス格子",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "guides",
+    "zh": "參考線",
+    "zhHans": "辅助线",
+    "en": "Guide lines",
+    "ja": "ガイド線",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "waveLine",
+    "zh": "波浪線",
+    "zhHans": "波浪线",
+    "en": "Wave line",
+    "ja": "波線",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spiralLine",
+    "zh": "漩渦",
+    "zhHans": "漩涡",
+    "en": "Spiral line",
+    "ja": "渦巻き",
+    "tags": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "halftonePatch",
+    "zh": "網點",
+    "zhHans": "网点",
+    "en": "Halftone patch",
+    "ja": "網点",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "checkerStrip",
+    "zh": "棋盤格帶",
+    "zhHans": "棋盘格带",
+    "en": "Checker strip",
+    "ja": "市松の帯",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "beatRing",
+    "zh": "節拍圓環",
+    "zhHans": "节拍圆环",
+    "en": "Beat ring",
+    "ja": "拍の輪",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "orbitDots",
+    "zh": "環繞圓點",
+    "zhHans": "环绕圆点",
+    "en": "Orbit dots",
+    "ja": "周回する点",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "constellation",
+    "zh": "星座",
+    "zhHans": "星座",
+    "en": "Constellation",
+    "ja": "星座",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "confetti",
+    "zh": "彩紙",
+    "zhHans": "彩纸",
+    "en": "Confetti",
+    "ja": "紙吹雪",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "petals",
+    "zh": "花瓣",
+    "zhHans": "花瓣",
+    "en": "Petals",
+    "ja": "花びら",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "wa"
+    ]
+   },
+   {
+    "key": "rainStreaks",
+    "zh": "雨絲",
+    "zhHans": "雨丝",
+    "en": "Rain streaks",
+    "ja": "雨の筋",
+    "tags": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "snow",
+    "zh": "雪",
+    "zhHans": "雪",
+    "en": "Snow",
+    "ja": "雪",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "lightLeak",
+    "zh": "漏光",
+    "zhHans": "漏光",
+    "en": "Light leak",
+    "ja": "光漏れ",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bokeh",
+    "zh": "散景光點",
+    "zhHans": "散景光点",
+    "en": "Bokeh",
+    "ja": "ボケ玉",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "speedCorner",
+    "zh": "集中線",
+    "zhHans": "集中线",
+    "en": "Speed lines",
+    "ja": "集中線",
+    "tags": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "risingParticles",
+    "zh": "上升粒子",
+    "zhHans": "上升粒子",
+    "en": "Rising particles",
+    "ja": "立ち上る粒",
+    "tags": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "twinkle",
+    "zh": "閃爍星光",
+    "zhHans": "闪烁星光",
+    "en": "Twinkle",
+    "ja": "きらめき",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "brushStroke",
+    "zh": "筆刷痕",
+    "zhHans": "笔刷痕",
+    "en": "Brush stroke",
+    "ja": "筆の払い",
+    "tags": [
+     "emotional",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "wa"
+    ]
+   },
+   {
+    "key": "tapePieces",
+    "zh": "紙膠帶",
+    "zhHans": "纸胶带",
+    "en": "Masking tape",
+    "ja": "マスキングテープ",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scribbleCircle",
+    "zh": "手繪圈",
+    "zhHans": "手绘圈",
+    "en": "Scribble circle",
+    "ja": "手描きの囲み",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scribbleUnder",
+    "zh": "手繪底線",
+    "zhHans": "手绘底线",
+    "en": "Hand drawn underline",
+    "ja": "手描き下線",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "crossOut",
+    "zh": "推敲筆記",
+    "zhHans": "推敲笔记",
+    "en": "Editorial marks",
+    "ja": "推敲の走り書き",
+    "tags": [
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "highlightMark",
+    "zh": "螢光筆",
+    "zhHans": "荧光笔",
+    "en": "Highlight mark",
+    "ja": "蛍光マーカー",
+    "tags": [
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "heartsStars",
+    "zh": "愛心與星星",
+    "zhHans": "爱心与星星",
+    "en": "Hearts stars",
+    "ja": "ハートと星",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "watermarkKanji",
+    "zh": "浮水印大字",
+    "zhHans": "浮水印大字",
+    "en": "Large watermark character",
+    "ja": "透かし大漢字",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "verticalStrip",
+    "zh": "直書條",
+    "zhHans": "竖排条",
+    "en": "Vertical text strip",
+    "ja": "縦書き帯",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "romajiLine",
+    "zh": "羅馬字",
+    "zhHans": "罗马字",
+    "en": "Romanized line",
+    "ja": "ローマ字",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bracketsJP",
+    "zh": "方頭括號",
+    "zhHans": "方头括号",
+    "en": "Japanese corner brackets",
+    "ja": "隅付き括弧",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "seal",
+    "zh": "落款",
+    "zhHans": "落款",
+    "en": "Red seal",
+    "ja": "落款",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "wa"
+    ]
+   },
+   {
+    "key": "kamon",
+    "zh": "家紋",
+    "zhHans": "家纹",
+    "en": "Family crest",
+    "ja": "家紋",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "seigaiha",
+    "zh": "青海波",
+    "zhHans": "青海波",
+    "en": "Seigaiha wave pattern",
+    "ja": "青海波",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "asanoha",
+    "zh": "麻葉紋",
+    "zhHans": "麻叶纹",
+    "en": "Asanoha hemp leaf pattern",
+    "ja": "麻の葉",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "hanabi",
+    "zh": "煙火",
+    "zhHans": "烟火",
+    "en": "Fireworks",
+    "ja": "花火",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "chochin",
+    "zh": "燈籠",
+    "zhHans": "灯笼",
+    "en": "Paper lantern",
+    "ja": "提灯",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "shimenawa",
+    "zh": "注連繩",
+    "zhHans": "注连绳",
+    "en": "Sacred rope",
+    "ja": "注連縄",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "sensu",
+    "zh": "扇子",
+    "zhHans": "扇子",
+    "en": "Folding fan",
+    "ja": "扇",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "tsukiKumo",
+    "zh": "雲中月",
+    "zhHans": "云中月",
+    "en": "Moon and clouds",
+    "ja": "月に雲",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "momiji",
+    "zh": "楓葉",
+    "zhHans": "枫叶",
+    "en": "Maple leaves",
+    "ja": "紅葉",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "namiGashira",
+    "zh": "浪頭",
+    "zhHans": "浪头",
+    "en": "Wave crest",
+    "ja": "波頭",
+    "tags": [
+     "emotional",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "kasumi",
+    "zh": "霞",
+    "zhHans": "霞",
+    "en": "Mist",
+    "ja": "霞",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "hexGrid",
+    "zh": "六角網格",
+    "zhHans": "六角网格",
+    "en": "Hex grid",
+    "ja": "六角格子",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spectrumRing",
+    "zh": "環形頻譜",
+    "zhHans": "环形频谱",
+    "en": "Spectrum ring",
+    "ja": "円形スペクトラム",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dataColumns",
+    "zh": "資料列",
+    "zhHans": "数据列",
+    "en": "Data columns",
+    "ja": "データ列",
+    "tags": [
+     "glitch",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spinner",
+    "zh": "載入中",
+    "zhHans": "加载中",
+    "en": "Spinner",
+    "ja": "読み込み",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "headingTape",
+    "zh": "方位刻度",
+    "zhHans": "方位刻度",
+    "en": "Heading tape",
+    "ja": "方位テープ",
+    "tags": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glyphLock",
+    "zh": "文字鎖定",
+    "zhHans": "文字锁定",
+    "en": "Glyph lock",
+    "ja": "文字ロック",
+    "tags": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "atomOrbit",
+    "zh": "原子軌道",
+    "zhHans": "原子轨道",
+    "en": "Atom orbit",
+    "ja": "原子軌道",
+    "tags": [
+     "graphic",
+     "glitch",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sonarArcs",
+    "zh": "聲波",
+    "zhHans": "声波",
+    "en": "Sonar arcs",
+    "ja": "音波",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "circuit",
+    "zh": "電路",
+    "zhHans": "电路",
+    "en": "Circuit",
+    "ja": "回路",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "swatches",
+    "zh": "色票",
+    "zhHans": "色票",
+    "en": "Swatches",
+    "ja": "色見本",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ruledLines",
+    "zh": "橫線筆記",
+    "zhHans": "横线笔记",
+    "en": "Ruled notebook",
+    "ja": "罫線ノート",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "registration",
+    "zh": "套準標記",
+    "zhHans": "套准标记",
+    "en": "Registration marks",
+    "ja": "見当合わせ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "punchHoles",
+    "zh": "打孔",
+    "zhHans": "打孔",
+    "en": "Punch holes",
+    "ja": "パンチ穴",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "staple",
+    "zh": "釘書針",
+    "zhHans": "钉书针",
+    "en": "Staple",
+    "ja": "ホチキス",
+    "tags": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "paperClip",
+    "zh": "迴紋針",
+    "zhHans": "回纹针",
+    "en": "Paper clip",
+    "ja": "クリップ",
+    "tags": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "indexTabs",
+    "zh": "索引標籤",
+    "zhHans": "索引标签",
+    "en": "Index tabs",
+    "ja": "見出しタブ",
+    "tags": [
+     "editorial",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vines",
+    "zh": "藤蔓",
+    "zhHans": "藤蔓",
+    "en": "Vines",
+    "ja": "蔓",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cloudPuffs",
+    "zh": "雲朵",
+    "zhHans": "云朵",
+    "en": "Cloud puffs",
+    "ja": "雲",
+    "tags": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "starField",
+    "zh": "星空",
+    "zhHans": "星空",
+    "en": "Star field",
+    "ja": "星空",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "moonPhases",
+    "zh": "月相",
+    "zhHans": "月相",
+    "en": "Moon phases",
+    "ja": "月齢",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sunRays",
+    "zh": "陽光",
+    "zhHans": "阳光",
+    "en": "Sun rays",
+    "ja": "陽射し",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rainRipples",
+    "zh": "雨滴漣漪",
+    "zhHans": "雨滴涟漪",
+    "en": "Rain ripples",
+    "ja": "雨の波紋",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bubbles",
+    "zh": "肥皂泡",
+    "zhHans": "肥皂泡",
+    "en": "Bubbles",
+    "ja": "シャボン玉",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "smoke",
+    "zh": "煙",
+    "zhHans": "烟",
+    "en": "Smoke",
+    "ja": "煙",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dandelion",
+    "zh": "蒲公英",
+    "zhHans": "蒲公英",
+    "en": "Dandelion seeds",
+    "ja": "綿毛",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fireflies",
+    "zh": "螢火蟲",
+    "zhHans": "萤火虫",
+    "en": "Fireflies",
+    "ja": "蛍",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "memphis",
+    "zh": "孟菲斯",
+    "zhHans": "孟菲斯",
+    "en": "Memphis",
+    "ja": "メンフィス",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zigzagRibbon",
+    "zh": "鋸齒緞帶",
+    "zhHans": "锯齿缎带",
+    "en": "Zigzag ribbon",
+    "ja": "ジグザグリボン",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "polkaPatch",
+    "zh": "圓點",
+    "zhHans": "圆点",
+    "en": "Polka patch",
+    "ja": "水玉",
+    "tags": [
+     "pop",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stripeCircle",
+    "zh": "條紋圓",
+    "zhHans": "条纹圆",
+    "en": "Stripe circle",
+    "ja": "縞の円",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "decoCorners",
+    "zh": "裝飾角",
+    "zhHans": "装饰角",
+    "en": "Deco corners",
+    "ja": "装飾コーナー",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "halfCircles",
+    "zh": "半圓堆疊",
+    "zhHans": "半圆堆叠",
+    "en": "Half circles",
+    "ja": "半円の積層",
+    "tags": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "loopArrows",
+    "zh": "循環箭頭",
+    "zhHans": "循环箭头",
+    "en": "Loop arrows",
+    "ja": "循環矢印",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "starburst",
+    "zh": "星芒",
+    "zhHans": "星芒",
+    "en": "Starburst",
+    "ja": "スターバースト",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tally",
+    "zh": "畫正字",
+    "zhHans": "画正字",
+    "en": "Tally marks",
+    "ja": "正の字",
+    "tags": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cursorClick",
+    "zh": "游標",
+    "zhHans": "光标",
+    "en": "Cursor click",
+    "ja": "カーソル",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "windowChrome",
+    "zh": "視窗",
+    "zhHans": "窗口",
+    "en": "Window frame",
+    "ja": "ウィンドウ",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "progressBar",
+    "zh": "進度條",
+    "zhHans": "进度条",
+    "en": "Progress bar",
+    "ja": "読み込みバー",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "toggleSwitch",
+    "zh": "切換開關",
+    "zhHans": "切换开关",
+    "en": "Toggle switch",
+    "ja": "トグル",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "notifBell",
+    "zh": "通知",
+    "zhHans": "通知",
+    "en": "Notification bell",
+    "ja": "通知",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "likeCounter",
+    "zh": "按讚數",
+    "zhHans": "按赞数",
+    "en": "Like counter",
+    "ja": "いいね",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "mediaControls",
+    "zh": "播放按鈕",
+    "zhHans": "播放按钮",
+    "en": "Playback controls",
+    "ja": "再生ボタン",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "volumeBars",
+    "zh": "音量",
+    "zhHans": "音量",
+    "en": "Volume bars",
+    "ja": "音量",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "musicNotes",
+    "zh": "音符",
+    "zhHans": "音符",
+    "en": "Music notes",
+    "ja": "音符",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "treat": [
+   {
+    "key": "none",
+    "zh": "無",
+    "zhHans": "无",
+    "en": "None",
+    "ja": "なし",
+    "tags": [],
+    "flags": []
+   },
+   {
+    "key": "outline",
+    "zh": "空心字",
+    "zhHans": "空心字",
+    "en": "Hollow letters",
+    "ja": "袋文字",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "outlineFill",
+    "zh": "描邊",
+    "zhHans": "描边",
+    "en": "Outlined text",
+    "ja": "縁取り",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "doubleOutline",
+    "zh": "雙層描邊",
+    "zhHans": "双层描边",
+    "en": "Double outline",
+    "ja": "二重縁",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "extrude",
+    "zh": "立體字",
+    "zhHans": "立体字",
+    "en": "Extruded text",
+    "ja": "立体",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "longShadow",
+    "zh": "長陰影",
+    "zhHans": "长阴影",
+    "en": "Long shadow",
+    "ja": "長い影",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hardShadow",
+    "zh": "錯位陰影",
+    "zhHans": "错位阴影",
+    "en": "Hard shadow",
+    "ja": "ずらし影",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "softShadow",
+    "zh": "柔和陰影",
+    "zhHans": "柔和阴影",
+    "en": "Soft shadow",
+    "ja": "ぼかし影",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "glow",
+    "zh": "發光",
+    "zhHans": "发光",
+    "en": "Glow",
+    "ja": "発光",
+    "tags": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "marker",
+    "zh": "螢光筆",
+    "zhHans": "荧光笔",
+    "en": "Marker highlight",
+    "ja": "マーカー",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "underline",
+    "zh": "底線",
+    "zhHans": "底线",
+    "en": "Underline",
+    "ja": "下線",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "strike",
+    "zh": "刪除線",
+    "zhHans": "删除线",
+    "en": "Strikethrough",
+    "ja": "取り消し線",
+    "tags": [
+     "glitch",
+     "editorial",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "boxed",
+    "zh": "方框字",
+    "zhHans": "方框字",
+    "en": "Boxed text",
+    "ja": "箱組",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gradientV",
+    "zh": "垂直漸層",
+    "zhHans": "垂直渐变",
+    "en": "Vertical gradient",
+    "ja": "縦グラデ",
+    "tags": [
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitColor",
+    "zh": "上下雙色",
+    "zhHans": "上下双色",
+    "en": "Two tone split",
+    "ja": "上下二色",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "halftone",
+    "zh": "網點",
+    "zhHans": "网点",
+    "en": "Halftone",
+    "ja": "網点",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stripes",
+    "zh": "條紋",
+    "zhHans": "条纹",
+    "en": "Stripes",
+    "ja": "ストライプ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hatch",
+    "zh": "斜線",
+    "zhHans": "斜线",
+    "en": "Hatch",
+    "ja": "斜線",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dotted",
+    "zh": "點線輪廓",
+    "zhHans": "点线轮廓",
+    "en": "Dotted outline",
+    "ja": "点線輪郭",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "alternate",
+    "zh": "交錯配色",
+    "zhHans": "交错配色",
+    "en": "Alternating colors",
+    "ja": "交互色",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "italic",
+    "zh": "斜體",
+    "zhHans": "斜体",
+    "en": "Italic",
+    "ja": "斜体",
+    "tags": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "wide",
+    "zh": "扁平字",
+    "zhHans": "扁平字",
+    "en": "Wide letters",
+    "ja": "平体",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tall",
+    "zh": "瘦長字",
+    "zhHans": "瘦长字",
+    "en": "Tall letters",
+    "ja": "長体",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "echoOutline",
+    "zh": "輪廓殘響",
+    "zhHans": "轮廓残响",
+    "en": "Echoed outline",
+    "ja": "輪郭の残響",
+    "tags": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "emphasisDots",
+    "zh": "著重號",
+    "zhHans": "着重号",
+    "en": "Emphasis dots",
+    "ja": "傍点",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "neonOutline",
+    "zh": "霓虹燈管",
+    "zhHans": "霓虹灯管",
+    "en": "Neon tubing",
+    "ja": "ネオン管",
+    "tags": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "chrome",
+    "zh": "鍍鉻",
+    "zhHans": "镀铬",
+    "en": "Chrome",
+    "ja": "クローム",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rainbow",
+    "zh": "彩虹色",
+    "zhHans": "彩虹色",
+    "en": "Rainbow",
+    "ja": "虹色",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "glitchSplit",
+    "zh": "色版錯位",
+    "zhHans": "色版错位",
+    "en": "Misregistered colors",
+    "ja": "色版ズレ",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shadowStack",
+    "zh": "多重陰影",
+    "zhHans": "多重阴影",
+    "en": "Shadow stack",
+    "ja": "多重影",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "stencilGap",
+    "zh": "鏤空字",
+    "zhHans": "镂空字",
+    "en": "Stencil gaps",
+    "ja": "ステンシル字",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "waterline",
+    "zh": "水位",
+    "zhHans": "水位",
+    "en": "Waterline",
+    "ja": "水位",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "karaoke",
+    "zh": "卡拉 OK",
+    "zhHans": "卡拉 OK",
+    "en": "Karaoke",
+    "ja": "カラオケ",
+    "tags": [
+     "emotional",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sizeWave",
+    "zh": "大小節奏",
+    "zhHans": "大小节奏",
+    "en": "Rhythmic letter sizes",
+    "ja": "大小リズム",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rotateAlt",
+    "zh": "搖擺字",
+    "zhHans": "摇摆字",
+    "en": "Alternating angles",
+    "ja": "揺れ字",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "baselineShift",
+    "zh": "高低錯落",
+    "zhHans": "高低错落",
+    "en": "Staggered baseline",
+    "ja": "段違い",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fauxBold",
+    "zh": "超粗",
+    "zhHans": "超粗",
+    "en": "Extra bold",
+    "ja": "極太",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "circled",
+    "zh": "圓圈字",
+    "zhHans": "圆圈字",
+    "en": "Circled letters",
+    "ja": "丸囲み",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bracketsQuote",
+    "zh": "引號",
+    "zhHans": "引号",
+    "en": "Quotation marks",
+    "ja": "かぎ括弧",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "reflection",
+    "zh": "倒影",
+    "zhHans": "倒影",
+    "en": "Reflection",
+    "ja": "映り込み",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "inline",
+    "zh": "內框線",
+    "zhHans": "内框线",
+    "en": "Inline",
+    "ja": "インライン",
+    "tags": [
+     "editorial",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sticker",
+    "zh": "貼紙描邊",
+    "zhHans": "贴纸描边",
+    "en": "Sticker outline",
+    "ja": "シール縁",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "gradientSweep",
+    "zh": "光澤掃過",
+    "zhHans": "光泽扫过",
+    "en": "Gradient sweep",
+    "ja": "光沢スイープ",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "kerningWide",
+    "zh": "寬字距",
+    "zhHans": "宽字距",
+    "en": "Wide letter spacing",
+    "ja": "字間広め",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "monoGrid",
+    "zh": "稿紙風",
+    "zhHans": "稿纸风",
+    "en": "Manuscript grid",
+    "ja": "原稿用紙風",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "outlineOffset",
+    "zh": "錯位空心字",
+    "zhHans": "错位空心字",
+    "en": "Offset outline",
+    "ja": "版ズレ袋文字",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "toneShadow",
+    "zh": "網點陰影",
+    "zhHans": "网点阴影",
+    "en": "Halftone shadow",
+    "ja": "トーン影",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fadeChars",
+    "zh": "餘韻",
+    "zhHans": "余韵",
+    "en": "Fading letters",
+    "ja": "余韻",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cutShift",
+    "zh": "切割錯位",
+    "zhHans": "切割错位",
+    "en": "Offset cut",
+    "ja": "断ち切り",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "focusPull",
+    "zh": "模糊移焦",
+    "zhHans": "模糊移焦",
+    "en": "Focus shift",
+    "ja": "ぼかし送り",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spotChar",
+    "zh": "單字標記",
+    "zhHans": "单字标记",
+    "en": "Highlighted character",
+    "ja": "一字マーク",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ransom",
+    "zh": "剪貼字",
+    "zhHans": "剪贴字",
+    "en": "Cutout letters",
+    "ja": "切り貼り文字",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ],
+  "bg": [
+   {
+    "key": "none",
+    "zh": "素色",
+    "zhHans": "素色",
+    "en": "Solid color",
+    "ja": "無地",
+    "tags": [],
+    "flags": []
+   },
+   {
+    "key": "auroraRibbons",
+    "zh": "極光",
+    "zhHans": "极光",
+    "en": "Aurora ribbons",
+    "ja": "オーロラ",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "meshBlobs",
+    "zh": "網格漸層",
+    "zhHans": "网格渐变",
+    "en": "Mesh blobs",
+    "ja": "メッシュグラデ",
+    "tags": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "duotoneSweep",
+    "zh": "雙色掃動",
+    "zhHans": "双色扫动",
+    "en": "Duotone sweep",
+    "ja": "二色スイープ",
+    "tags": [
+     "calm",
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "horizonGlow",
+    "zh": "行星邊緣",
+    "zhHans": "行星边缘",
+    "en": "Horizon glow",
+    "ja": "惑星の縁",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "seigaiha",
+    "zh": "青海波",
+    "zhHans": "青海波",
+    "en": "Seigaiha waves",
+    "ja": "青海波",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "asanoha",
+    "zh": "麻葉紋",
+    "zhHans": "麻叶纹",
+    "en": "Asanoha pattern",
+    "ja": "麻の葉",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra",
+     "wa"
+    ]
+   },
+   {
+    "key": "houndstooth",
+    "zh": "千鳥格",
+    "zhHans": "千鸟格",
+    "en": "Houndstooth",
+    "ja": "千鳥格子",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "herringbone",
+    "zh": "人字紋",
+    "zhHans": "人字纹",
+    "en": "Herringbone",
+    "ja": "ヘリンボーン",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "argyle",
+    "zh": "菱格紋",
+    "zhHans": "菱格纹",
+    "en": "Argyle",
+    "ja": "アーガイル",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tartan",
+    "zh": "蘇格蘭格紋",
+    "zhHans": "苏格兰格纹",
+    "en": "Tartan",
+    "ja": "タータン",
+    "tags": [
+     "pop",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "chevron",
+    "zh": "V 形紋",
+    "zhHans": "V 形纹",
+    "en": "Chevron",
+    "ja": "山形",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "isoCubes",
+    "zh": "立方體",
+    "zhHans": "立方体",
+    "en": "Iso cubes",
+    "ja": "立方体",
+    "tags": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "hexGrid",
+    "zh": "六角網格",
+    "zhHans": "六角网格",
+    "en": "Hex grid",
+    "ja": "六角格子",
+    "tags": [
+     "graphic",
+     "glitch",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "triTess",
+    "zh": "三角馬賽克",
+    "zhHans": "三角马赛克",
+    "en": "Tri tess",
+    "ja": "三角モザイク",
+    "tags": [
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "moire",
+    "zh": "摩爾紋",
+    "zhHans": "摩尔纹",
+    "en": "Moire",
+    "ja": "モアレ",
+    "tags": [
+     "glitch",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "squareTunnel",
+    "zh": "方形隧道",
+    "zhHans": "方形隧道",
+    "en": "Square tunnel",
+    "ja": "四角トンネル",
+    "tags": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spiralArms",
+    "zh": "漩渦",
+    "zhHans": "漩涡",
+    "en": "Spiral arms",
+    "ja": "渦巻き",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "topoLines",
+    "zh": "等高線",
+    "zhHans": "等高线",
+    "en": "Contour lines",
+    "ja": "等高線",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ridgePlot",
+    "zh": "山脊線圖",
+    "zhHans": "山脊线图",
+    "en": "Mountain ridges",
+    "ja": "稜線グラフ",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "starfield",
+    "zh": "星空",
+    "zhHans": "星空",
+    "en": "Starfield",
+    "ja": "星空",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "nightMoon",
+    "zh": "月夜",
+    "zhHans": "月夜",
+    "en": "Moonlit night",
+    "ja": "月夜",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "skyline",
+    "zh": "街景",
+    "zhHans": "街景",
+    "en": "Skyline",
+    "ja": "街並み",
+    "tags": [
+     "emotional",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sunsetSun",
+    "zh": "夕陽",
+    "zhHans": "夕阳",
+    "en": "Sunset sun",
+    "ja": "夕日",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "oceanWaves",
+    "zh": "海浪",
+    "zhHans": "海浪",
+    "en": "Ocean waves",
+    "ja": "海の波",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rainWindow",
+    "zh": "雨窗",
+    "zhHans": "雨窗",
+    "en": "Rain window",
+    "ja": "雨の窓",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "snowLayers",
+    "zh": "雪",
+    "zhHans": "雪",
+    "en": "Snow layers",
+    "ja": "雪",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "fireworks",
+    "zh": "煙火",
+    "zhHans": "烟火",
+    "en": "Fireworks",
+    "ja": "花火",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cloudLayers",
+    "zh": "雲",
+    "zhHans": "云",
+    "en": "Cloud layers",
+    "ja": "雲",
+    "tags": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "mountains",
+    "zh": "山巒",
+    "zhHans": "山峦",
+    "en": "Mountains",
+    "ja": "山並み",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "filmStrip",
+    "zh": "底片",
+    "zhHans": "胶片",
+    "en": "Filmstrip",
+    "ja": "フィルム",
+    "tags": [
+     "editorial",
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vhsBand",
+    "zh": "VHS 雜訊",
+    "zhHans": "VHS 噪点",
+    "en": "VHS noise band",
+    "ja": "VHSノイズ",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tornPaper",
+    "zh": "撕紙",
+    "zhHans": "撕纸",
+    "en": "Torn paper",
+    "ja": "破れ紙",
+    "tags": [
+     "editorial",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "godRays",
+    "zh": "光芒",
+    "zhHans": "光芒",
+    "en": "Light rays",
+    "ja": "光芒",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vignettePulse",
+    "zh": "彩色暗角",
+    "zhHans": "彩色暗角",
+    "en": "Pulsing vignette",
+    "ja": "色の周辺光",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "kaleidoscope",
+    "zh": "萬花筒",
+    "zhHans": "万花筒",
+    "en": "Kaleidoscope",
+    "ja": "万華鏡",
+    "tags": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "marble",
+    "zh": "大理石",
+    "zhHans": "大理石",
+    "en": "Marble",
+    "ja": "大理石",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "paperCut",
+    "zh": "剪紙",
+    "zhHans": "剪纸",
+    "en": "Paper cutout",
+    "ja": "切り絵",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sunburst",
+    "zh": "放射",
+    "zhHans": "放射",
+    "en": "Sunburst",
+    "ja": "放射",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "concentric",
+    "zh": "同心圓",
+    "zhHans": "同心圆",
+    "en": "Concentric",
+    "ja": "同心円",
+    "tags": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "halftoneFade",
+    "zh": "網點漸層",
+    "zhHans": "网点渐变",
+    "en": "Halftone fade",
+    "ja": "網点グラデ",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bigStripes",
+    "zh": "大斜紋",
+    "zhHans": "大斜纹",
+    "en": "Big stripes",
+    "ja": "大きな斜線",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitV",
+    "zh": "左右雙色",
+    "zhHans": "左右双色",
+    "en": "Vertical color split",
+    "ja": "左右二色",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitH",
+    "zh": "上下雙色",
+    "zhHans": "上下双色",
+    "en": "Horizontal color split",
+    "ja": "上下二色",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitDiag",
+    "zh": "斜向雙色",
+    "zhHans": "斜向双色",
+    "en": "Diagonal color split",
+    "ja": "斜め二色",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gradientSweep",
+    "zh": "漸層",
+    "zhHans": "渐变",
+    "en": "Gradient sweep",
+    "ja": "グラデ",
+    "tags": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "spotlight",
+    "zh": "聚光燈",
+    "zhHans": "聚光灯",
+    "en": "Spotlight",
+    "ja": "スポットライト",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tvBars",
+    "zh": "電視彩條",
+    "zhHans": "电视彩条",
+    "en": "TV color bars",
+    "ja": "テレビの帯",
+    "tags": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "checker",
+    "zh": "棋盤格",
+    "zhHans": "棋盘格",
+    "en": "Checker",
+    "ja": "市松",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bigChar",
+    "zh": "巨大文字",
+    "zhHans": "巨大文字",
+    "en": "Oversized letters",
+    "ja": "巨大文字",
+    "tags": [
+     "editorial",
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "speedLines",
+    "zh": "集中線",
+    "zhHans": "集中线",
+    "en": "Speed lines",
+    "ja": "集中線",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "scanBars",
+    "zh": "掃描線帶",
+    "zhHans": "扫描线带",
+    "en": "Scan bars",
+    "ja": "走査線の帯",
+    "tags": [
+     "calm",
+     "glitch",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dotGrid",
+    "zh": "點狀網格",
+    "zhHans": "点状网格",
+    "en": "Dot grid",
+    "ja": "ドット格子",
+    "tags": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "retroGrid",
+    "zh": "復古網格",
+    "zhHans": "复古网格",
+    "en": "Retro grid",
+    "ja": "レトロ格子",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bokehBg",
+    "zh": "散景光點",
+    "zhHans": "散景光点",
+    "en": "Bokeh",
+    "ja": "ボケ玉",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "particlesBg",
+    "zh": "飛舞粒子",
+    "zhHans": "飞舞粒子",
+    "en": "Floating particles",
+    "ja": "舞い上がる粒",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "ripples",
+    "zh": "漣漪",
+    "zhHans": "涟漪",
+    "en": "Ripples",
+    "ja": "波紋",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "polka",
+    "zh": "圓點",
+    "zhHans": "圆点",
+    "en": "Polka",
+    "ja": "水玉",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "eqBars",
+    "zh": "背景等化器",
+    "zhHans": "背景等化器",
+    "en": "Equalizer bars",
+    "ja": "背景イコライザー",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "borderFrame",
+    "zh": "粗框",
+    "zhHans": "粗框",
+    "en": "Border frame",
+    "ja": "太枠",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "letterbox",
+    "zh": "電影黑邊",
+    "zhHans": "电影黑边",
+    "en": "Cinema letterbox",
+    "ja": "シネスコ帯",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "noiseField",
+    "zh": "雜訊擾動",
+    "zhHans": "噪点扰动",
+    "en": "Moving noise",
+    "ja": "ノイズの揺らぎ",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   }
+  ],
+  "cam": [
+   {
+    "key": "push",
+    "zh": "緩慢推近",
+    "zhHans": "缓慢推近",
+    "en": "Slow push in",
+    "ja": "ゆっくり寄る",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "orbitDrift",
+    "zh": "環繞",
+    "zhHans": "环绕",
+    "en": "Orbit drift",
+    "ja": "周回",
+    "tags": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "barrelRoll",
+    "zh": "桶滾",
+    "zhHans": "桶滚",
+    "en": "Barrel roll",
+    "ja": "バレルロール",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pendulumSway",
+    "zh": "鐘擺",
+    "zhHans": "钟摆",
+    "en": "Pendulum sway",
+    "ja": "振り子",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "focusIn",
+    "zh": "對焦",
+    "zhHans": "对焦",
+    "en": "Focus in",
+    "ja": "ピント合わせ",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rackFocus",
+    "zh": "失焦",
+    "zhHans": "失焦",
+    "en": "Rack focus",
+    "ja": "ピンぼけ",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "earthquake",
+    "zh": "地震",
+    "zhHans": "地震",
+    "en": "Earthquake",
+    "ja": "地震",
+    "tags": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "floatNoise",
+    "zh": "漂浮",
+    "zhHans": "漂浮",
+    "en": "Floating camera",
+    "ja": "浮遊",
+    "tags": [
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "vertigo",
+    "zh": "暈眩變焦",
+    "zhHans": "晕眩变焦",
+    "en": "Dolly zoom",
+    "ja": "めまい",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tiltDown",
+    "zh": "鏡頭下搖",
+    "zhHans": "镜头下摇",
+    "en": "Tilt down",
+    "ja": "ティルトダウン",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spiralIn",
+    "zh": "漩渦變焦",
+    "zhHans": "漩涡变焦",
+    "en": "Spiral zoom",
+    "ja": "渦ズーム",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "snapPan",
+    "zh": "快速橫搖",
+    "zhHans": "快速横摇",
+    "en": "Snap pan",
+    "ja": "スナップパン",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "jelly",
+    "zh": "果凍晃動",
+    "zhHans": "果冻晃动",
+    "en": "Elastic wobble",
+    "ja": "ぷるん",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pullOut",
+    "zh": "拉遠",
+    "zhHans": "拉远",
+    "en": "Pull out",
+    "ja": "引き",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "panL",
+    "zh": "向左橫搖",
+    "zhHans": "向左横摇",
+    "en": "Pan left",
+    "ja": "左パン",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "panR",
+    "zh": "向右橫搖",
+    "zhHans": "向右横摇",
+    "en": "Pan right",
+    "ja": "右パン",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tiltUp",
+    "zh": "鏡頭上搖",
+    "zhHans": "镜头上摇",
+    "en": "Tilt up",
+    "ja": "ティルト",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dutch",
+    "zh": "斜角鏡頭",
+    "zhHans": "斜角镜头",
+    "en": "Dutch angle",
+    "ja": "ダッチ",
+    "tags": [
+     "emotional",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "handheld",
+    "zh": "手持",
+    "zhHans": "手持",
+    "en": "Handheld",
+    "ja": "手持ち",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "beatPunch",
+    "zh": "隨拍放大",
+    "zhHans": "随拍放大",
+    "en": "Zoom on beat",
+    "ja": "拍でズーム",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "whipIn",
+    "zh": "急甩推入",
+    "zhHans": "急甩推入",
+    "en": "Whip in",
+    "ja": "ホイップイン",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "crashZoom",
+    "zh": "急速變焦",
+    "zhHans": "急速变焦",
+    "en": "Crash zoom",
+    "ja": "クラッシュズーム",
+    "tags": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "bounce",
+    "zh": "彈跳",
+    "zhHans": "弹跳",
+    "en": "Bounce",
+    "ja": "バウンス",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "roll",
+    "zh": "滾轉",
+    "zhHans": "滚转",
+    "en": "Roll",
+    "ja": "ロール",
+    "tags": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "driftDiag",
+    "zh": "斜向漂移",
+    "zhHans": "斜向漂移",
+    "en": "Diagonal drift",
+    "ja": "斜めドリフト",
+    "tags": [
+     "calm",
+     "emotional",
+     "editorial",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shakeHard",
+    "zh": "劇烈搖晃",
+    "zhHans": "剧烈摇晃",
+    "en": "Strong shake",
+    "ja": "強い揺れ",
+    "tags": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "dollyIn",
+    "zh": "推軌",
+    "zhHans": "推轨",
+    "en": "Dolly in",
+    "ja": "ドリー",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "stepZoom",
+    "zh": "分段變焦",
+    "zhHans": "分段变焦",
+    "en": "Stepped zoom",
+    "ja": "段階ズーム",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   }
+  ],
+  "fx": [
+   {
+    "key": "chroma",
+    "zh": "色彩錯位跳動",
+    "zhHans": "色彩错位跳动",
+    "en": "Chromatic jump",
+    "ja": "色ズレの跳ね",
+    "tags": [
+     "glitch",
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "shake",
+    "zh": "搖晃",
+    "zhHans": "摇晃",
+    "en": "Shake",
+    "ja": "揺れ",
+    "tags": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "slice",
+    "zh": "切片故障",
+    "zhHans": "切片故障",
+    "en": "Slice glitch",
+    "ja": "スライスグリッチ",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "block",
+    "zh": "區塊故障",
+    "zhHans": "区块故障",
+    "en": "Block glitch",
+    "ja": "ブロックグリッチ",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "invert",
+    "zh": "反轉",
+    "zhHans": "反转",
+    "en": "Invert",
+    "ja": "反転",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "flash",
+    "zh": "閃光",
+    "zhHans": "闪光",
+    "en": "Flash",
+    "ja": "フラッシュ",
+    "tags": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoom",
+    "zh": "縮放模糊",
+    "zhHans": "缩放模糊",
+    "en": "Zoom blur",
+    "ja": "ズームブラー",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "mosaic",
+    "zh": "馬賽克",
+    "zhHans": "马赛克",
+    "en": "Mosaic",
+    "ja": "モザイク",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "radialChroma",
+    "zh": "放射色差",
+    "zhHans": "放射色差",
+    "en": "Radial color fringing",
+    "ja": "放射色収差",
+    "tags": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bloomFlash",
+    "zh": "光暈",
+    "zhHans": "光晕",
+    "en": "Bloom flash",
+    "ja": "ブルーム",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bulge",
+    "zh": "魚眼",
+    "zhHans": "鱼眼",
+    "en": "Fisheye distortion",
+    "ja": "魚眼",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pixelSort",
+    "zh": "像素排序",
+    "zhHans": "像素排序",
+    "en": "Pixel sort",
+    "ja": "ピクセルソート",
+    "tags": [
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "interlace",
+    "zh": "交錯掃描",
+    "zhHans": "交错扫描",
+    "en": "Interlace",
+    "ja": "インターレース",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "macroBlock",
+    "zh": "區塊雜訊",
+    "zhHans": "区块噪点",
+    "en": "Compression blocks",
+    "ja": "ブロックノイズ",
+    "tags": [
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "halftone",
+    "zh": "網點",
+    "zhHans": "网点",
+    "en": "Halftone",
+    "ja": "網点",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "duotone",
+    "zh": "雙色調",
+    "zhHans": "双色调",
+    "en": "Duotone",
+    "ja": "ダブルトーン",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ditherBit",
+    "zh": "1 位元遞色",
+    "zhHans": "1 位抖动",
+    "en": "1 bit dither",
+    "ja": "1bitディザ",
+    "tags": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "rotateSnap",
+    "zh": "角度急轉",
+    "zhHans": "角度急转",
+    "en": "Angle snap",
+    "ja": "傾きスナップ",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "echoFrames",
+    "zh": "殘影回聲",
+    "zhHans": "残影回声",
+    "en": "Frame echoes",
+    "ja": "残像エコー",
+    "tags": [
+     "emotional",
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "kaleido",
+    "zh": "萬花筒",
+    "zhHans": "万花筒",
+    "en": "Kaleidoscope",
+    "ja": "万華鏡",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "bandInvert",
+    "zh": "帶狀反轉",
+    "zhHans": "带状反转",
+    "en": "Inverted band",
+    "ja": "帯反転",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "lightRays",
+    "zh": "光芒",
+    "zhHans": "光芒",
+    "en": "Light rays",
+    "ja": "光芒",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "anamorphic",
+    "zh": "橫向光斑",
+    "zhHans": "横向光斑",
+    "en": "Anamorphic flare",
+    "ja": "アナモフレア",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "heartbeat",
+    "zh": "心跳",
+    "zhHans": "心跳",
+    "en": "Heartbeat",
+    "ja": "鼓動",
+    "tags": [
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "tvStatic",
+    "zh": "雪花雜訊",
+    "zhHans": "雪花噪点",
+    "en": "TV static",
+    "ja": "砂嵐",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "dustScratches",
+    "zh": "底片刮痕",
+    "zhHans": "胶片划痕",
+    "en": "Film scratches",
+    "ja": "フィルム傷",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "filmAdvance",
+    "zh": "底片捲動",
+    "zhHans": "胶片滚动",
+    "en": "Film advance",
+    "ja": "フィルム送り",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "perspectiveTilt",
+    "zh": "透視搖晃",
+    "zhHans": "透视摇晃",
+    "en": "Perspective tilt",
+    "ja": "パース揺れ",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "ripple",
+    "zh": "漣漪",
+    "zhHans": "涟漪",
+    "en": "Ripple",
+    "ja": "波紋",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "focusLines",
+    "zh": "集中線",
+    "zhHans": "集中线",
+    "en": "Focus lines",
+    "ja": "集中線",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "speedLines",
+    "zh": "速度線",
+    "zhHans": "速度线",
+    "en": "Speed lines",
+    "ja": "流線",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "starGlint",
+    "zh": "星芒閃光",
+    "zhHans": "星芒闪光",
+    "en": "Star glint",
+    "ja": "キラッ",
+    "tags": [
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "colorBars",
+    "zh": "彩條",
+    "zhHans": "彩条",
+    "en": "Color bars",
+    "ja": "カラーバー",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zoomStutter",
+    "zh": "連續縮放",
+    "zhHans": "连续缩放",
+    "en": "Zoom stutter",
+    "ja": "ズーム連打",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "negativeRing",
+    "zh": "反轉圓環",
+    "zhHans": "反转圆环",
+    "en": "Inverted ring",
+    "ja": "反転リング",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "edgeDetect",
+    "zh": "邊緣偵測",
+    "zhHans": "边缘侦测",
+    "en": "Edge detect",
+    "ja": "輪郭抽出",
+    "tags": [
+     "graphic",
+     "glitch",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shatter",
+    "zh": "玻璃碎裂",
+    "zhHans": "玻璃碎裂",
+    "en": "Glass shatter",
+    "ja": "ガラス割れ",
+    "tags": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "defocus",
+    "zh": "失焦",
+    "zhHans": "失焦",
+    "en": "Out of focus",
+    "ja": "ピンぼけ",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "snapshot",
+    "zh": "快門",
+    "zhHans": "快门",
+    "en": "Snapshot",
+    "ja": "シャッター",
+    "tags": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "squash",
+    "zh": "伸縮",
+    "zhHans": "伸缩",
+    "en": "Squash",
+    "ja": "伸縮",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "scanBar",
+    "zh": "掃描",
+    "zhHans": "扫描",
+    "en": "Scan bar",
+    "ja": "スキャン",
+    "tags": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "loopScroll",
+    "zh": "橫向循環",
+    "zhHans": "横向循环",
+    "en": "Loop scroll",
+    "ja": "横ループ",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "panelWipe",
+    "zh": "面板擦除",
+    "zhHans": "面板擦除",
+    "en": "Panel wipe",
+    "ja": "パネルワイプ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "irisTrans",
+    "zh": "光圈",
+    "zhHans": "光圈",
+    "en": "Iris trans",
+    "ja": "アイリス",
+    "tags": [
+     "pop",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "doors",
+    "zh": "門",
+    "zhHans": "门",
+    "en": "Doors",
+    "ja": "扉",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blindsTrans",
+    "zh": "百葉窗",
+    "zhHans": "百叶窗",
+    "en": "Blinds trans",
+    "ja": "ブラインド",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "rgbSplit",
+    "zh": "RGB 分離",
+    "zhHans": "RGB 分离",
+    "en": "RGB separation",
+    "ja": "RGB分離",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "smear",
+    "zh": "橫向拖影",
+    "zhHans": "横向拖影",
+    "en": "Smear",
+    "ja": "横スミア",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "vhsRoll",
+    "zh": "VHS 滾動",
+    "zhHans": "VHS 滚动",
+    "en": "VHS roll",
+    "ja": "VHSロール",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "trackingNoise",
+    "zh": "磁軌雜訊",
+    "zhHans": "磁道噪点",
+    "en": "Tracking noise",
+    "ja": "トラッキングノイズ",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "mirrorFlash",
+    "zh": "鏡像",
+    "zhHans": "镜像",
+    "en": "Mirror flash",
+    "ja": "ミラー",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "strobe",
+    "zh": "頻閃",
+    "zhHans": "频闪",
+    "en": "Strobe",
+    "ja": "ストロボ",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "posterize",
+    "zh": "色調分離",
+    "zhHans": "色调分离",
+    "en": "Posterization",
+    "ja": "ポスタリゼ",
+    "tags": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "hueShift",
+    "zh": "色相偏移",
+    "zhHans": "色相偏移",
+    "en": "Hue shift",
+    "ja": "色相シフト",
+    "tags": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "tileShift",
+    "zh": "磁磚錯位",
+    "zhHans": "磁砖错位",
+    "en": "Tile shift",
+    "ja": "タイルずらし",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": []
+   },
+   {
+    "key": "filmBurn",
+    "zh": "底片燒灼",
+    "zhHans": "胶片烧灼",
+    "en": "Film burn",
+    "ja": "フィルム焼け",
+    "tags": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "flags": []
+   },
+   {
+    "key": "whipBlur",
+    "zh": "急甩模糊",
+    "zhHans": "急甩模糊",
+    "en": "Whip blur",
+    "ja": "ホイップブラー",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "blackFrame",
+    "zh": "黑畫格",
+    "zhHans": "黑画格",
+    "en": "Black frame",
+    "ja": "黒コマ",
+    "tags": [
+     "editorial",
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "whiteFrame",
+    "zh": "白畫格",
+    "zhHans": "白画格",
+    "en": "White frame",
+    "ja": "白コマ",
+    "tags": [
+     "emotional",
+     "pop"
+    ],
+    "flags": []
+   },
+   {
+    "key": "gridRepeat",
+    "zh": "分割畫面",
+    "zhHans": "分割画面",
+    "en": "Grid repeat",
+    "ja": "画面分割",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "waveWarp",
+    "zh": "波浪扭曲",
+    "zhHans": "波浪扭曲",
+    "en": "Wave warp",
+    "ja": "波ゆがみ",
+    "tags": [
+     "emotional",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "pixelDrift",
+    "zh": "像素偏移",
+    "zhHans": "像素偏移",
+    "en": "Pixel drift",
+    "ja": "ピクセルずれ",
+    "tags": [
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "zoomPunch",
+    "zh": "縮放重擊",
+    "zhHans": "缩放重击",
+    "en": "Zoom punch",
+    "ja": "ズームパンチ",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": []
+   },
+   {
+    "key": "lightSweep",
+    "zh": "光束掃過",
+    "zhHans": "光束扫过",
+    "en": "Light sweep",
+    "ja": "光の筋",
+    "tags": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "flags": []
+   },
+   {
+    "key": "crtOff",
+    "zh": "映像管關機",
+    "zhHans": "映像管关机",
+    "en": "CRT powers off",
+    "ja": "ブラウン管オフ",
+    "tags": [
+     "glitch",
+     "emotional"
+    ],
+    "flags": []
+   },
+   {
+    "key": "splitSlide",
+    "zh": "上下滑移",
+    "zhHans": "上下滑移",
+    "en": "Split slide",
+    "ja": "上下スライド",
+    "tags": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "flags": []
+   }
+  ],
+  "trans": [
+   {
+    "key": "wipe",
+    "zh": "邊緣擦除",
+    "zhHans": "边缘擦除",
+    "en": "Edge wipe",
+    "ja": "エッジワイプ",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "diagonalWipe",
+    "zh": "斜帶擦除",
+    "zhHans": "斜带擦除",
+    "en": "Diagonal band wipe",
+    "ja": "斜め帯ワイプ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "clockWipe",
+    "zh": "時鐘擦除",
+    "zhHans": "时钟擦除",
+    "en": "Clock wipe",
+    "ja": "クロックワイプ",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "irisOpen",
+    "zh": "光圈開啟",
+    "zhHans": "光圈开启",
+    "en": "Iris opens",
+    "ja": "アイリスイン",
+    "tags": [
+     "emotional",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pushSlide",
+    "zh": "推移",
+    "zhHans": "推移",
+    "en": "Push",
+    "ja": "プッシュ",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cover",
+    "zh": "覆蓋",
+    "zhHans": "覆盖",
+    "en": "Cover",
+    "ja": "カバー",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "uncover",
+    "zh": "揭開",
+    "zhHans": "揭开",
+    "en": "Uncover",
+    "ja": "アンカバー",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "zoomThrough",
+    "zh": "穿越縮放",
+    "zhHans": "穿越缩放",
+    "en": "Zoom through",
+    "ja": "ズームスルー",
+    "tags": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "doorsOpen",
+    "zh": "對開門",
+    "zhHans": "对开门",
+    "en": "Double doors",
+    "ja": "観音開き",
+    "tags": [
+     "graphic",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "blinds",
+    "zh": "百葉窗轉場",
+    "zhHans": "百叶窗转场",
+    "en": "Blinds",
+    "ja": "ブラインド転換",
+    "tags": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "checker",
+    "zh": "棋盤格轉場",
+    "zhHans": "棋盘格转场",
+    "en": "Checkerboard",
+    "ja": "市松転換",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "blockDissolve",
+    "zh": "方塊崩解",
+    "zhHans": "方块崩解",
+    "en": "Block dissolve",
+    "ja": "ブロック崩し",
+    "tags": [
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "whipPan",
+    "zh": "急甩橫搖",
+    "zhHans": "急甩横摇",
+    "en": "Whip pan",
+    "ja": "ホイップパン",
+    "tags": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "spinOut",
+    "zh": "旋轉轉出",
+    "zhHans": "旋转转出",
+    "en": "Spin out",
+    "ja": "回転アウト",
+    "tags": [
+     "pop",
+     "glitch"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "inkBlob",
+    "zh": "墨漬",
+    "zhHans": "墨渍",
+    "en": "Ink blot",
+    "ja": "インク",
+    "tags": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "shatterTiles",
+    "zh": "磁磚崩落",
+    "zhHans": "磁砖崩落",
+    "en": "Shattering tiles",
+    "ja": "タイル崩落",
+    "tags": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "sliceShift",
+    "zh": "長條錯位",
+    "zhHans": "长条错位",
+    "en": "Sliding strips",
+    "ja": "短冊ずらし",
+    "tags": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "cubeTurn",
+    "zh": "立方體",
+    "zhHans": "立方体",
+    "en": "Cube turn",
+    "ja": "キューブ",
+    "tags": [
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "flashCross",
+    "zh": "閃光轉場",
+    "zhHans": "闪光转场",
+    "en": "Flash cut",
+    "ja": "フラッシュ転換",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "extra"
+    ]
+   },
+   {
+    "key": "pixelate",
+    "zh": "馬賽克轉場",
+    "zhHans": "马赛克转场",
+    "en": "Pixel transition",
+    "ja": "モザイク転換",
+    "tags": [
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "extra"
+    ]
+   }
+  ]
+ },
+ "defaultFx": {
+  "motion": 0.7,
+  "glitch": 0.55,
+  "chroma": 0.7,
+  "decor": 0.5,
+  "density": 0.55,
+  "texture": 0.6,
+  "flash": true,
+  "onTwos": true,
+  "koma": 12,
+  "hud": "auto",
+  "bgSwitch": 0.35
+ }
+}
