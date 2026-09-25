@@ -1,57 +1,63 @@
-# jizura-preset（非官方）
+# jizura-helper-skill (unofficial)
 
-用一句話描述你想要的感覺，讓 AI 幫你產生 [JIZURA](https://github.com/852wa/JIZURA) 的設定檔。
+[繁體中文](README.zh-TW.md)
 
-> **這是非官方的第三方工具，和 JIZURA 及其作者沒有任何關係。** JIZURA 是一個不使用 AI、只靠瀏覽器運作的動態歌詞影片工具。這個專案只是幫你的 AI 助理看懂 JIZURA 的設定檔格式，JIZURA 本身完全沒有被修改。遇到問題請回報到這裡，不要去打擾 JIZURA 的作者。
+Describe the look you want in a sentence, and let your AI assistant write a settings file for [JIZURA](https://github.com/852wa/JIZURA).
 
-![「陰森、紅黑、破碎」範例的畫面](examples/horror-red-black.preview.jpg)
+> **This is an unofficial third-party tool, not affiliated with JIZURA or its author.** JIZURA is a browser-only lyric video tool that uses no AI. This project only teaches your AI assistant JIZURA's project file format; JIZURA itself is not modified in any way. Please report problems here, not to JIZURA's author.
 
-## 怎麼用
+![Frames from the "eerie, red and black, shattering" example](examples/horror-red-black.preview.jpg)
 
-1. 把這個 skill 交給你的 AI（方法見下一節）。
-2. 告訴它你的歌詞和想要的感覺，例如「陰森、紅黑色、字會碎掉，做成直式短影音」。
-3. AI 會產生一個 `.jizura.json` 檔案。
-4. 打開 JIZURA 繁中版 <https://852wa.github.io/JIZURA/zh-hant/>，按「**開啟**」選這個檔案，再按「**匯入歌曲**」載入音樂，播放確認後按「**匯出 MP4**」。
+## How it works
 
-想在保留這套設定的前提下換一種編排，按「重新排列」；「隨機生成」會把所有設定換掉。
+1. Give this skill to your AI (see below).
+2. Tell it your lyrics and the look you want, e.g. "eerie, red and black, words shatter, vertical for Reels".
+3. It writes a `.jizura.json` file. If it can only paste text, save the JSON as `<title>.jizura.json` (UTF-8, extension `.json`).
+4. Open JIZURA — [English](https://852wa.github.io/JIZURA/en/), [日本語](https://852wa.github.io/JIZURA/), [繁體中文](https://852wa.github.io/JIZURA/zh-hant/), [简体中文](https://852wa.github.io/JIZURA/zh-hans/), [한국어](https://852wa.github.io/JIZURA/ko/), [Bahasa Indonesia](https://852wa.github.io/JIZURA/id/) — press **Open** and choose the file, press **Import audio** to load your song, preview, then **Export MP4**.
 
-## 交給不同的 AI
+To keep the settings but try another arrangement, press **Shuffle**. The big random button (**Create a variation**) replaces all the settings.
 
-| AI | 做法 |
+JIZURA opens files through a file picker; there is no box to paste JSON into.
+
+## Giving it to your AI
+
+| AI | How |
 |---|---|
-| Claude Code | `git clone https://github.com/Zaious/jizura-helper-skill.git ~/.claude/skills/jizura-preset`（資料夾名稱要是 `jizura-preset`，和 skill 名稱相同） |
-| claude.ai | 把整個資料夾當作自訂 skill 上傳（skill 名稱是 `jizura-preset`） |
-| ChatGPT | 建立自訂 GPT，把 `SKILL.md`、`references/format.md`、`references/catalog.md` 上傳為知識檔，並把 `SKILL.md` 的內容貼進指示欄 |
-| 其他 AI | 在對話開頭依序貼上 `SKILL.md`、`references/format.md`，再貼 `references/catalog.md` 裡需要的段落 |
+| Claude Code | `git clone https://github.com/Zaious/jizura-helper-skill.git ~/.claude/skills/jizura-preset` (the folder must be named `jizura-preset`, the skill's name) |
+| Claude (claude.ai) | Upload the folder as a custom skill (skill name `jizura-preset`) |
+| ChatGPT | Create a custom GPT: upload `SKILL.md`, `references/format.md`, `references/catalog.md` and `references/enabled-all.json` as knowledge, and paste `SKILL.md` into the instructions |
+| Other AIs | Paste `SKILL.md` and `references/format.md` at the start of the chat, then the parts of `references/catalog.md` you need |
 
-能執行程式的 AI（例如 Claude Code）會自動用 `scripts/finalize.js` 檢查設定檔。在聊天介面裡的 AI 無法執行程式，會照 `format.md` 的檢查清單自己核對。
+AIs that can run code (such as Claude Code) check the file with `scripts/finalize.js`. Chat AIs that cannot run code check it by hand against the checklist in `format.md`. The assistant replies in your language.
 
-## 內容
+Tested with Claude (with and without code execution). Not yet tested with ChatGPT or other assistants.
+
+## Contents
 
 ```
-SKILL.md                  給 AI 看的主要說明
-references/format.md      .jizura.json 的格式與規則
-references/catalog.md     風格、氛圍、字型、707 個零件的代號與中文名（自動產生）
-references/catalog.json   同上，給程式用
-references/enabled-all.json  每類零件的完整代號清單，讓不能執行程式的 AI 複製後修改
-scripts/finalize.js       展開 only 簡寫、檢查設定檔（node）
-scripts/build_catalog.js  從 JIZURA 原始碼重新產生目錄（node）
-examples/                 範例：陰森、紅黑、破碎
+SKILL.md                     instructions for the AI
+references/format.md         the .jizura.json format and rules
+references/catalog.md        styles, moods, fonts and all 707 parts with Chinese and English names (generated)
+references/catalog.json      the same, for scripts
+references/enabled-all.json  every part key per group, for AIs that cannot run code to copy and edit
+scripts/finalize.js          expands the `only` shorthand and checks a file (node)
+scripts/build_catalog.js     regenerates the catalogue from the JIZURA source (node)
+examples/                    worked example: eerie, red and black, shattering
 ```
 
-## 更新目錄
+## Updating the catalogue
 
-JIZURA 新增零件後，拿最新的 JIZURA 原始碼重新產生：
+When JIZURA adds parts, regenerate from the latest source:
 
 ```bash
 git clone https://github.com/852wa/JIZURA.git
 node scripts/build_catalog.js JIZURA $(git -C JIZURA rev-parse --short HEAD)
 ```
 
-## 授權
+## License
 
-本專案的程式與說明採用 MIT License。
+MIT. See [LICENSE](LICENSE).
 
-`references/catalog.md` 和 `references/catalog.json` 裡的零件、風格、字型名稱與設定值，是從 JIZURA 原始碼整理出來的：
+The part, style and font names and settings in `references/catalog.md`, `references/catalog.json` and `references/enabled-all.json` were extracted from JIZURA:
 
 > JIZURA — Copyright (c) 2026 hakoniwa — MIT License — <https://github.com/852wa/JIZURA>

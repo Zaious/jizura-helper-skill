@@ -33,6 +33,7 @@
    "zh": "暗黑色差",
    "zhDesc": "黑底、白字、青色／琥珀色的色彩錯位",
    "en": "Noir Chroma",
+   "enDesc": "Black and white with cyan and amber color offsets",
    "ja": "ノワール・クロマ",
    "moods": [],
    "fonts": {
@@ -60,6 +61,7 @@
    "zh": "深紅訊號",
    "zhDesc": "深紅底、黑白雙層排版、資料毀損",
    "en": "Crimson Signal",
+   "enDesc": "Deep red, monochrome type and damaged data",
    "ja": "クリムゾン・シグナル",
    "moods": [],
    "fonts": {
@@ -86,6 +88,7 @@
    "zh": "警示",
    "zhDesc": "黃色底、紅藍強調色、儀表介面",
    "en": "Caution",
+   "enDesc": "Yellow, red and blue with instrument graphics",
    "ja": "コーション",
    "moods": [],
    "fonts": {
@@ -112,6 +115,7 @@
    "zh": "普普洋紅",
    "zhDesc": "螢光粉紅×白、粗圓體、標示引線",
    "en": "Pop Magenta",
+   "enDesc": "Hot pink, round bold type and callout lines",
    "ja": "ポップ・マゼンタ",
    "moods": [],
    "fonts": {
@@ -139,6 +143,7 @@
    "zh": "紙與墨",
    "zhDesc": "紙張質感、靛藍與洋紅、明體殘影",
    "en": "Paper and Ink",
+   "enDesc": "Paper texture, indigo, magenta and serif echoes",
    "ja": "ペーパー・インク",
    "moods": [],
    "fonts": {
@@ -165,6 +170,7 @@
    "zh": "暗色 HUD",
    "zhDesc": "炭灰底、細線框、橘色點綴、日蝕",
    "en": "Dark HUD",
+   "enDesc": "Charcoal, fine frames, orange accents and eclipses",
    "ja": "ダークHUD",
    "moods": [],
    "fonts": {
@@ -191,6 +197,7 @@
    "zh": "薄荷終端機",
    "zhDesc": "黑×青綠×萊姆綠、標籤貼紙、狹縫掃描",
    "en": "Mint Terminal",
+   "enDesc": "Black, teal and lime with scan effects",
    "ja": "ミント・ターミナル",
    "moods": [],
    "fonts": {
@@ -218,6 +225,7 @@
    "zh": "字型樣本",
    "zhDesc": "墨色底、明體、辭典註解與引線",
    "en": "Type Specimen",
+   "enDesc": "Ink colored background with serif annotations",
    "ja": "スペシメン",
    "moods": [],
    "fonts": {
@@ -244,6 +252,7 @@
    "zh": "交通指標",
    "zhDesc": "橄欖綠×黃色、箭頭與標誌、網點",
    "en": "Transit",
+   "enDesc": "Olive and yellow with signage and halftone",
    "ja": "トランジット",
    "moods": [],
    "fonts": {
@@ -269,6 +278,7 @@
    "zh": "藍圖",
    "zhDesc": "鮮藍×白×黑、圖形拼貼、斜帶",
    "en": "Blueprint",
+   "enDesc": "Blue, white and black graphic collage",
    "ja": "ブループリント",
    "moods": [],
    "fonts": {
@@ -295,6 +305,7 @@
    "zh": "胭脂漸層",
    "zhDesc": "淺灰底、紅色漸層、膠囊",
    "en": "Rouge Gradient",
+   "enDesc": "Light gray and red gradients with capsules",
    "ja": "ルージュ・グラデ",
    "moods": [],
    "fonts": {
@@ -320,6 +331,7 @@
    "zh": "單色 RGB",
    "zhDesc": "灰色空間、白色明體、強烈 RGB 分離、座標圓",
    "en": "Mono RGB",
+   "enDesc": "Gray space, white serif and bold RGB separation",
    "ja": "モノ・RGB",
    "moods": [],
    "fonts": {
@@ -345,6 +357,7 @@
    "zh": "櫻花",
    "zhDesc": "淡櫻色、深梅紫、夜櫻、圓體與明體",
    "en": "Sakura",
+   "enDesc": "Soft cherry pink and plum with rounded and serif type",
    "ja": "サクラ",
    "moods": [
     "emotional",
@@ -376,6 +389,7 @@
    "zh": "深海",
    "zhDesc": "深藍的深海、青色螢光、泡泡與細黑體",
    "en": "Deep Sea",
+   "enDesc": "Navy, glowing cyan, bubbles and light sans type",
    "ja": "深海",
    "moods": [
     "calm",
@@ -407,6 +421,7 @@
    "zh": "夕陽漸層",
    "zhDesc": "橘到紫羅蘭的漸層、粗明體、逆光",
    "en": "Sunset Gradient",
+   "enDesc": "Orange to violet, bold serif and backlight",
    "ja": "夕焼けグラデ",
    "moods": [
     "emotional",
@@ -439,6 +454,7 @@
    "zh": "森林手帖",
    "zhDesc": "苔綠與米白、樹皮棕、鉛筆手寫字",
    "en": "Forest Notebook",
+   "enDesc": "Moss, natural paper and pencil lettering",
    "ja": "森の手帖",
    "moods": [
     "calm",
@@ -471,6 +487,7 @@
    "zh": "蒸氣波",
    "zhDesc": "淡紫與粉彩粉紅／水藍、明體、VHS 暈染",
    "en": "Vaporwave",
+   "enDesc": "Pastel pink and blue with VHS bloom",
    "ja": "ヴェイパー",
    "moods": [
     "pop",
@@ -505,6 +522,7 @@
    "zh": "報紙",
    "zhDesc": "灰色新聞紙、墨黑與紅、標題明體、CMY 套印錯位與網點",
    "en": "Newsprint",
+   "enDesc": "Gray paper, black and red with halftone registration",
    "ja": "新聞",
    "moods": [
     "editorial",
@@ -536,6 +554,7 @@
    "zh": "合成器 80s",
    "zhDesc": "黑底霓虹洋紅／青色、立體字、掃描線",
    "en": "Synth 80s",
+   "enDesc": "Black with neon magenta, cyan and scanlines",
    "ja": "シンセ80s",
    "moods": [
     "pop",
@@ -568,6 +587,7 @@
    "zh": "牛皮紙",
    "zhDesc": "牛皮紙與米白、朱紅與靛藍印章、紙膠帶",
    "en": "Kraft Paper",
+   "enDesc": "Warm paper, red and indigo stamps and washi tape",
    "ja": "クラフト紙",
    "moods": [
     "pop",
@@ -600,6 +620,7 @@
    "zh": "糖果",
    "zhDesc": "薄荷／草莓／檸檬／葡萄的粉彩色、圓潤跳動的文字",
    "en": "Candy",
+   "enDesc": "Mint and fruit pastel colors with bouncing letters",
    "ja": "キャンディ",
    "moods": [
     "pop"
@@ -631,6 +652,7 @@
    "zh": "酸性",
    "zhDesc": "黑×酸性綠×洋紅、粗糙字型與故障畫面",
    "en": "Acid",
+   "enDesc": "Black, acid green and magenta with distressed type",
    "ja": "アシッド",
    "moods": [
     "glitch",
@@ -663,6 +685,7 @@
    "zh": "墨與朱",
    "zhDesc": "和紙米白、毛筆墨字、朱紅落款",
    "en": "Ink and Vermilion",
+   "enDesc": "Japanese paper, brush lettering and red seals",
    "ja": "墨と朱",
    "moods": [
     "calm",
@@ -695,6 +718,7 @@
    "zh": "金夜",
    "zhDesc": "漆黑與金箔、象牙色明體、閃爍光芒",
    "en": "Golden Night",
+   "enDesc": "Deep black, gold foil, ivory serif and glints",
    "ja": "金夜",
    "moods": [
     "emotional",

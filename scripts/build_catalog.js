@@ -60,7 +60,7 @@ for (const g of groups) parts[g] = J.order(g).map(k => {
 });
 const styles = J.STYLE_ORDER.concat(Object.keys(J.STYLES).filter(k => !J.STYLE_ORDER.includes(k))).map(k => {
   const s = J.STYLES[k], n = styleNames[k] || {};
-  return { key: k, zh: (n.zhHant || [])[0] || '', zhDesc: (n.zhHant || [])[1] || '', en: (n.en || [])[0] || '', ja: (n.ja || [])[0] || '',
+  return { key: k, zh: (n.zhHant || [])[0] || '', zhDesc: (n.zhHant || [])[1] || '', en: (n.en || [])[0] || '', enDesc: (n.en || [])[1] || '', ja: (n.ja || [])[0] || '',
     moods: s.moods || [], fonts: s.fonts || {}, bg: ((s.schemes || [])[0] || {}).bg, flags: ok({ extra: false, wa: true }, 'style', k) ? [] : ['extra'] };
 });
 const moods = Object.entries(J.MOODS).map(([k, m]) => ({ key: k, zh: (moodNames[k] || {}).zhHant || '', en: (moodNames[k] || {}).en || '', ja: (moodNames[k] || {}).ja || '',
@@ -78,32 +78,32 @@ fs.writeFileSync(path.join(out, 'enabled-all.json'), '{\n' + allOn.join(',\n') +
 
 // ---- markdown for the model to read ----
 const GROUP_TITLE = {
-  layout: 'layout 版面（每個片段的排版）', enter: 'enter 進場動畫', hold: 'hold 停留時的動作', exit: 'exit 退場動畫',
-  decor: 'decor 裝飾（一個片段可放 0 到數個）', treat: 'treat 文字處理（描邊、立體、錯位…）', bg: 'bg 背景圖形（每行一個）',
-  cam: 'cam 運鏡', fx: 'fx 畫面效果（閃光、故障等事件）', trans: 'trans 片段之間的轉場',
+  layout: 'layout — how each cut is laid out', enter: 'enter — entrance animation', hold: 'hold — motion while on screen', exit: 'exit — exit animation',
+  decor: 'decor — decorations (0 to several per cut)', treat: 'treat — text treatment (outline, extrude, offset…)', bg: 'bg — background graphic (one per line)',
+  cam: 'cam — camera move', fx: 'fx — screen effects (flash, glitch and other events)', trans: 'trans — transition between cuts',
 };
 const esc = s => String(s).replace(/\|/g, '／').replace(/\n/g, ' ');
 const L = [];
-L.push('# JIZURA 零件與風格目錄', '');
-L.push(`> 由 \`scripts/build_catalog.js\` 從 JIZURA 原始碼自動產生${commit ? `（commit \`${commit}\`）` : ''}，請勿手改。`);
-L.push('> 欄位：`key` 是寫進設定檔的代號；中文名是繁中版介面顯示的名稱；`tags` 是作者標的氛圍；',
-  '> `flags`：`extra` = 首次公開版之後新增（要 `"extra": true` 才會被隨機選到）、`wa` = 和風（`"wa": false` 時不會被隨機選到）、`special` = 系統內部使用，不要動。', '');
-L.push('## 目錄', '', '- [風格 styles](#風格-styles)', '- [氛圍 moods](#氛圍-moods)', '- [字型 fonts](#字型-fonts)');
+L.push('# JIZURA parts and styles catalogue', '');
+L.push(`> Generated from the JIZURA source by \`scripts/build_catalog.js\`${commit ? ` (commit \`${commit}\`)` : ''}. Do not edit by hand.`);
+L.push('> Columns: `key` is what goes into the file; 中文 is the name shown in the Traditional Chinese edition; English is the English edition\'s name; `tags` are the author\'s mood tags.',
+  '> `flags`: `extra` = added after the first public version (only picked at random with `"extra": true`); `wa` = Japanese motif (never picked at random with `"wa": false`); `special` = internal, do not touch.', '');
+L.push('## Contents', '', '- [Styles](#styles)', '- [Moods](#moods)', '- [Fonts](#fonts)');
 for (const g of groups) L.push(`- [${GROUP_TITLE[g]}](#${g})`);
-L.push('', '## 風格 styles', '', '| key | 中文名 | 說明 | English | 適合的氛圍 | flags |', '|---|---|---|---|---|---|');
-for (const s of styles) L.push(`| \`${s.key}\` | ${esc(s.zh)} | ${esc(s.zhDesc)} | ${esc(s.en)} | ${s.moods.join(', ')} | ${s.flags.join(', ')} |`);
-L.push('', '## 氛圍 moods', '', '`mood` 欄位本身只是標籤。要得到某個氛圍的感覺，請把下面的滑桿範圍取值寫進 `fx`，並優先開啟帶有該 tag 的零件（見 format.md）。', '');
-L.push('| key | 中文名 | English | 滑桿範圍 fx | 偏好的版面 / 進場 / 退場 |', '|---|---|---|---|---|');
+L.push('', '## Styles', '', '| key | 中文 | English | Description | Suits moods | flags |', '|---|---|---|---|---|---|');
+for (const s of styles) L.push(`| \`${s.key}\` | ${esc(s.zh)} | ${esc(s.en)} | ${esc(s.enDesc || s.zhDesc)} | ${s.moods.join(', ')} | ${s.flags.join(', ')} |`);
+L.push('', '## Moods', '', 'The `mood` field is only a label. For a mood\'s feel, write values from these slider ranges into `fx`, and favour parts carrying that tag (see format.md).', '');
+L.push('| key | 中文 | English | fx slider ranges | Preferred layout / enter / exit |', '|---|---|---|---|---|');
 for (const m of moods) {
   const fx = Object.entries(m.fx).map(([k, v]) => `${k} ${Array.isArray(v) ? v.join('–') : v}`).join('; ');
-  const pref = [['版面', m.layout], ['進場', m.enter], ['退場', m.exit]].filter(([, a]) => a.length).map(([t, a]) => `${t}: ${a.join(', ')}`).join('<br>');
+  const pref = [['layout', m.layout], ['enter', m.enter], ['exit', m.exit]].filter(([, a]) => a.length).map(([t, a]) => `${t}: ${a.join(', ')}`).join('<br>');
   L.push(`| \`${m.key}\` | ${esc(m.zh)} | ${esc(m.en)} | ${fx} | ${pref} |`);
 }
-L.push('', '## 字型 fonts', '', '用在 `fonts.display` / `fonts.serif` / `fonts.body`。歌詞是中文時，程式會自動換成對應的繁中／簡中字型。', '');
-L.push('| key | 名稱 | 類型 | 粗細 |', '|---|---|---|---|');
+L.push('', '## Fonts', '', 'Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean lyrics the app swaps in matching faces automatically.', '');
+L.push('| key | Name | Kind | Weight |', '|---|---|---|---|');
 for (const f of fonts) L.push(`| \`${f.key}\` | ${esc(f.label)} | ${f.kind} | ${f.weight} |`);
 for (const g of groups) {
-  L.push('', `## ${g}`, '', `**${GROUP_TITLE[g]}**，共 ${parts[g].length} 個`, '', '| key | 中文名 | English | tags | flags |', '|---|---|---|---|---|');
+  L.push('', `## ${g}`, '', `**${GROUP_TITLE[g]}** — ${parts[g].length} parts`, '', '| key | 中文 | English | tags | flags |', '|---|---|---|---|---|');
   for (const p of parts[g]) L.push(`| \`${p.key}\` | ${esc(p.zh)} | ${esc(p.en)} | ${p.tags.join(', ')} | ${p.flags.join(', ')} |`);
 }
 fs.writeFileSync(path.join(out, 'catalog.md'), L.join('\n') + '\n');

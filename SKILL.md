@@ -1,85 +1,97 @@
 ---
 name: jizura-preset
-description: 把使用者想要的歌詞影片感覺（例如「陰森、紅黑、破碎」「溫柔的粉色、慢慢浮現」「短影音用、很炸」）轉成 JIZURA 可以直接開啟的 .jizura.json 設定檔。JIZURA 是在瀏覽器裡把歌詞自動做成動態歌詞影片（文字 PV、lyric video）的免費工具；使用者只要在網頁上按「開啟」載入檔案。只要使用者提到 JIZURA、字面、.jizura.json，或想做動態歌詞影片、文字 PV、lyric motion，並描述想要的風格、配色、效果或氛圍，就使用這個 skill，即使他沒有明說要設定檔。這是非官方的第三方輔助工具。
+description: Turn the look someone describes for a lyric video (for example "eerie, red and black, text shattering", "soft pink, words slowly fading in", "fast neon for Reels") into a .jizura.json project file that JIZURA opens directly. JIZURA is a free browser app that builds animated lyric videos (lyric motion, 文字PV, 動態歌詞影片) from lyrics; the user only has to press Open in the web app. Use this skill whenever the user mentions JIZURA, 字面, .jizura.json, or wants to make a lyric video / lyric motion / 文字PV / 動態歌詞影片 and describes a style, colours, effects or mood, even if they do not ask for a "settings file". Unofficial third-party helper.
 ---
 
-# JIZURA 設定檔產生器（非官方）
+# JIZURA preset writer (unofficial)
 
-使用者用的是 JIZURA 網頁版：<https://852wa.github.io/JIZURA/zh-hant/>（日文原版在 <https://852wa.github.io/JIZURA/>）。你的工作是把他描述的感覺，寫成一個 `.jizura.json` 設定檔，讓他在網頁上按「開啟」就能套用，**不需要下載原始碼、不需要任何 API**。
+The user makes lyric videos in the JIZURA web app (<https://852wa.github.io/JIZURA/>). Your job is to turn the look they describe into a `.jizura.json` file that they open with the app's **Open** button. **No download of the source code and no API are involved.**
 
-**這是非官方的第三方工具，和 JIZURA 的作者沒有關係。** 作者希望 JIZURA 保持「只靠網頁就能完整運作、不是 AI 專案」。所以不要把這個 skill 說成 JIZURA 的功能，也不要建議使用者去要求作者加入 AI 相關的功能。
+**This is an unofficial third-party tool, unrelated to JIZURA's author.** The author wants JIZURA to stay a browser-only tool that is not an AI project. So never present this skill as a JIZURA feature, and never suggest that the user ask the author for AI features.
 
-## 為什麼需要照這份說明做
+## Why the instructions matter
 
-JIZURA 讀檔案時，**寫錯的代號不會報錯，只會悄悄失效**。使用者只會看到「怎麼跟我說的不一樣」，卻不知道原因。所以代號一律從 `references/catalog.md` 查，不要憑印象寫。另外有兩個很容易踩的坑：
+When JIZURA reads a file, **a wrong key does not raise an error — it silently does nothing.** The user only sees "that's not what I asked for" and cannot tell why. So look every key up in `references/catalog.md`; never write one from memory. Two traps are easy to fall into:
 
-- 設定檔裡的 `mood`（氛圍）欄位**只是一個標籤**。氛圍真正的效果，要靠 `fx` 滑桿的數值和零件開關寫出來。
-- 零件開關的規則是「沒寫 `false` 的都算開著」，而且每類零件最好留到一定數量，影片才不會一直重複同樣的效果。
+- The `mood` field is **only a label**. A mood's actual feel has to be written out as `fx` slider values and part switches.
+- Part switches work as "everything not explicitly `false` is on", and each group should keep a minimum number of parts so the video does not keep repeating the same effect.
 
-細節都在 `references/format.md`，**每次開始寫之前都要先讀它**。
+The details are in `references/format.md`. **Read it every time before you write a file.**
 
-## 流程
+## Workflow
 
-### 1. 確認需求
+### 1. Confirm what you need
 
-需要這幾件事，缺的才問，而且一次問完：
+Ask only for what is missing, and ask everything in one go:
 
-- **歌詞**：請使用者自己貼上。他只給歌名時，請他貼歌詞，**不要憑記憶寫出受著作權保護的歌詞**。沒有歌詞只是想先看效果時，可以寫幾句原創的示範歌詞。
-  - 使用者給的歌詞**逐字照放進 `lyrics`**，包括 `/`、`*`、`!`、`[ti:]`、`[01:23.45]` 這些標記，不要刪、不要改寫、不要搬到別的欄位。這些標記都是 JIZURA 看得懂的語法；`[ti:]` 這類標記也不會影響逐行指定的行號（見 format.md 第 6 節）。
-- **想要的感覺**：氛圍、配色、動作快慢、想要或不想要的效果。說得很模糊也沒關係，就用你的判斷補上。
-- **用途**：橫式影片（16:9）或短影音（9:16）。沒說就用 16:9。
-- **語言**：從歌詞判斷。中文歌寫 `"lang": "zh-Hant"` 或 `"zh-Hans"`。
+- **Lyrics**: the user pastes them. If they only give a song title, ask them to paste the lyrics — **never write copyrighted lyrics from memory.** If they have no lyrics and just want to see the effect, write a few original sample lines.
+  - Put the user's lyrics into `lyrics` **exactly as given**, including the markers `/`, `*`, `!`, `[ti:]`, `[01:23.45]`. Do not delete, rewrite or move them to another field: they are all JIZURA syntax, and tags like `[ti:]` do not shift the line numbers used by per-line settings (format.md §6).
+- **The look**: mood, colours, speed, effects they want or do not want. Vague is fine — fill the gaps with your judgement.
+- **Use**: landscape (16:9) or short-form vertical (9:16). Default to 16:9.
+- **Language**: read it from the lyrics and set `lang` (`zh-Hant`, `zh-Hans`, `ja`, `ko`, `en`).
 
-### 2. 查目錄，做決定
+### 2. Look things up and decide
 
-讀 `references/catalog.md`：先看「風格」和「氛圍」兩張表，再看你要篩選的零件類別。整份很長，只讀需要的段落。
+Read `references/catalog.md`: first the Styles and Moods tables, then only the part groups you intend to filter. The file is long; read just the sections you need.
 
-把感覺轉成設定的思考順序：
+Order of decisions when turning a feeling into settings:
 
-1. **風格 style**：先挑背景色和字型調性最接近的，它決定了整體基調。
-2. **滑桿 fx**：參考最接近的氛圍的範圍取值，再依描述微調。例如「慢、壓抑」就把 `motion` 往下調，「爆發、很炸」就把 `glitch` 往上調並開 `flash`。
-3. **零件**：只在需要統一調性時才篩選，而且**版面 layout 對氣氛影響最大**。靠中文名和英文名判斷每個零件的感覺，不要只看 tags。
-4. **配色 colors**：風格的配色不夠貼近時才寫。
-5. **`extra` 和 `wa`**：想用的零件標了 `extra` 就設 `"extra": true`；題材不適合和風就設 `"wa": false`。
+1. **Style**: pick the one whose background colour and typefaces are closest. It sets the overall tone.
+2. **fx sliders**: take values from the closest mood's ranges, then adjust to the description ("slow, heavy" → lower `motion`; "explosive" → higher `glitch` and `flash` on).
+3. **Parts**: filter only when the tone must be consistent, and remember that **layout has the biggest effect on the atmosphere**. Judge each part by its names, not just its tags.
+4. **Colours**: write `colors` only when the style's palette is not close enough.
+5. **`extra` and `wa`**: if a part you want is flagged `extra`, set `"extra": true`; if Japanese motifs do not fit, set `"wa": false`.
 
-### 3. 寫檔
+### 3. Write the file
 
-先用 `only` 簡寫把想用的零件列出來，再依環境完成：
+List the parts you want with the `only` shorthand, then finish depending on what you can do:
 
-- **能執行程式時**：存成草稿，執行 `node scripts/finalize.js draft.json <曲名>.jizura.json`。它會把 `only` 展開成 JIZURA 讀得懂的 `enabled`，並檢查所有規則。ERROR 代表代號或數值有錯，會悄悄失效，一定要修正後重跑，直到回報 `ok`。warning 是品質上的建議，要看一下，確定是你刻意的選擇。
-- **不能執行程式時**（例如在聊天介面裡）：照 `references/format.md` 第 5 節自己展開 `only`，再逐項過一遍第 10 節的檢查清單。展開時從 `references/enabled-all.json` 複製該類的完整代號清單，再把不要的改成 `false`，比從目錄逐一抄寫可靠得多。
+- **If you can run code**: save a draft and run `node scripts/finalize.js draft.json <title>.jizura.json`. It expands `only` into the `enabled` map JIZURA reads and checks every rule. An ERROR means a key or value is wrong and would fail silently: fix it and rerun until it prints `ok`. Warnings are quality advice; read them and make sure the choice is deliberate.
+- **If you cannot run code** (for example in a chat app): expand `only` yourself as described in `references/format.md` §5, then go through the §10 checklist. Copy each group's full key list from `references/enabled-all.json` and flip the ones you drop to `false` — far more reliable than copying keys from the catalogue one by one.
 
-  完整展開的 JSON 很長（每篩選一類就多上百個代號），使用者要從對話裡整段複製，很容易漏掉一截。所以：
-  - 你的介面**能產生可下載的檔案**時（例如 ChatGPT 或 Claude 網頁版），就直接給檔案。
-  - 只能貼在對話裡時，**只篩選對氣氛影響最大的一兩類**（通常是版面 `layout`，再加上最關鍵的一類，例如退場 `exit`），其他類別靠 `fx` 滑桿和風格來控制。
+  A fully expanded file is long (every filtered group adds a hundred-odd keys), and users copying it out of a chat easily miss a piece. So:
+  - If your interface **can hand over a downloadable file** (for example ChatGPT or Claude on the web), give the file.
+  - If you can only paste text, **filter only the one or two groups that matter most** (usually `layout`, plus the most important other group such as `exit`), and steer the rest with the style and the `fx` sliders.
 
-### 4. 交給使用者
+### 4. Hand it over
 
-用繁體中文回覆。使用者多半不懂參數，所以說明要**白話、簡短**，依序寫這些：
+Reply **in the user's language**. Most users do not know the settings, so keep the explanation **plain and short**, in this order:
 
-1. **設定檔**：能存檔就給檔案，否則給完整的 JSON 程式碼區塊，請他存成 `<曲名>.jizura.json`（注意副檔名是 `.json`，不是 `.txt`）。
-2. **這套設定的感覺**：3–5 行白話，描述他會看到什麼，例如「選了櫻花粉的風格，字會慢慢浮現再淡出，拿掉了閃光和故障效果」。**不要寫參數名稱和數值**（像 `motion 0.3`、`"extra": true`），也不要列出零件代號。最後加一句「想調整哪裡直接告訴我，例如再慢一點、換個顏色」。使用者主動問細節時才解釋參數。
-3. **使用步驟**：
-   1. 打開 <https://852wa.github.io/JIZURA/zh-hant/>
-   2. 按右上角的「**開啟**」，選這個檔案
-   3. 按「**匯入歌曲**」載入音樂檔，程式會偵測節拍並對齊
-   4. 按播放預覽，滿意後按「**匯出 MP4**」
-4. **提醒**：
-   - 想在**保留這套設定**的前提下換一種編排，按「**重新排列**」，或用「只換這一項」。
-   - **不要按「隨機生成」**，它會把風格、滑桿和零件設定全部換掉。
+1. **The file**: attach it if you can; otherwise give the complete JSON in a code block and ask them to save it as `<title>.jizura.json` (the extension must be `.json`, not `.txt`, and the encoding UTF-8).
+2. **What it will look like**: 3–5 plain lines describing what they will see, e.g. "a cherry-pink style, words drift in slowly and fade out, no flashes or glitches". **Do not mention setting names or values** (such as `motion 0.3` or `"extra": true`) and do not list part keys. End with one line like "Tell me what to change — slower, another colour, anything." Explain the settings only if they ask.
+3. **How to use it**, with the edition and button names in their language (table below):
+   1. Open the JIZURA page
+   2. Press **Open** and choose the file
+   3. Press **Import audio** to load the song; the app detects the beat and aligns to it
+   4. Play to preview, then press **Export MP4**
+4. **Reminders**:
+   - To keep these settings but get another arrangement, press **Shuffle**.
+   - **Do not press the big random button** (Create a variation): it replaces the style, sliders and part settings.
+   - This is an unofficial tool, unrelated to JIZURA's author.
 
-## 範例
+| User's language | Page | Open | Import audio | Export | Shuffle (keeps settings) | Random (replaces them) |
+|---|---|---|---|---|---|---|
+| 繁體中文 | <https://852wa.github.io/JIZURA/zh-hant/> | 開啟 | 匯入歌曲 | 匯出 MP4 | 重新排列 | 隨機生成 |
+| 简体中文 | <https://852wa.github.io/JIZURA/zh-hans/> | 打开 | 载入音乐 | 导出 MP4 | 随机编排 | 一键生成 |
+| English | <https://852wa.github.io/JIZURA/en/> | Open | Import audio | Export MP4 | Shuffle | Create a variation |
+| 日本語 | <https://852wa.github.io/JIZURA/> | 開く | 曲を読み込む | MP4 を書き出す | シャッフル | おまかせで作る |
+| 한국어 | <https://852wa.github.io/JIZURA/ko/> | 열기 | 음원 불러오기 | MP4 내보내기 | 셔플 | 자동으로 만들기 |
+| Bahasa Indonesia | <https://852wa.github.io/JIZURA/id/> | Buka | Impor audio | Ekspor MP4 | Acak susunan | Buat variasi |
 
-`examples/` 裡有完整的範例，可以參考寫法：
+The file itself works the same in every edition; only the page language differs.
 
-- `horror-red-black.draft.json`：「陰森、紅黑、破碎」的草稿，用 `only` 簡寫
-- `horror-red-black.jizura.json`：同一份草稿經過 `finalize.js` 展開後的成品，可以直接開啟
-- `horror-red-black.response.md`：交給使用者的回覆範例，示範白話短版的寫法
+## Examples
 
-## 目錄過期時
+`examples/` has a complete worked example:
 
-`references/catalog.md` 是從 JIZURA 原始碼自動產生的，檔案開頭寫著對應的版本。作者新增零件後，舊目錄還是能用，只是用不到新零件。要更新時，在有 JIZURA 原始碼的電腦上執行：
+- `horror-red-black.draft.json`: an "eerie, red and black, shattering" draft using `only`
+- `horror-red-black.jizura.json`: the same draft after `finalize.js`, ready to open
+- `horror-red-black.response.md`: the reply that goes with it (to a Traditional Chinese user), showing the plain, short style
+
+## When the catalogue is out of date
+
+`references/catalog.md` is generated from the JIZURA source; its header names the commit. After the author adds parts, the old catalogue still works — it just cannot use the new parts. To refresh it, on a machine with the JIZURA source:
 
 ```bash
-node scripts/build_catalog.js <JIZURA 原始碼資料夾> <commit 代號>
+node scripts/build_catalog.js <path-to-JIZURA> <commit>
 ```

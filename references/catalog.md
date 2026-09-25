@@ -1,73 +1,73 @@
-# JIZURA 零件與風格目錄
+# JIZURA parts and styles catalogue
 
-> 由 `scripts/build_catalog.js` 從 JIZURA 原始碼自動產生（commit `94413f7`），請勿手改。
-> 欄位：`key` 是寫進設定檔的代號；中文名是繁中版介面顯示的名稱；`tags` 是作者標的氛圍；
-> `flags`：`extra` = 首次公開版之後新增（要 `"extra": true` 才會被隨機選到）、`wa` = 和風（`"wa": false` 時不會被隨機選到）、`special` = 系統內部使用，不要動。
+> Generated from the JIZURA source by `scripts/build_catalog.js` (commit `94413f7`). Do not edit by hand.
+> Columns: `key` is what goes into the file; 中文 is the name shown in the Traditional Chinese edition; English is the English edition's name; `tags` are the author's mood tags.
+> `flags`: `extra` = added after the first public version (only picked at random with `"extra": true`); `wa` = Japanese motif (never picked at random with `"wa": false`); `special` = internal, do not touch.
 
-## 目錄
+## Contents
 
-- [風格 styles](#風格-styles)
-- [氛圍 moods](#氛圍-moods)
-- [字型 fonts](#字型-fonts)
-- [layout 版面（每個片段的排版）](#layout)
-- [enter 進場動畫](#enter)
-- [hold 停留時的動作](#hold)
-- [exit 退場動畫](#exit)
-- [decor 裝飾（一個片段可放 0 到數個）](#decor)
-- [treat 文字處理（描邊、立體、錯位…）](#treat)
-- [bg 背景圖形（每行一個）](#bg)
-- [cam 運鏡](#cam)
-- [fx 畫面效果（閃光、故障等事件）](#fx)
-- [trans 片段之間的轉場](#trans)
+- [Styles](#styles)
+- [Moods](#moods)
+- [Fonts](#fonts)
+- [layout — how each cut is laid out](#layout)
+- [enter — entrance animation](#enter)
+- [hold — motion while on screen](#hold)
+- [exit — exit animation](#exit)
+- [decor — decorations (0 to several per cut)](#decor)
+- [treat — text treatment (outline, extrude, offset…)](#treat)
+- [bg — background graphic (one per line)](#bg)
+- [cam — camera move](#cam)
+- [fx — screen effects (flash, glitch and other events)](#fx)
+- [trans — transition between cuts](#trans)
 
-## 風格 styles
+## Styles
 
-| key | 中文名 | 說明 | English | 適合的氛圍 | flags |
+| key | 中文 | English | Description | Suits moods | flags |
 |---|---|---|---|---|---|
-| `noir` | 暗黑色差 | 黑底、白字、青色／琥珀色的色彩錯位 | Noir Chroma |  |  |
-| `crimson` | 深紅訊號 | 深紅底、黑白雙層排版、資料毀損 | Crimson Signal |  |  |
-| `caution` | 警示 | 黃色底、紅藍強調色、儀表介面 | Caution |  |  |
-| `magenta` | 普普洋紅 | 螢光粉紅×白、粗圓體、標示引線 | Pop Magenta |  |  |
-| `paper` | 紙與墨 | 紙張質感、靛藍與洋紅、明體殘影 | Paper and Ink |  |  |
-| `hud` | 暗色 HUD | 炭灰底、細線框、橘色點綴、日蝕 | Dark HUD |  |  |
-| `mint` | 薄荷終端機 | 黑×青綠×萊姆綠、標籤貼紙、狹縫掃描 | Mint Terminal |  |  |
-| `specimen` | 字型樣本 | 墨色底、明體、辭典註解與引線 | Type Specimen |  |  |
-| `transit` | 交通指標 | 橄欖綠×黃色、箭頭與標誌、網點 | Transit |  |  |
-| `blueprint` | 藍圖 | 鮮藍×白×黑、圖形拼貼、斜帶 | Blueprint |  |  |
-| `rouge` | 胭脂漸層 | 淺灰底、紅色漸層、膠囊 | Rouge Gradient |  |  |
-| `mono` | 單色 RGB | 灰色空間、白色明體、強烈 RGB 分離、座標圓 | Mono RGB |  |  |
-| `sakura` | 櫻花 | 淡櫻色、深梅紫、夜櫻、圓體與明體 | Sakura | emotional, calm | extra |
-| `ocean` | 深海 | 深藍的深海、青色螢光、泡泡與細黑體 | Deep Sea | calm, emotional | extra |
-| `sunset` | 夕陽漸層 | 橘到紫羅蘭的漸層、粗明體、逆光 | Sunset Gradient | emotional, pop | extra |
-| `forest` | 森林手帖 | 苔綠與米白、樹皮棕、鉛筆手寫字 | Forest Notebook | calm, editorial, emotional | extra |
-| `vapor` | 蒸氣波 | 淡紫與粉彩粉紅／水藍、明體、VHS 暈染 | Vaporwave | pop, emotional, glitch | extra |
-| `newsprint` | 報紙 | 灰色新聞紙、墨黑與紅、標題明體、CMY 套印錯位與網點 | Newsprint | editorial, graphic | extra |
-| `synth80` | 合成器 80s | 黑底霓虹洋紅／青色、立體字、掃描線 | Synth 80s | pop, glitch, emotional | extra |
-| `kraft` | 牛皮紙 | 牛皮紙與米白、朱紅與靛藍印章、紙膠帶 | Kraft Paper | pop, editorial, graphic | extra |
-| `candy` | 糖果 | 薄荷／草莓／檸檬／葡萄的粉彩色、圓潤跳動的文字 | Candy | pop | extra |
-| `acid` | 酸性 | 黑×酸性綠×洋紅、粗糙字型與故障畫面 | Acid | glitch, graphic | extra |
-| `sumi` | 墨與朱 | 和紙米白、毛筆墨字、朱紅落款 | Ink and Vermilion | calm, emotional, editorial | extra |
-| `gold` | 金夜 | 漆黑與金箔、象牙色明體、閃爍光芒 | Golden Night | emotional, calm, editorial | extra |
+| `noir` | 暗黑色差 | Noir Chroma | Black and white with cyan and amber color offsets |  |  |
+| `crimson` | 深紅訊號 | Crimson Signal | Deep red, monochrome type and damaged data |  |  |
+| `caution` | 警示 | Caution | Yellow, red and blue with instrument graphics |  |  |
+| `magenta` | 普普洋紅 | Pop Magenta | Hot pink, round bold type and callout lines |  |  |
+| `paper` | 紙與墨 | Paper and Ink | Paper texture, indigo, magenta and serif echoes |  |  |
+| `hud` | 暗色 HUD | Dark HUD | Charcoal, fine frames, orange accents and eclipses |  |  |
+| `mint` | 薄荷終端機 | Mint Terminal | Black, teal and lime with scan effects |  |  |
+| `specimen` | 字型樣本 | Type Specimen | Ink colored background with serif annotations |  |  |
+| `transit` | 交通指標 | Transit | Olive and yellow with signage and halftone |  |  |
+| `blueprint` | 藍圖 | Blueprint | Blue, white and black graphic collage |  |  |
+| `rouge` | 胭脂漸層 | Rouge Gradient | Light gray and red gradients with capsules |  |  |
+| `mono` | 單色 RGB | Mono RGB | Gray space, white serif and bold RGB separation |  |  |
+| `sakura` | 櫻花 | Sakura | Soft cherry pink and plum with rounded and serif type | emotional, calm | extra |
+| `ocean` | 深海 | Deep Sea | Navy, glowing cyan, bubbles and light sans type | calm, emotional | extra |
+| `sunset` | 夕陽漸層 | Sunset Gradient | Orange to violet, bold serif and backlight | emotional, pop | extra |
+| `forest` | 森林手帖 | Forest Notebook | Moss, natural paper and pencil lettering | calm, editorial, emotional | extra |
+| `vapor` | 蒸氣波 | Vaporwave | Pastel pink and blue with VHS bloom | pop, emotional, glitch | extra |
+| `newsprint` | 報紙 | Newsprint | Gray paper, black and red with halftone registration | editorial, graphic | extra |
+| `synth80` | 合成器 80s | Synth 80s | Black with neon magenta, cyan and scanlines | pop, glitch, emotional | extra |
+| `kraft` | 牛皮紙 | Kraft Paper | Warm paper, red and indigo stamps and washi tape | pop, editorial, graphic | extra |
+| `candy` | 糖果 | Candy | Mint and fruit pastel colors with bouncing letters | pop | extra |
+| `acid` | 酸性 | Acid | Black, acid green and magenta with distressed type | glitch, graphic | extra |
+| `sumi` | 墨與朱 | Ink and Vermilion | Japanese paper, brush lettering and red seals | calm, emotional, editorial | extra |
+| `gold` | 金夜 | Golden Night | Deep black, gold foil, ivory serif and glints | emotional, calm, editorial | extra |
 
-## 氛圍 moods
+## Moods
 
-`mood` 欄位本身只是標籤。要得到某個氛圍的感覺，請把下面的滑桿範圍取值寫進 `fx`，並優先開啟帶有該 tag 的零件（見 format.md）。
+The `mood` field is only a label. For a mood's feel, write values from these slider ranges into `fx`, and favour parts carrying that tag (see format.md).
 
-| key | 中文名 | English | 滑桿範圍 fx | 偏好的版面 / 進場 / 退場 |
+| key | 中文 | English | fx slider ranges | Preferred layout / enter / exit |
 |---|---|---|---|---|
-| `glitch` | 故障風 | Glitch | motion 0.6–0.9; glitch 0.75–1; chroma 0.75–1; decor 0.3–0.6; density 0.6–0.9; texture 0.5–0.9; bgSwitch 0.3–0.6 | 版面: center, condensed, huge, tile, marquee, vcols, scatter, stack<br>進場: slice, scramble, assemble, flicker, zoom, stretch<br>退場: glitch, slice, explode, fall |
-| `calm` | 沉靜 | Gentle | motion 0.3–0.55; glitch 0.05–0.25; chroma 0.2–0.5; decor 0.2–0.5; density 0.25–0.45; texture 0.5–0.85; bgSwitch 0.1–0.3 | 版面: center, vcols, gloss, stack, circle, type, mixed<br>進場: blur, type, wipe, assemble<br>退場: blur, drift, wipe, shrink |
-| `pop` | 普普 | Pop | motion 0.7–1; glitch 0.1–0.35; chroma 0.3–0.6; decor 0.6–1; density 0.5–0.8; texture 0.2–0.5; bgSwitch 0.4–0.8 | 版面: mixed, scatter, wave, labels, pill, ring, huge, diag, center<br>進場: pop, drop, spin, stretch, zoom<br>退場: scatter, shrink, stretch, blur |
-| `graphic` | 圖形感 | Graphic | motion 0.5–0.8; glitch 0.2–0.5; chroma 0.4–0.7; decor 0.7–1; density 0.5–0.8; texture 0.4–0.7; bgSwitch 0.3–0.7 | 版面: diag, labels, marquee, tile, condensed, huge, circle, pill<br>進場: wipe, slice, stretch, zoom<br>退場: wipe, slice, stretch |
-| `editorial` | 編輯排版 | Editorial | motion 0.4–0.65; glitch 0.1–0.3; chroma 0.2–0.45; decor 0.4–0.7; density 0.35–0.6; texture 0.6–0.9; bgSwitch 0.2–0.4 | 版面: gloss, vcols, mixed, stack, type, center, circle<br>進場: type, blur, wipe, assemble<br>退場: blur, drift, wipe |
-| `emotional` | 感性 | Emotional | motion 0.55–0.85; glitch 0.3–0.6; chroma 0.5–0.85; decor 0.3–0.6; density 0.4–0.7; texture 0.6–1; bgSwitch 0.2–0.5 | 版面: huge, center, vcols, stack, condensed, mixed, circle<br>進場: assemble, blur, zoom, wipe, slice<br>退場: drift, explode, fall, blur |
+| `glitch` | 故障風 | Glitch | motion 0.6–0.9; glitch 0.75–1; chroma 0.75–1; decor 0.3–0.6; density 0.6–0.9; texture 0.5–0.9; bgSwitch 0.3–0.6 | layout: center, condensed, huge, tile, marquee, vcols, scatter, stack<br>enter: slice, scramble, assemble, flicker, zoom, stretch<br>exit: glitch, slice, explode, fall |
+| `calm` | 沉靜 | Gentle | motion 0.3–0.55; glitch 0.05–0.25; chroma 0.2–0.5; decor 0.2–0.5; density 0.25–0.45; texture 0.5–0.85; bgSwitch 0.1–0.3 | layout: center, vcols, gloss, stack, circle, type, mixed<br>enter: blur, type, wipe, assemble<br>exit: blur, drift, wipe, shrink |
+| `pop` | 普普 | Pop | motion 0.7–1; glitch 0.1–0.35; chroma 0.3–0.6; decor 0.6–1; density 0.5–0.8; texture 0.2–0.5; bgSwitch 0.4–0.8 | layout: mixed, scatter, wave, labels, pill, ring, huge, diag, center<br>enter: pop, drop, spin, stretch, zoom<br>exit: scatter, shrink, stretch, blur |
+| `graphic` | 圖形感 | Graphic | motion 0.5–0.8; glitch 0.2–0.5; chroma 0.4–0.7; decor 0.7–1; density 0.5–0.8; texture 0.4–0.7; bgSwitch 0.3–0.7 | layout: diag, labels, marquee, tile, condensed, huge, circle, pill<br>enter: wipe, slice, stretch, zoom<br>exit: wipe, slice, stretch |
+| `editorial` | 編輯排版 | Editorial | motion 0.4–0.65; glitch 0.1–0.3; chroma 0.2–0.45; decor 0.4–0.7; density 0.35–0.6; texture 0.6–0.9; bgSwitch 0.2–0.4 | layout: gloss, vcols, mixed, stack, type, center, circle<br>enter: type, blur, wipe, assemble<br>exit: blur, drift, wipe |
+| `emotional` | 感性 | Emotional | motion 0.55–0.85; glitch 0.3–0.6; chroma 0.5–0.85; decor 0.3–0.6; density 0.4–0.7; texture 0.6–1; bgSwitch 0.2–0.5 | layout: huge, center, vcols, stack, condensed, mixed, circle<br>enter: assemble, blur, zoom, wipe, slice<br>exit: drift, explode, fall, blur |
 | `chaos` | 全都來 | Anything goes | motion 0.5–1; glitch 0.3–1; chroma 0.4–1; decor 0.4–1; density 0.45–0.9; texture 0.3–1; bgSwitch 0.3–0.9 |  |
 
-## 字型 fonts
+## Fonts
 
-用在 `fonts.display` / `fonts.serif` / `fonts.body`。歌詞是中文時，程式會自動換成對應的繁中／簡中字型。
+Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean lyrics the app swaps in matching faces automatically.
 
-| key | 名稱 | 類型 | 粗細 |
+| key | Name | Kind | Weight |
 |---|---|---|---|
 | `gothic_black` | Noto Sans JP Black | gothic | 900 |
 | `gothic_bold` | Noto Sans JP Bold | gothic | 700 |
@@ -95,9 +95,9 @@
 
 ## layout
 
-**layout 版面（每個片段的排版）**，共 140 個
+**layout — how each cut is laid out** — 140 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `center` | 置中 | Center | glitch, calm, pop, editorial, emotional |  |
 | `mixed` | 大小混排 | Mixed | calm, pop, editorial, emotional |  |
@@ -242,9 +242,9 @@
 
 ## enter
 
-**enter 進場動畫**，共 100 個
+**enter — entrance animation** — 100 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `cut` | 直切 | Cut |  |  |
 | `assemble` | 分解→聚合 | Break apart and assemble | glitch, calm, editorial, emotional |  |
@@ -349,9 +349,9 @@
 
 ## hold
 
-**hold 停留時的動作**，共 38 個
+**hold — motion while on screen** — 38 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `still` | 靜止 | Still | calm, editorial, emotional, graphic |  |
 | `jitter` | 抖動 | Jitter | glitch, pop |  |
@@ -394,9 +394,9 @@
 
 ## exit
 
-**exit 退場動畫**，共 86 個
+**exit — exit animation** — 86 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `cut` | 直切 | Cut |  |  |
 | `explode` | 爆散 | Explode | glitch, emotional |  |
@@ -487,9 +487,9 @@
 
 ## decor
 
-**decor 裝飾（一個片段可放 0 到數個）**，共 115 個
+**decor — decorations (0 to several per cut)** — 115 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `brackets` | 框角標記 | Corner marks | graphic, editorial |  |
 | `rings` | 座標圓 | Coordinate rings | graphic, emotional |  |
@@ -609,9 +609,9 @@
 
 ## treat
 
-**treat 文字處理（描邊、立體、錯位…）**，共 52 個
+**treat — text treatment (outline, extrude, offset…)** — 52 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `none` | 無 | None |  |  |
 | `outline` | 空心字 | Hollow letters | graphic, pop, glitch, emotional |  |
@@ -668,9 +668,9 @@
 
 ## bg
 
-**bg 背景圖形（每行一個）**，共 62 個
+**bg — background graphic (one per line)** — 62 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `none` | 素色 | Solid color |  |  |
 | `auroraRibbons` | 極光 | Aurora ribbons | emotional, calm | extra |
@@ -737,9 +737,9 @@
 
 ## cam
 
-**cam 運鏡**，共 28 個
+**cam — camera move** — 28 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `push` | 緩慢推近 | Slow push in | calm, editorial, emotional, graphic, pop, glitch |  |
 | `orbitDrift` | 環繞 | Orbit drift | calm, emotional, graphic | extra |
@@ -772,9 +772,9 @@
 
 ## fx
 
-**fx 畫面效果（閃光、故障等事件）**，共 66 個
+**fx — screen effects (flash, glitch and other events)** — 66 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `chroma` | 色彩錯位跳動 | Chromatic jump | glitch, emotional, pop, graphic |  |
 | `shake` | 搖晃 | Shake | pop, glitch, emotional |  |
@@ -845,9 +845,9 @@
 
 ## trans
 
-**trans 片段之間的轉場**，共 20 個
+**trans — transition between cuts** — 20 parts
 
-| key | 中文名 | English | tags | flags |
+| key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `wipe` | 邊緣擦除 | Edge wipe | graphic, editorial, pop | extra |
 | `diagonalWipe` | 斜帶擦除 | Diagonal band wipe | pop, graphic | extra |
