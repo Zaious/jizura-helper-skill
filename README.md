@@ -37,7 +37,7 @@ Tested with Claude (with and without code execution). Catalogue: JIZURA v0.9.0 (
 ```
 SKILL.md                     instructions for the AI
 references/format.md         the .jizura.json format and rules
-references/catalog.md        styles, moods, fonts and all 707 parts with Chinese and English names (generated)
+references/catalog.md        styles, moods, fonts and all 860 parts with Chinese and English names (generated)
 references/catalog.json      the same, for scripts
 references/enabled-all.json  every part key per group, for AIs that cannot run code to copy and edit
 scripts/finalize.js          expands the `only` shorthand and checks a file (node)
