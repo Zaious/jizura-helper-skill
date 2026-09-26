@@ -40,7 +40,7 @@ Order of decisions when turning a feeling into settings:
 2. **fx sliders**: take values from the closest mood's ranges, then adjust to the description ("slow, heavy" → lower `motion`; "explosive" → higher `glitch` and `flash` on).
 3. **Parts**: filter only when the tone must be consistent, and remember that **layout has the biggest effect on the atmosphere**. Judge each part by its names, not just its tags.
 4. **Colours**: write `colors` only when the style's palette is not close enough.
-5. **`extra` and `wa`**: if a part you want is flagged `extra`, set `"extra": true`; if Japanese motifs do not fit, set `"wa": false`.
+5. **Switches**: if a part you want is flagged `extra`, set `"extra": true`; if Japanese motifs do not fit, set `"wa": false`. For anything eerie, creepy or horror, set `"horror": true` and use the horror mood, styles and parts — the horror set is off by default and its parts are never picked without it.
 
 ### 3. Write the file
 

@@ -71,6 +71,9 @@ Put the user's lyrics into `lyrics` **exactly**, markers included. Do not delete
 | `mood` | a mood key from catalog.md, or `null` | **only a label** — the planner never reads it. To get a mood's feel, write `fx` and the part switches (§4, §5) |
 | `extra` | `true` / `false` (default `false`) | whether parts and styles added after the first public version can be picked. Parts flagged `extra` in catalog.md need `true` |
 | `wa` | `true` / `false` (default `true`) | whether Japanese-motif parts (lanterns, shoji, family crests…) can be picked. Use `false` for modern, western or dark themes |
+| `horror` | `true` / `false` (default `false`) | the horror set: 52 parts (flashlight, door gap, CCTV, ouija board, blink-creep, pulled down…) and three horror styles. **Its parts are never picked unless this is `true`** — set it for eerie, creepy or horror requests |
+| `typo` | `true` / `false` (default `true`) | the typographic (文字PV) set |
+| `kinetic` | `true` / `false` (default `true`) | the kinetic-typography set (word-by-word beats, swings, slams) |
 | `seed` | integer | the same number gives exactly the same result; another number gives another arrangement |
 | `aspect` | `16:9`, `9:16`, `4:3`, `3:4`, `1:1`, `4:5`, `21:9` | frame shape; `9:16` for short-form vertical video |
 | `res` | `720`, `1080`, `1440`, `2160` | output resolution |
@@ -115,13 +118,13 @@ That is long, so this tool offers the shorthand `only`, listing "use only these"
 **Recommended rules** — this is what JIZURA's own random pick does. Breaking them does not break the app, but the video gets worse.
 
 1. **Keep a minimum number per group**, or the video keeps repeating the same effect: layout ≥ 6, enter ≥ 5, exit ≥ 5, hold ≥ 3, decor ≥ 6, treat ≥ 4, bg ≥ 4, cam ≥ 3, fx ≥ 4, trans ≥ 3.
-   - Do not count parts that cannot be picked: `extra` parts while `"extra": false`, and `wa` parts while `"wa": false`.
+   - Do not count parts that cannot be picked: `extra` parts while `"extra": false`, `wa` parts while `"wa": false`, and parts of a set (`horror`, `typo`, `kinetic`) whose switch is off.
 2. **Keep these on**: `enter.cut`, `exit.cut`, `hold.still`, `treat.none`, `bg.none`, `cam.push`. They are the plainest options, used when a very short cut needs a clean switch. `finalize.js` adds them back when expanding `only`.
 3. Leave groups you do not need to restrict out entirely, so everything in them stays on.
 
 What really matters is **getting the keys right**: a wrong key raises no error, it just silently does nothing.
 
-**Choosing parts**: judge by the Chinese and English names in catalog.md. The tags only cover the author's seven moods, so a feel outside them (for example "eerie") has to be judged from the names: keep things like shatter, crumble, noise, flicker; avoid bright, cute or everyday ones like bubbles, stickers, station signs. **Layout has the biggest effect on the overall atmosphere**; for a consistent tone, filter layouts too.
+**Choosing parts**: judge by the Chinese and English names in catalog.md, plus the author's mood tags. For eerie or horror requests, use the `horror` mood: set `"horror": true`, take `fx` from the horror mood's ranges, pick a horror style (`hrRuin`, `hrNightRec`, `hrCurse`) or a dark one, and favour parts tagged `horror`. For a feel no tag covers, judge from the names: avoid bright, cute or everyday parts like bubbles, stickers, station signs when the tone is dark. **Layout has the biggest effect on the overall atmosphere**; for a consistent tone, filter layouts too.
 
 ## 6. Per-line settings: overrides
 
@@ -168,7 +171,7 @@ If the user gives start times for each line, write them as LRC tags `[mm:ss.xx]`
 - [ ] Every key can be found in catalog.md, and no field is invented
 - [ ] The lyrics match the user's exactly, markers included
 - [ ] Lines meant to flash end in a half-width `!`
-- [ ] Using `extra` parts or styles → `"extra": true`; no Japanese motifs → `"wa": false`
+- [ ] Using `extra` parts or styles → `"extra": true`; no Japanese motifs → `"wa": false`; using horror parts → `"horror": true`
 - [ ] Each group meets the recommended minimum, and the six recommended parts are on
 - [ ] No `only` left (expanded by `finalize.js`, or by hand)
 - [ ] The wanted mood is written into `fx`, not just into `mood`

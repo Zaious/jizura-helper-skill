@@ -48,8 +48,9 @@ const flagsOf = (g, k) => {
   const d = J.registry(g)[k] || {};
   const f = [];
   if (d.special) f.push('special');
-  if (!ok({ extra: false, wa: true }, g, k) && ok({ extra: true, wa: true }, g, k)) f.push('extra');
-  if (ok({ extra: true, wa: true }, g, k) && !ok({ extra: true, wa: false }, g, k)) f.push('wa');
+  if (d.extra || (!J.isExtra && !ok({ extra: false, wa: true }, g, k) && ok({ extra: true, wa: true }, g, k))) f.push('extra');
+  if (d.wa) f.push('wa');
+  if (d.set) f.push(d.set);                            // part sets with their own switch: horror (off by default), typo, kinetic
   return f;
 };
 
@@ -61,7 +62,8 @@ for (const g of groups) parts[g] = J.order(g).map(k => {
 const styles = J.STYLE_ORDER.concat(Object.keys(J.STYLES).filter(k => !J.STYLE_ORDER.includes(k))).map(k => {
   const s = J.STYLES[k], n = styleNames[k] || {};
   return { key: k, zh: (n.zhHant || [])[0] || '', zhDesc: (n.zhHant || [])[1] || '', en: (n.en || [])[0] || '', enDesc: (n.en || [])[1] || '', ja: (n.ja || [])[0] || '',
-    moods: s.moods || [], fonts: s.fonts || {}, bg: ((s.schemes || [])[0] || {}).bg, flags: ok({ extra: false, wa: true }, 'style', k) ? [] : ['extra'] };
+    moods: s.moods || [], fonts: s.fonts || {}, bg: ((s.schemes || [])[0] || {}).bg,
+    flags: [s.extra && 'extra', s.wa && 'wa', s.set].filter(Boolean) };
 });
 const moods = Object.entries(J.MOODS).map(([k, m]) => ({ key: k, zh: (moodNames[k] || {}).zhHant || '', en: (moodNames[k] || {}).en || '', ja: (moodNames[k] || {}).ja || '',
   fx: m.fx || {}, layout: m.layout || [], enter: m.enter || [], exit: m.exit || [], styles: m.styles || [], noHold: m.noHold || [] }));
@@ -71,7 +73,9 @@ const def = J.defaultProject();
 fs.mkdirSync(out, { recursive: true });
 // every field JIZURA reads from a project file: the defaults, plus userFonts (read by the editor's mergeProject)
 const projectFields = [...new Set([...Object.keys(def), 'userFonts'])];
-fs.writeFileSync(path.join(out, 'catalog.json'), JSON.stringify({ commit, projectFields, styles, moods, fonts, parts, defaultFx: def.fx }, null, 1));
+// part sets with their own project switch, and whether each is on when the file does not say
+const sets = Object.fromEntries(Object.entries(J.SETS || {}).map(([k, v]) => [k, !!v.on]));
+fs.writeFileSync(path.join(out, 'catalog.json'), JSON.stringify({ commit, projectFields, sets, styles, moods, fonts, parts, defaultFx: def.fx }, null, 1));
 // every key of every group switched on, one group per line: models that cannot run code copy a group and flip the ones they drop
 const allOn = groups.map(g => `  ${JSON.stringify(g)}: {${parts[g].map(p => `${JSON.stringify(p.key)}: true`).join(', ')}}`);
 fs.writeFileSync(path.join(out, 'enabled-all.json'), '{\n' + allOn.join(',\n') + '\n}\n');
@@ -87,7 +91,8 @@ const L = [];
 L.push('# JIZURA parts and styles catalogue', '');
 L.push(`> Generated from the JIZURA source by \`scripts/build_catalog.js\`${commit ? ` (commit \`${commit}\`)` : ''}. Do not edit by hand.`);
 L.push('> Columns: `key` is what goes into the file; 中文 is the name shown in the Traditional Chinese edition; English is the English edition\'s name; `tags` are the author\'s mood tags.',
-  '> `flags`: `extra` = added after the first public version (only picked at random with `"extra": true`); `wa` = Japanese motif (never picked at random with `"wa": false`); `special` = internal, do not touch.', '');
+  '> `flags`: `extra` = added after the first public version (only picked at random with `"extra": true`); `wa` = Japanese motif (never picked at random with `"wa": false`); `special` = internal, do not touch.',
+  `> Part sets with their own switch field: ${Object.entries(sets).map(([k, on]) => `\`${k}\` (picked only when \`"${k}": true\`${on ? '; on unless the file says `false`' : '; **off unless the file says `true`**'})`).join(', ')}.`, '');
 L.push('## Contents', '', '- [Styles](#styles)', '- [Moods](#moods)', '- [Fonts](#fonts)');
 for (const g of groups) L.push(`- [${GROUP_TITLE[g]}](#${g})`);
 L.push('', '## Styles', '', '| key | 中文 | English | Description | Suits moods | flags |', '|---|---|---|---|---|---|');

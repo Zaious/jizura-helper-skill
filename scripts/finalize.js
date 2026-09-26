@@ -63,15 +63,23 @@ if (p.fx && p.fx.koma !== undefined && p.fx.onTwos === undefined) p.fx.onTwos = 
 
 // ---- enabled ----
 const extraOn = p.extra === true, waOn = p.wa !== false;
+// part sets with their own switch (horror is off unless the file says true; typo / kinetic are on unless it says false)
+const SETS = cat.sets || {};
+const setOn = s => (typeof p[s] === 'boolean' ? p[s] : !!SETS[s]);
+for (const s of Object.keys(SETS)) if (p[s] !== undefined && typeof p[s] !== 'boolean') errors.push(`${s}: must be true or false`);
 for (const [g, map] of Object.entries(p.enabled || {})) {
   if (!cat.parts[g]) { errors.push(`enabled.${g}: unknown group`); continue; }
   for (const k of Object.keys(map)) if (!partOf(g, k)) warns.push(`enabled.${g}.${k}: unknown part (ignored by JIZURA)`);
   // JIZURA: anything not explicitly false is on
   const on = keysOf(g).filter(k => map[k] !== false);
-  const pickable = on.filter(k => { const f = partOf(g, k).flags; return !f.includes('special') && (extraOn || !f.includes('extra')) && (waOn || !f.includes('wa')); });
+  const pickable = on.filter(k => { const f = partOf(g, k).flags; return !f.includes('special') && (extraOn || !f.includes('extra')) && (waOn || !f.includes('wa')) && Object.keys(SETS).every(s => setOn(s) || !f.includes(s)); });
   if (pickable.length < (MIN[g] || 3)) warns.push(`enabled.${g}: only ${pickable.length} parts can be picked; JIZURA's own random pick keeps ≥ ${MIN[g] || 3} so the video does not repeat itself`);
   const extraOnly = on.filter(k => partOf(g, k).flags.includes('extra'));
   if (!extraOn && extraOnly.length) warns.push(`enabled.${g}: ${extraOnly.length} of the parts you left on are 追加分 and are skipped unless "extra": true (${extraOnly.slice(0, 4).join(', ')}${extraOnly.length > 4 ? '…' : ''})`);
+  for (const s of Object.keys(SETS)) {
+    const inSet = on.filter(k => partOf(g, k).flags.includes(s) && map[k] === true);
+    if (!setOn(s) && inSet.length) warns.push(`enabled.${g}: ${inSet.length} ${s} part(s) you switched on are skipped unless "${s}": true (${inSet.slice(0, 4).join(', ')}${inSet.length > 4 ? '…' : ''})`);
+  }
   for (const k of ALWAYS_ON[g] || []) if (map[k] === false) warns.push(`enabled.${g}.${k}: JIZURA's random pick always keeps this plain fall-back on (it is still used when nothing else fits)`);
 }
 

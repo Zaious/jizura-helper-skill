@@ -30,7 +30,7 @@ JIZURA opens files through a file picker; there is no box to paste JSON into.
 
 AIs that can run code (such as Claude Code) check the file with `scripts/finalize.js`. Chat AIs that cannot run code check it by hand against the checklist in `format.md`. The assistant replies in your language.
 
-Tested with Claude (with and without code execution). Not yet tested with ChatGPT or other assistants.
+Tested with Claude (with and without code execution). Catalogue: JIZURA v0.9.0 (`bae339e`), including the horror set. Not yet tested with ChatGPT or other assistants.
 
 ## Contents
 

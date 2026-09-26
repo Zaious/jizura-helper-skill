@@ -1,8 +1,9 @@
 # JIZURA parts and styles catalogue
 
-> Generated from the JIZURA source by `scripts/build_catalog.js` (commit `94413f7`). Do not edit by hand.
+> Generated from the JIZURA source by `scripts/build_catalog.js` (commit `bae339e`). Do not edit by hand.
 > Columns: `key` is what goes into the file; 中文 is the name shown in the Traditional Chinese edition; English is the English edition's name; `tags` are the author's mood tags.
 > `flags`: `extra` = added after the first public version (only picked at random with `"extra": true`); `wa` = Japanese motif (never picked at random with `"wa": false`); `special` = internal, do not touch.
+> Part sets with their own switch field: `horror` (picked only when `"horror": true`; **off unless the file says `true`**), `typo` (picked only when `"typo": true`; on unless the file says `false`), `kinetic` (picked only when `"kinetic": true`; on unless the file says `false`).
 
 ## Contents
 
@@ -36,7 +37,10 @@
 | `blueprint` | 藍圖 | Blueprint | Blue, white and black graphic collage |  |  |
 | `rouge` | 胭脂漸層 | Rouge Gradient | Light gray and red gradients with capsules |  |  |
 | `mono` | 單色 RGB | Mono RGB | Gray space, white serif and bold RGB separation |  |  |
-| `sakura` | 櫻花 | Sakura | Soft cherry pink and plum with rounded and serif type | emotional, calm | extra |
+| `hrRuin` | 廢墟 | Ruins | Faded green-grey, rust red and echoing serif type | horror | horror |
+| `hrNightRec` | 深夜錄影 | Midnight Recording | Pitch-black frames, CCTV white and red, static | horror | horror |
+| `hrCurse` | 詛咒之信 | Cursed Letter | Yellowed paper, faded ink and dark red handwriting | horror | horror |
+| `sakura` | 櫻花 | Sakura | Soft cherry pink and plum with rounded and serif type | emotional, calm | extra, wa |
 | `ocean` | 深海 | Deep Sea | Navy, glowing cyan, bubbles and light sans type | calm, emotional | extra |
 | `sunset` | 夕陽漸層 | Sunset Gradient | Orange to violet, bold serif and backlight | emotional, pop | extra |
 | `forest` | 森林手帖 | Forest Notebook | Moss, natural paper and pencil lettering | calm, editorial, emotional | extra |
@@ -46,7 +50,7 @@
 | `kraft` | 牛皮紙 | Kraft Paper | Warm paper, red and indigo stamps and washi tape | pop, editorial, graphic | extra |
 | `candy` | 糖果 | Candy | Mint and fruit pastel colors with bouncing letters | pop | extra |
 | `acid` | 酸性 | Acid | Black, acid green and magenta with distressed type | glitch, graphic | extra |
-| `sumi` | 墨與朱 | Ink and Vermilion | Japanese paper, brush lettering and red seals | calm, emotional, editorial | extra |
+| `sumi` | 墨與朱 | Ink and Vermilion | Japanese paper, brush lettering and red seals | calm, emotional, editorial | extra, wa |
 | `gold` | 金夜 | Golden Night | Deep black, gold foil, ivory serif and glints | emotional, calm, editorial | extra |
 
 ## Moods
@@ -61,6 +65,7 @@ The `mood` field is only a label. For a mood's feel, write values from these sli
 | `graphic` | 圖形感 | Graphic | motion 0.5–0.8; glitch 0.2–0.5; chroma 0.4–0.7; decor 0.7–1; density 0.5–0.8; texture 0.4–0.7; bgSwitch 0.3–0.7 | layout: diag, labels, marquee, tile, condensed, huge, circle, pill<br>enter: wipe, slice, stretch, zoom<br>exit: wipe, slice, stretch |
 | `editorial` | 編輯排版 | Editorial | motion 0.4–0.65; glitch 0.1–0.3; chroma 0.2–0.45; decor 0.4–0.7; density 0.35–0.6; texture 0.6–0.9; bgSwitch 0.2–0.4 | layout: gloss, vcols, mixed, stack, type, center, circle<br>enter: type, blur, wipe, assemble<br>exit: blur, drift, wipe |
 | `emotional` | 感性 | Emotional | motion 0.55–0.85; glitch 0.3–0.6; chroma 0.5–0.85; decor 0.3–0.6; density 0.4–0.7; texture 0.6–1; bgSwitch 0.2–0.5 | layout: huge, center, vcols, stack, condensed, mixed, circle<br>enter: assemble, blur, zoom, wipe, slice<br>exit: drift, explode, fall, blur |
+| `horror` | 恐怖 | Horror | motion 0.35–0.65; glitch 0.3–0.7; chroma 0.2–0.5; decor 0.3–0.6; density 0.3–0.55; texture 0.7–1; bgSwitch 0.1–0.3 | layout: center, vcols, stack, huge, type<br>enter: flicker, blur, type, scramble<br>exit: blur, glitch, fall, drift |
 | `chaos` | 全都來 | Anything goes | motion 0.5–1; glitch 0.3–1; chroma 0.4–1; decor 0.4–1; density 0.45–0.9; texture 0.3–1; bgSwitch 0.3–0.9 |  |
 
 ## Fonts
@@ -95,27 +100,53 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 
 ## layout
 
-**layout — how each cut is laid out** — 140 parts
+**layout — how each cut is laid out** — 184 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
-| `center` | 置中 | Center | glitch, calm, pop, editorial, emotional |  |
+| `center` | 置中 | Center | glitch, calm, pop, editorial, emotional, horror |  |
 | `mixed` | 大小混排 | Mixed | calm, pop, editorial, emotional |  |
-| `vcols` | 直書 | Vertical text | glitch, calm, editorial, emotional |  |
+| `vcols` | 直書 | Vertical text | glitch, calm, editorial, emotional, horror |  |
 | `marquee` | 流動橫幅 | Scrolling banner | glitch, graphic |  |
 | `tile` | 滿版鋪排 | Tiled text | glitch, graphic |  |
 | `scatter` | 散落 | Scatter | glitch, pop |  |
 | `ring` | 環形 | Ring | pop |  |
 | `wave` | 波浪軌跡 | Wave | pop |  |
-| `huge` | 超出畫面 | Oversized text | glitch, pop, graphic, emotional |  |
+| `huge` | 超出畫面 | Oversized text | glitch, pop, graphic, emotional, horror |  |
 | `labels` | 標籤貼 | Labels | pop, graphic |  |
 | `condensed` | 瘦長壓縮 | Condensed | glitch, graphic, emotional |  |
 | `gloss` | 註解 | Annotation | calm, editorial |  |
-| `type` | 打字 | Type | calm, editorial |  |
+| `type` | 打字 | Type | calm, editorial, horror |  |
 | `diag` | 斜帶 | Diagonal band | pop, graphic |  |
 | `circle` | 圓窗 | Circle | calm, graphic, editorial, emotional |  |
-| `stack` | 殘影堆疊 | Echo stack | glitch, calm, editorial, emotional |  |
+| `stack` | 殘影堆疊 | Echo stack | glitch, calm, editorial, emotional, horror |  |
 | `pill` | 膠囊 | Pill | pop, graphic |  |
+| `hrFlashlight` | 手電筒 | Flashlight | horror, emotional | horror |
+| `hrDoorGap` | 門縫 | Door Gap | horror, editorial | horror |
+| `hrWallScrawl` | 牆上塗寫 | Wall Scrawl | horror, glitch | horror |
+| `hrCctv` | 監視螢幕 | CCTV Monitor | horror, glitch, editorial | horror |
+| `hrOuija` | 通靈板 | Spirit Board | horror | horror |
+| `hrMissing` | 尋人啟事 | Missing Poster | horror, editorial | horror |
+| `hrWrongOne` | 唯一不對的字 | The Wrong Glyph | horror, editorial, calm | horror |
+| `hrRisingDark` | 從黑暗爬出 | Out of the Dark | horror, emotional | horror |
+| `hrRedacted` | 塗黑文件 | Redacted File | horror, editorial | horror |
+| `hrStaticTv` | 雪花電視 | Static TV | horror, glitch | horror |
+| `hrSpiritPhoto` | 靈異照片 | Spirit Photo | horror, emotional | horror |
+| `hrWrongShadow` | 不對勁的影子 | Wrong Shadow | horror, emotional, graphic | horror |
+| `knSlamStack` | 堆疊重擊 | Slam Stack | pop, graphic | kinetic |
+| `knQuarterTurn` | 直角轉向 | Quarter Turn | pop, graphic, editorial | kinetic |
+| `knSwapCenter` | 逐字替換 | Word Swap | pop, graphic, glitch | kinetic |
+| `knZoomDive` | 鑽入字中 | Dive Into Letter | pop, emotional, graphic | kinetic |
+| `knFlowSnap` | 流動後對齊 | Flow and Snap | graphic, pop, editorial | kinetic |
+| `knSeesaw` | 蹺蹺板 | Seesaw | pop, graphic | kinetic |
+| `knTypeSlam` | 打字→重擊 | Type then Slam | pop, graphic, editorial | kinetic |
+| `knRhythmCuts` | 逐字分鏡 | Word Jump Cuts | pop, graphic, glitch | kinetic |
+| `knPathRide` | 環形軌道 | Loop Track | pop, graphic | kinetic |
+| `knGearWords` | 齒輪 | Gears | pop, graphic | kinetic |
+| `knCollide` | 正面衝撞 | Head-on Crash | pop, graphic, glitch | kinetic |
+| `knTumble` | 翻滾方塊 | Tumbling Boxes | pop, graphic | kinetic |
+| `knReflow` | 直排轉橫排 | Vertical to Line | editorial, graphic, emotional | kinetic |
+| `knPadGrid` | 打擊墊 | Drum Pads | pop, graphic, glitch | kinetic |
 | `lowerThird` | 下方字卡 | Lower third | editorial, calm, emotional |  |
 | `corners` | 對角配置 | Opposite corners | graphic, editorial, calm |  |
 | `staircase` | 階梯 | Staircase | graphic, pop, editorial |  |
@@ -239,25 +270,43 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `contour` | 等高線 | Contour | calm, graphic, emotional | extra |
 | `halftoneBig` | 網點巨字 | Oversized halftone text | pop, graphic, editorial | extra |
 | `stencil` | 鏤空模板 | Stencil | graphic, pop, editorial | extra |
+| `tyKeySplit` | 大字夾排 | Key Glyph Split | editorial, graphic, emotional | typo |
+| `tyCropGiant` | 出框大字 | Cropped Giant | graphic, editorial, pop | typo |
+| `tyCross` | 十字排 | Cross Setting | graphic, editorial | typo |
+| `tyBandHide` | 帶狀遮字 | Band Cover | graphic, pop, editorial | typo |
+| `tyRuby` | 標音注記 | Ruby Notes | editorial, calm, emotional | typo |
+| `tyBaseline` | 格線排版 | Ruled Lines | editorial, calm, graphic | typo |
+| `tyScaleSteps` | 字級遞增 | Size Crescendo | graphic, editorial, pop | typo |
+| `tyJustify` | 等寬堆疊 | Justified Stack | graphic, pop, editorial | typo |
+| `tyIndexTable` | 字表 | Glyph Table | editorial, graphic, calm | typo |
+| `tySplitType` | 斷字錯位 | Split Type | graphic, glitch, pop | typo |
+| `tyErode` | 漸削重複 | Eroding Repeat | emotional, editorial, calm | typo |
+| `tyVRuler` | 直式刻度 | Vertical Scale | editorial, calm, graphic | typo |
+| `tyFullTrack` | 滿版字距 | Full-Width Tracking | editorial, calm, graphic | typo |
+| `tyStatCount` | 字數顯示 | Glyph Count | editorial, graphic | typo |
+| `tyMargin` | 留白 | White Space | calm, editorial, emotional | typo |
+| `tyRotBlock` | 旋轉字塊 | Rotated Block | graphic, pop, editorial | typo |
+| `tySquare` | 方塊排 | Square Setting | graphic, editorial, pop | typo |
+| `tyLineFocus` | 行中強調 | Line Highlight | editorial, emotional, calm | typo |
 
 ## enter
 
-**enter — entrance animation** — 100 parts
+**enter — entrance animation** — 125 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `cut` | 直切 | Cut |  |  |
 | `assemble` | 分解→聚合 | Break apart and assemble | glitch, calm, editorial, emotional |  |
 | `slice` | 切片 | Slice | glitch, graphic, emotional |  |
-| `type` | 打字 | Type | calm, editorial |  |
+| `type` | 打字 | Type | calm, editorial, horror |  |
 | `pop` | 彈出 | Pop | pop |  |
 | `drop` | 落下 | Drop | pop |  |
 | `stretch` | 伸縮 | Stretch | glitch, pop, graphic |  |
 | `wipe` | 擦除 | Wipe | calm, graphic, editorial, emotional |  |
-| `blur` | 模糊 | Blur | calm, editorial, emotional |  |
+| `blur` | 模糊 | Blur | calm, editorial, emotional, horror |  |
 | `spin` | 旋轉 | Spin | pop |  |
-| `flicker` | 閃爍 | Flicker | glitch |  |
-| `scramble` | 亂碼 | Scramble | glitch |  |
+| `flicker` | 閃爍 | Flicker | glitch, horror |  |
+| `scramble` | 亂碼 | Scramble | glitch, horror |  |
 | `zoom` | 縮放 | Zoom | glitch, pop, graphic, emotional |  |
 | `riseMask` | 由下浮現 | Reveal from below | editorial, graphic, calm, emotional |  |
 | `dropMask` | 由上浮現 | Reveal from above | editorial, graphic, pop |  |
@@ -346,10 +395,35 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `shadowFirst` | 影子先落 | Shadow first | pop, graphic, emotional | extra |
 | `bubbles` | 泡泡 | Bubbles | pop, emotional, calm | extra |
 | `tokoroten` | 擠壓成條 | Extruded noodles | pop, graphic | extra |
+| `hrBlinkCreep` | 眨眼之間 | Between Blinks | horror, emotional | horror |
+| `hrJumpScare` | 突然跳出 | Jump Scare | horror, glitch, pop | horror |
+| `hrUneasy` | 不安的出現 | Uneasy Timing | horror, editorial | horror |
+| `hrVhold` | 垂直同步 | Vertical Hold | horror, glitch | horror |
+| `hrMirrorSnap` | 鏡像字 | Mirror Writing | horror, glitch | horror |
+| `hrManifest` | 緩緩浮現 | Manifest | horror, emotional, calm | horror |
+| `hrClawReveal` | 爪痕浮現 | Claw Marks | horror, graphic | horror |
+| `knWordSlam` | 逐詞重擊 | Word Slam | pop, graphic, glitch | kinetic |
+| `knTypeToSlam` | 打字→放大 | Type and Grow | pop, editorial, graphic | kinetic |
+| `knReplaceIn` | 替換登場 | Swap In | pop, graphic, glitch | kinetic |
+| `knHingeDrop` | 鉸鏈落下 | Hinge Drop | pop, graphic | kinetic |
+| `knLoopIn` | 繞圈進場 | Loop In | pop, graphic | kinetic |
+| `knPushIn` | 推入 | Push In | pop, editorial, graphic | kinetic |
+| `knInertia` | 急煞車 | Hard Brake | pop, graphic | kinetic |
+| `knWordSpin` | 逐詞旋轉 | Word Spin | pop, graphic | kinetic |
+| `knDiveIn` | 從鏡頭飛入 | Words From Camera | pop, emotional, graphic | kinetic |
+| `knStretchOut` | 伸展彈出 | Tape Stretch | pop, graphic | kinetic |
+| `tyKeyFirst` | 主字先行 | Key Glyph First | pop, graphic, editorial, emotional | typo |
+| `tyLineWipe` | 逐行擦入 | Line-by-Line Wipe | editorial, graphic, calm | typo |
+| `tyZoomOne` | 逐字放大 | One by One Zoom | pop, graphic, emotional | typo |
+| `tyUnderLift` | 從底線升起 | Rise from Underline | editorial, graphic, pop | typo |
+| `tyDotGrow` | 點化為字 | Dot to Glyph | pop, calm, graphic | typo |
+| `tyBracketOpen` | 括號展開 | Brackets Open | editorial, graphic, pop | typo |
+| `tyRetype` | 打錯重打 | Retype | editorial, glitch, emotional | typo |
+| `tyRubyDrop` | 從注音落下 | From Ruby | calm, editorial, emotional | typo |
 
 ## hold
 
-**hold — motion while on screen** — 38 parts
+**hold — motion while on screen** — 52 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
@@ -391,24 +465,38 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `typeRattle` | 打字震動 | Typewriter rattle | editorial, glitch | extra |
 | `focusRack` | 移焦 | Rack focus | calm, emotional | extra |
 | `pluckString` | 撥弦 | Plucked string | pop, emotional | extra |
+| `hrTwitch` | 抽搐 | Twitch | horror, glitch | horror |
+| `hrStare` | 凝視的字 | Staring Glyph | horror, emotional | horror |
+| `hrLagOne` | 慢一拍的字 | The Late One | horror, calm | horror |
+| `hrFlickerLight` | 將熄的燈 | Failing Light | horror, glitch, emotional | horror |
+| `knWordPulse` | 逐詞節拍 | Word Pulse | pop, graphic | kinetic |
+| `knCounterRock` | 反向搖擺 | Counter Rock | pop, calm, graphic | kinetic |
+| `knWordRide` | 詞語衝浪 | Word Surf | calm, emotional, pop | kinetic |
+| `knTickShift` | 滴答位移 | Tick Shift | graphic, pop, editorial | kinetic |
+| `knBeatLean` | 隨拍傾斜 | Beat Lean | pop, glitch, graphic | kinetic |
+| `knGapBreath` | 詞間呼吸 | Breathing Gaps | calm, editorial, emotional | kinetic |
+| `tyKeyPulse` | 主字脈動 | Key Glyph Pulse | emotional, pop, calm | typo |
+| `tyReadCursor` | 閱讀游標 | Reading Cursor | calm, editorial, pop | typo |
+| `tyOutlineBlink` | 空心閃爍 | Outline Blink | glitch, graphic, pop | typo |
+| `tyTrackStep` | 字距跳段 | Tracking Steps | graphic, editorial, pop | typo |
 
 ## exit
 
-**exit — exit animation** — 86 parts
+**exit — exit animation** — 109 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `cut` | 直切 | Cut |  |  |
 | `explode` | 爆散 | Explode | glitch, emotional |  |
-| `fall` | 崩落 | Crumble and fall | glitch, emotional |  |
-| `drift` | 霧散 | Drift away | calm, editorial, emotional |  |
+| `fall` | 崩落 | Crumble and fall | glitch, emotional, horror |  |
+| `drift` | 霧散 | Drift away | calm, editorial, emotional, horror |  |
 | `slice` | 切片退場 | Slice | glitch, graphic |  |
 | `wipe` | 擦除退場 | Wipe | calm, graphic, editorial |  |
 | `shrink` | 收縮 | Shrink | calm, pop |  |
-| `blur` | 模糊退場 | Blur | calm, pop, editorial, emotional |  |
+| `blur` | 模糊退場 | Blur | calm, pop, editorial, emotional, horror |  |
 | `stretch` | 伸縮退場 | Stretch | pop, graphic |  |
 | `scatter` | 飛散 | Scatter | pop |  |
-| `glitch` | 故障退場 | Glitch | glitch |  |
+| `glitch` | 故障退場 | Glitch | glitch, horror |  |
 | `sinkMask` | 下沉 | Sink out | calm, editorial, graphic |  |
 | `riseOut` | 向上消失 | Rise out | calm, emotional, editorial |  |
 | `slideOutL` | 向左滑出 | Slide left | pop, graphic |  |
@@ -484,10 +572,33 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `mosaicOut` | 馬賽克 | Mosaic out | glitch, graphic | extra |
 | `scribbleOut` | 亂塗抹消 | Scribble away | editorial, emotional, pop | extra |
 | `candleOut` | 吹熄 | Blow out | emotional, calm | extra |
+| `hrPulledDown` | 被拖下去 | Pulled Under | horror, glitch, emotional | horror |
+| `hrLookBack` | 留下一字 | One Remains | horror, emotional | horror |
+| `hrTurnAway` | 轉身背對 | Turn Away | horror, calm, emotional | horror |
+| `hrShiver` | 顫抖消失 | Shiver Out | horror, glitch | horror |
+| `hrSwallow` | 被黑暗吞沒 | Swallowed | horror, emotional, graphic | horror |
+| `hrFlickerDie` | 閃爍熄滅 | Dying Flicker | horror, glitch | horror |
+| `hrDrain` | 滴落 | Drain | horror, emotional | horror |
+| `knWordKick` | 逐詞踢飛 | Word Kick | pop, graphic | kinetic |
+| `knPushOut` | 推出退場 | Push Out | editorial, graphic, pop | kinetic |
+| `knDiveGlyph` | 衝入一字 | Dive Into Letter | pop, emotional, graphic | kinetic |
+| `knLaunch` | 急起步 | Launch | pop, graphic | kinetic |
+| `knWordBlink` | 逐詞熄滅 | Words Blink Out | pop, glitch, graphic | kinetic |
+| `knCloseGap` | 收攏消失 | Close the Gaps | editorial, graphic, pop | kinetic |
+| `knJumpCutOut` | 跳切 | Jump Cut | pop, glitch, graphic | kinetic |
+| `knStackAway` | 疊起落下 | Stack and Drop | pop, graphic | kinetic |
+| `tyStrike` | 劃線刪除 | Strike Out | editorial, graphic, emotional | typo |
+| `tyToDot` | 縮回圓點 | Back to Dots | calm, pop, graphic | typo |
+| `tyLineFeed` | 換行送出 | Line Feed | editorial, calm, graphic | typo |
+| `tyBracketClose` | 括號合上 | Brackets Close | editorial, graphic, pop | typo |
+| `tyToIndex` | 化為編號 | Turn to Numbers | editorial, glitch, graphic | typo |
+| `tyKeyLast` | 留下一字 | Key Glyph Last | emotional, pop, graphic | typo |
+| `tyUnderSink` | 沉入底線 | Sink into Underline | editorial, calm, graphic | typo |
+| `tyFoldVert` | 折成直排 | Fold to Vertical | graphic, editorial, pop | typo |
 
 ## decor
 
-**decor — decorations (0 to several per cut)** — 115 parts
+**decor — decorations (0 to several per cut)** — 130 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
@@ -606,14 +717,35 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `mediaControls` | 播放按鈕 | Playback controls | pop, graphic, emotional | extra |
 | `volumeBars` | 音量 | Volume bars | pop, glitch, graphic | extra |
 | `musicNotes` | 音符 | Music notes | pop, emotional, calm | extra |
+| `hrScratches` | 抓痕 | Claw Scratches | horror, glitch | horror |
+| `hrSigil` | 魔法陣 | Sigil | horror, graphic | horror |
+| `hrWatchEye` | 注視之眼 | Watching Eye | horror, graphic | horror |
+| `hrStaticPatch` | 雜訊碎片 | Static Patches | horror, glitch | horror |
+| `hrDustBeam` | 光束與塵埃 | Dusty Light Beam | horror, calm, emotional | horror |
+| `hrDrips` | 垂落的墨 | Ink Drips | horror, emotional | horror |
+| `hrCracks` | 裂痕 | Cracks | horror, graphic, glitch | horror |
+| `knSpeedTrail` | 跟隨速度線 | Trailing Speed Lines | pop, graphic, glitch | kinetic |
+| `knWordTicks` | 詞數計數器 | Word Counter | graphic, editorial, pop | kinetic |
+| `tyColophon` | 版權頁 | Colophon | editorial, calm, graphic | typo |
+| `tyRunningHead` | 書眉頁碼 | Running Head & Folio | editorial, calm | typo |
+| `tyGlyphBody` | 字身分割線 | Glyph Body Lines | editorial, graphic, calm | typo |
+| `tyTextRule` | 文字線條 | Text Rule | editorial, graphic, calm | typo |
+| `tyTypeScale` | 字級樣本 | Type Scale | editorial, graphic | typo |
+| `tyBigPunct` | 巨大引號 | Big Quote Marks | editorial, emotional, graphic | typo |
 
 ## treat
 
-**treat — text treatment (outline, extrude, offset…)** — 52 parts
+**treat — text treatment (outline, extrude, offset…)** — 62 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
 | `none` | 無 | None |  |  |
+| `hrInkBleed` | 暈染滴落 | Bleeding Ink | horror, emotional | horror |
+| `hrEroded` | 風化 | Eroded | horror, editorial, graphic | horror |
+| `hrRedact` | 塗黑 | Redacted | horror, editorial, graphic | horror |
+| `hrDoubleExp` | 雙重曝光 | Double Exposure | horror, emotional, glitch | horror |
+| `knWordScale` | 大小詞 | Big and Small Words | pop, graphic, editorial | kinetic |
+| `knWordPlate` | 逐詞反白 | Word Knockout | pop, graphic, glitch | kinetic |
 | `outline` | 空心字 | Hollow letters | graphic, pop, glitch, emotional |  |
 | `outlineFill` | 描邊 | Outlined text | pop, graphic |  |
 | `doubleOutline` | 雙層描邊 | Double outline | pop, graphic |  |
@@ -665,10 +797,14 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `focusPull` | 模糊移焦 | Focus shift | emotional, calm, editorial | extra |
 | `spotChar` | 單字標記 | Highlighted character | pop, graphic, editorial, emotional | extra |
 | `ransom` | 剪貼字 | Cutout letters | pop, glitch, graphic | extra |
+| `tyHollowKey` | 單字鏤空 | Hollow Key Glyph | graphic, editorial, pop | typo |
+| `tyHeadRules` | 天地線 | Head & Foot Rules | editorial, graphic, calm | typo |
+| `tyHeadBig` | 首字放大 | Large Initial | editorial, pop, emotional | typo |
+| `tyIndexSup` | 字序號 | Glyph Numbers | editorial, graphic | typo |
 
 ## bg
 
-**bg — background graphic (one per line)** — 62 parts
+**bg — background graphic (one per line)** — 66 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
@@ -710,6 +846,10 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `kaleidoscope` | 萬花筒 | Kaleidoscope | pop, glitch, emotional | extra |
 | `marble` | 大理石 | Marble | calm, editorial, emotional | extra |
 | `paperCut` | 剪紙 | Paper cutout | pop, emotional, calm | extra |
+| `hrFailingLamp` | 將熄的燈 | Failing Lamp | horror, emotional | horror |
+| `hrCorridor` | 昏暗走廊 | Dark Corridor | horror, graphic | horror |
+| `hrMold` | 蔓延的污漬 | Spreading Stains | horror, emotional | horror |
+| `hrDeadTrees` | 枯樹林 | Dead Forest | horror, calm, emotional | horror |
 | `sunburst` | 放射 | Sunburst | pop, graphic |  |
 | `concentric` | 同心圓 | Concentric | calm, graphic, emotional |  |
 | `halftoneFade` | 網點漸層 | Halftone fade | pop, graphic, editorial |  |
@@ -737,7 +877,7 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 
 ## cam
 
-**cam — camera move** — 28 parts
+**cam — camera move** — 36 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
@@ -754,6 +894,14 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `spiralIn` | 漩渦變焦 | Spiral zoom | pop, graphic, emotional | extra |
 | `snapPan` | 快速橫搖 | Snap pan | pop, glitch, graphic | extra |
 | `jelly` | 果凍晃動 | Elastic wobble | pop, graphic | extra |
+| `hrNervous` | 驚恐手持 | Frightened Handheld | horror, glitch, emotional | horror |
+| `hrDutchSnap` | 突然傾斜 | Sudden Tilt | horror, emotional, graphic | horror |
+| `knReadPan` | 隨讀平移 | Reading Pan | pop, graphic, editorial | kinetic |
+| `knTiltKick` | 逐詞傾斜 | Tilt Kick | pop, graphic, emotional | kinetic |
+| `knCardFlip` | 翻牌 | Card Flip | pop, graphic | kinetic |
+| `knShearKick` | 斜切彈動 | Shear Kick | pop, glitch, graphic | kinetic |
+| `knJumpCut` | 跳切 | Jump Cut | pop, glitch, editorial | kinetic |
+| `knRushIn` | 從遠處衝來 | Rush In | pop, graphic, emotional | kinetic |
 | `pullOut` | 拉遠 | Pull out | calm, emotional, editorial |  |
 | `panL` | 向左橫搖 | Pan left | calm, editorial, emotional, graphic |  |
 | `panR` | 向右橫搖 | Pan right | calm, editorial, emotional, graphic |  |
@@ -772,7 +920,7 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 
 ## fx
 
-**fx — screen effects (flash, glitch and other events)** — 66 parts
+**fx — screen effects (flash, glitch and other events)** — 69 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
@@ -818,6 +966,9 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `squash` | 伸縮 | Squash | pop, graphic | extra |
 | `scanBar` | 掃描 | Scan bar | graphic, editorial, glitch | extra |
 | `loopScroll` | 橫向循環 | Loop scroll | pop, graphic, glitch | extra |
+| `hrSubliminal` | 潛意識閃現 | Subliminal | horror, glitch | horror |
+| `hrSignalLoss` | 訊號中斷 | Signal Loss | horror, glitch, editorial | horror |
+| `hrPassingShadow` | 掠過的影子 | Passing Shadow | horror, emotional | horror |
 | `panelWipe` | 面板擦除 | Panel wipe | pop, graphic |  |
 | `irisTrans` | 光圈 | Iris trans | pop, editorial |  |
 | `doors` | 門 | Doors | graphic, pop |  |
@@ -845,10 +996,15 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 
 ## trans
 
-**trans — transition between cuts** — 20 parts
+**trans — transition between cuts** — 27 parts
 
 | key | 中文 | English | tags | flags |
 |---|---|---|---|---|
+| `hrStaticCut` | 雜訊轉場 | Static Cut | horror, glitch | horror |
+| `hrBlink` | 眨眼 | Blink | horror, emotional | horror |
+| `knCornerSwing` | 轉角迴旋 | Corner Swing | pop, graphic | kinetic |
+| `knStutterCut` | 節奏跳切 | Stutter Cut | pop, glitch, graphic | kinetic |
+| `knStripSlam` | 條幅落下 | Strip Slam | pop, graphic | kinetic |
 | `wipe` | 邊緣擦除 | Edge wipe | graphic, editorial, pop | extra |
 | `diagonalWipe` | 斜帶擦除 | Diagonal band wipe | pop, graphic | extra |
 | `clockWipe` | 時鐘擦除 | Clock wipe | graphic, pop, editorial | extra |
@@ -869,3 +1025,5 @@ Used in `fonts.display` / `fonts.serif` / `fonts.body`. For Chinese or Korean ly
 | `cubeTurn` | 立方體 | Cube turn | graphic, pop | extra |
 | `flashCross` | 閃光轉場 | Flash cut | emotional, pop, calm | extra |
 | `pixelate` | 馬賽克轉場 | Pixel transition | glitch, pop | extra |
+| `tyRuleWipe` | 格線擦換 | Ruled Line Wipe | editorial, graphic, calm | typo |
+| `tyGridCells` | 稿紙格填入 | Grid Cell Fill | editorial, graphic | typo |

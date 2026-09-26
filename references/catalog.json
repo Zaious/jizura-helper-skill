@@ -1,5 +1,5 @@
 {
- "commit": "94413f7",
+ "commit": "bae339e",
  "projectFields": [
   "version",
   "title",
@@ -9,6 +9,9 @@
   "mood",
   "extra",
   "wa",
+  "horror",
+  "typo",
+  "kinetic",
   "lang",
   "keyBg",
   "unify",
@@ -23,10 +26,16 @@
   "enabled",
   "timing",
   "overrides",
+  "locks",
   "colors",
   "fonts",
   "userFonts"
  ],
+ "sets": {
+  "horror": false,
+  "typo": true,
+  "kinetic": true
+ },
  "styles": [
   {
    "key": "noir",
@@ -353,6 +362,101 @@
    "flags": []
   },
   {
+   "key": "hrRuin",
+   "zh": "廢墟",
+   "zhDesc": "褪色灰綠、鏽紅與迴響的明朝體",
+   "en": "Ruins",
+   "enDesc": "Faded green-grey, rust red and echoing serif type",
+   "ja": "廃墟",
+   "moods": [
+    "horror"
+   ],
+   "fonts": {
+    "display": [
+     "mincho_black",
+     "shippori"
+    ],
+    "serif": [
+     "mincho",
+     "mincho_light"
+    ],
+    "body": [
+     "mincho_light"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#161B18",
+   "flags": [
+    "horror"
+   ]
+  },
+  {
+   "key": "hrNightRec",
+   "zh": "深夜錄影",
+   "zhDesc": "漆黑畫面、監視影像的白與紅、雜訊",
+   "en": "Midnight Recording",
+   "enDesc": "Pitch-black frames, CCTV white and red, static",
+   "ja": "深夜の録画",
+   "moods": [
+    "horror"
+   ],
+   "fonts": {
+    "display": [
+     "gothic_bold",
+     "gothic_black"
+    ],
+    "serif": [
+     "mincho"
+    ],
+    "body": [
+     "gothic_med"
+    ],
+    "mono": [
+     "mono",
+     "dot"
+    ]
+   },
+   "bg": "#050505",
+   "flags": [
+    "horror"
+   ]
+  },
+  {
+   "key": "hrCurse",
+   "zh": "詛咒之信",
+   "zhDesc": "泛黃信紙、褪色墨跡與暗紅筆跡",
+   "en": "Cursed Letter",
+   "enDesc": "Yellowed paper, faded ink and dark red handwriting",
+   "ja": "呪いの手紙",
+   "moods": [
+    "horror"
+   ],
+   "fonts": {
+    "display": [
+     "klee",
+     "brush",
+     "mincho_black"
+    ],
+    "serif": [
+     "klee",
+     "mincho"
+    ],
+    "body": [
+     "klee",
+     "mincho"
+    ],
+    "mono": [
+     "mono"
+    ]
+   },
+   "bg": "#D8CBA4",
+   "flags": [
+    "horror"
+   ]
+  },
+  {
    "key": "sakura",
    "zh": "櫻花",
    "zhDesc": "淡櫻色、深梅紫、夜櫻、圓體與明體",
@@ -381,7 +485,8 @@
    },
    "bg": "#F8E4EB",
    "flags": [
-    "extra"
+    "extra",
+    "wa"
    ]
   },
   {
@@ -710,7 +815,8 @@
    },
    "bg": "#EFE5CF",
    "flags": [
-    "extra"
+    "extra",
+    "wa"
    ]
   },
   {
@@ -1147,6 +1253,69 @@
    "noHold": []
   },
   {
+   "key": "horror",
+   "zh": "恐怖",
+   "en": "Horror",
+   "ja": "ホラー",
+   "fx": {
+    "motion": [
+     0.35,
+     0.65
+    ],
+    "glitch": [
+     0.3,
+     0.7
+    ],
+    "chroma": [
+     0.2,
+     0.5
+    ],
+    "decor": [
+     0.3,
+     0.6
+    ],
+    "density": [
+     0.3,
+     0.55
+    ],
+    "texture": [
+     0.7,
+     1
+    ],
+    "bgSwitch": [
+     0.1,
+     0.3
+    ]
+   },
+   "layout": [
+    "center",
+    "vcols",
+    "stack",
+    "huge",
+    "type"
+   ],
+   "enter": [
+    "flicker",
+    "blur",
+    "type",
+    "scramble"
+   ],
+   "exit": [
+    "blur",
+    "glitch",
+    "fall",
+    "drift"
+   ],
+   "styles": [
+    "noir",
+    "mono",
+    "crimson"
+   ],
+   "noHold": [
+    "wave"
+   ]
+  },
+  {
    "key": "chaos",
    "zh": "全都來",
    "en": "Anything goes",
@@ -1341,7 +1510,8 @@
      "calm",
      "pop",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -1369,7 +1539,8 @@
      "glitch",
      "calm",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -1441,7 +1612,8 @@
      "glitch",
      "pop",
      "graphic",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -1490,7 +1662,8 @@
     "ja": "タイプ",
     "tags": [
      "calm",
-     "editorial"
+     "editorial",
+     "horror"
     ],
     "flags": []
    },
@@ -1530,7 +1703,8 @@
      "glitch",
      "calm",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -1545,6 +1719,381 @@
      "graphic"
     ],
     "flags": []
+   },
+   {
+    "key": "hrFlashlight",
+    "zh": "手電筒",
+    "zhHans": "手电筒",
+    "en": "Flashlight",
+    "ja": "懐中電灯",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDoorGap",
+    "zh": "門縫",
+    "zhHans": "门缝",
+    "en": "Door Gap",
+    "ja": "扉の隙間",
+    "tags": [
+     "horror",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrWallScrawl",
+    "zh": "牆上塗寫",
+    "zhHans": "墙上涂写",
+    "en": "Wall Scrawl",
+    "ja": "壁の落書き",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrCctv",
+    "zh": "監視螢幕",
+    "zhHans": "监控屏幕",
+    "en": "CCTV Monitor",
+    "ja": "監視モニター",
+    "tags": [
+     "horror",
+     "glitch",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrOuija",
+    "zh": "通靈板",
+    "zhHans": "通灵板",
+    "en": "Spirit Board",
+    "ja": "降霊盤",
+    "tags": [
+     "horror"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrMissing",
+    "zh": "尋人啟事",
+    "zhHans": "寻人启事",
+    "en": "Missing Poster",
+    "ja": "尋ね人",
+    "tags": [
+     "horror",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrWrongOne",
+    "zh": "唯一不對的字",
+    "zhHans": "唯一不对的字",
+    "en": "The Wrong Glyph",
+    "ja": "一字だけ違う",
+    "tags": [
+     "horror",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrRisingDark",
+    "zh": "從黑暗爬出",
+    "zhHans": "从黑暗爬出",
+    "en": "Out of the Dark",
+    "ja": "闇から這い出る",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrRedacted",
+    "zh": "塗黑文件",
+    "zhHans": "涂黑文件",
+    "en": "Redacted File",
+    "ja": "黒塗り文書",
+    "tags": [
+     "horror",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrStaticTv",
+    "zh": "雪花電視",
+    "zhHans": "雪花电视",
+    "en": "Static TV",
+    "ja": "砂嵐のテレビ",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrSpiritPhoto",
+    "zh": "靈異照片",
+    "zhHans": "灵异照片",
+    "en": "Spirit Photo",
+    "ja": "心霊写真",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrWrongShadow",
+    "zh": "不對勁的影子",
+    "zhHans": "不对劲的影子",
+    "en": "Wrong Shadow",
+    "ja": "影が違う",
+    "tags": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knSlamStack",
+    "zh": "堆疊重擊",
+    "zhHans": "堆叠重击",
+    "en": "Slam Stack",
+    "ja": "積み上げ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knQuarterTurn",
+    "zh": "直角轉向",
+    "zhHans": "直角转向",
+    "en": "Quarter Turn",
+    "ja": "直角ターン",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knSwapCenter",
+    "zh": "逐字替換",
+    "zhHans": "逐字替换",
+    "en": "Word Swap",
+    "ja": "入れ替わり",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knZoomDive",
+    "zh": "鑽入字中",
+    "zhHans": "钻入字中",
+    "en": "Dive Into Letter",
+    "ja": "文字へ潜る",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knFlowSnap",
+    "zh": "流動後對齊",
+    "zhHans": "流动后对齐",
+    "en": "Flow and Snap",
+    "ja": "流れて整列",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knSeesaw",
+    "zh": "蹺蹺板",
+    "zhHans": "跷跷板",
+    "en": "Seesaw",
+    "ja": "シーソー",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knTypeSlam",
+    "zh": "打字→重擊",
+    "zhHans": "打字→重击",
+    "en": "Type then Slam",
+    "ja": "タイプ→スラム",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knRhythmCuts",
+    "zh": "逐字分鏡",
+    "zhHans": "逐字分镜",
+    "en": "Word Jump Cuts",
+    "ja": "語のカット割り",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knPathRide",
+    "zh": "環形軌道",
+    "zhHans": "环形轨道",
+    "en": "Loop Track",
+    "ja": "ループ軌道",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knGearWords",
+    "zh": "齒輪",
+    "zhHans": "齿轮",
+    "en": "Gears",
+    "ja": "歯車",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knCollide",
+    "zh": "正面衝撞",
+    "zhHans": "正面冲撞",
+    "en": "Head-on Crash",
+    "ja": "正面衝突",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knTumble",
+    "zh": "翻滾方塊",
+    "zhHans": "翻滚方块",
+    "en": "Tumbling Boxes",
+    "ja": "箱転がし",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knReflow",
+    "zh": "直排轉橫排",
+    "zhHans": "竖排转横排",
+    "en": "Vertical to Line",
+    "ja": "縦から横へ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knPadGrid",
+    "zh": "打擊墊",
+    "zhHans": "打击垫",
+    "en": "Drum Pads",
+    "ja": "パッド",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
    },
    {
     "key": "lowerThird",
@@ -3270,6 +3819,274 @@
     "flags": [
      "extra"
     ]
+   },
+   {
+    "key": "tyKeySplit",
+    "zh": "大字夾排",
+    "zhHans": "大字夹排",
+    "en": "Key Glyph Split",
+    "ja": "大字挟み",
+    "tags": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyCropGiant",
+    "zh": "出框大字",
+    "zhHans": "出框大字",
+    "en": "Cropped Giant",
+    "ja": "見切れ大文字",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyCross",
+    "zh": "十字排",
+    "zhHans": "十字排",
+    "en": "Cross Setting",
+    "ja": "十字組",
+    "tags": [
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyBandHide",
+    "zh": "帶狀遮字",
+    "zhHans": "带状遮字",
+    "en": "Band Cover",
+    "ja": "帯隠れ",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyRuby",
+    "zh": "標音注記",
+    "zhHans": "标音注记",
+    "en": "Ruby Notes",
+    "ja": "ルビ振り",
+    "tags": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyBaseline",
+    "zh": "格線排版",
+    "zhHans": "格线排版",
+    "en": "Ruled Lines",
+    "ja": "罫線組",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyScaleSteps",
+    "zh": "字級遞增",
+    "zhHans": "字级递增",
+    "en": "Size Crescendo",
+    "ja": "級数上げ",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyJustify",
+    "zh": "等寬堆疊",
+    "zhHans": "等宽堆叠",
+    "en": "Justified Stack",
+    "ja": "幅揃え",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyIndexTable",
+    "zh": "字表",
+    "zhHans": "字表",
+    "en": "Glyph Table",
+    "ja": "一覧表",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tySplitType",
+    "zh": "斷字錯位",
+    "zhHans": "断字错位",
+    "en": "Split Type",
+    "ja": "断ち割り",
+    "tags": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyErode",
+    "zh": "漸削重複",
+    "zhHans": "渐削重复",
+    "en": "Eroding Repeat",
+    "ja": "削り反復",
+    "tags": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyVRuler",
+    "zh": "直式刻度",
+    "zhHans": "竖排刻度",
+    "en": "Vertical Scale",
+    "ja": "縦目盛り",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyFullTrack",
+    "zh": "滿版字距",
+    "zhHans": "满版字距",
+    "en": "Full-Width Tracking",
+    "ja": "全幅字送り",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyStatCount",
+    "zh": "字數顯示",
+    "zhHans": "字数显示",
+    "en": "Glyph Count",
+    "ja": "字数表示",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyMargin",
+    "zh": "留白",
+    "zhHans": "留白",
+    "en": "White Space",
+    "ja": "余白",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyRotBlock",
+    "zh": "旋轉字塊",
+    "zhHans": "旋转字块",
+    "en": "Rotated Block",
+    "ja": "回転ブロック",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tySquare",
+    "zh": "方塊排",
+    "zhHans": "方块排",
+    "en": "Square Setting",
+    "ja": "方形組",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyLineFocus",
+    "zh": "行中強調",
+    "zhHans": "行中强调",
+    "en": "Line Highlight",
+    "ja": "行中強調",
+    "tags": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
    }
   ],
   "enter": [
@@ -3317,7 +4134,8 @@
     "ja": "タイプ",
     "tags": [
      "calm",
-     "editorial"
+     "editorial",
+     "horror"
     ],
     "flags": []
    },
@@ -3379,7 +4197,8 @@
     "tags": [
      "calm",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -3401,7 +4220,8 @@
     "en": "Flicker",
     "ja": "点滅",
     "tags": [
-     "glitch"
+     "glitch",
+     "horror"
     ],
     "flags": []
    },
@@ -3412,7 +4232,8 @@
     "en": "Scramble",
     "ja": "スクランブル",
     "tags": [
-     "glitch"
+     "glitch",
+     "horror"
     ],
     "flags": []
    },
@@ -4612,6 +5433,372 @@
     "flags": [
      "extra"
     ]
+   },
+   {
+    "key": "hrBlinkCreep",
+    "zh": "眨眼之間",
+    "zhHans": "眨眼之间",
+    "en": "Between Blinks",
+    "ja": "瞬きの間に",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrJumpScare",
+    "zh": "突然跳出",
+    "zhHans": "突然跳出",
+    "en": "Jump Scare",
+    "ja": "飛び出し",
+    "tags": [
+     "horror",
+     "glitch",
+     "pop"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrUneasy",
+    "zh": "不安的出現",
+    "zhHans": "不安的出现",
+    "en": "Uneasy Timing",
+    "ja": "間の悪い出現",
+    "tags": [
+     "horror",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrVhold",
+    "zh": "垂直同步",
+    "zhHans": "垂直同步",
+    "en": "Vertical Hold",
+    "ja": "垂直同期",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrMirrorSnap",
+    "zh": "鏡像字",
+    "zhHans": "镜像字",
+    "en": "Mirror Writing",
+    "ja": "鏡文字",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrManifest",
+    "zh": "緩緩浮現",
+    "zhHans": "缓缓浮现",
+    "en": "Manifest",
+    "ja": "浮かび上がる",
+    "tags": [
+     "horror",
+     "emotional",
+     "calm"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrClawReveal",
+    "zh": "爪痕浮現",
+    "zhHans": "爪痕浮现",
+    "en": "Claw Marks",
+    "ja": "爪痕から",
+    "tags": [
+     "horror",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knWordSlam",
+    "zh": "逐詞重擊",
+    "zhHans": "逐词重击",
+    "en": "Word Slam",
+    "ja": "語ごとスラム",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knTypeToSlam",
+    "zh": "打字→放大",
+    "zhHans": "打字→放大",
+    "en": "Type and Grow",
+    "ja": "打鍵→拡大",
+    "tags": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knReplaceIn",
+    "zh": "替換登場",
+    "zhHans": "替换登场",
+    "en": "Swap In",
+    "ja": "入れ替わり登場",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knHingeDrop",
+    "zh": "鉸鏈落下",
+    "zhHans": "铰链落下",
+    "en": "Hinge Drop",
+    "ja": "蝶番おろし",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knLoopIn",
+    "zh": "繞圈進場",
+    "zhHans": "绕圈进场",
+    "en": "Loop In",
+    "ja": "ループ入り",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knPushIn",
+    "zh": "推入",
+    "zhHans": "推入",
+    "en": "Push In",
+    "ja": "押し込み",
+    "tags": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knInertia",
+    "zh": "急煞車",
+    "zhHans": "急刹车",
+    "en": "Hard Brake",
+    "ja": "急ブレーキ",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knWordSpin",
+    "zh": "逐詞旋轉",
+    "zhHans": "逐词旋转",
+    "en": "Word Spin",
+    "ja": "語ごと回転",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knDiveIn",
+    "zh": "從鏡頭飛入",
+    "zhHans": "从镜头飞入",
+    "en": "Words From Camera",
+    "ja": "手前から語",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knStretchOut",
+    "zh": "伸展彈出",
+    "zhHans": "伸展弹出",
+    "en": "Tape Stretch",
+    "ja": "伸び出し",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "tyKeyFirst",
+    "zh": "主字先行",
+    "zhHans": "主字先行",
+    "en": "Key Glyph First",
+    "ja": "キー字先行",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyLineWipe",
+    "zh": "逐行擦入",
+    "zhHans": "逐行擦入",
+    "en": "Line-by-Line Wipe",
+    "ja": "行送りワイプ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyZoomOne",
+    "zh": "逐字放大",
+    "zhHans": "逐字放大",
+    "en": "One by One Zoom",
+    "ja": "一字ずつ拡大",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyUnderLift",
+    "zh": "從底線升起",
+    "zhHans": "从底线升起",
+    "en": "Rise from Underline",
+    "ja": "下線から立つ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyDotGrow",
+    "zh": "點化為字",
+    "zhHans": "点化为字",
+    "en": "Dot to Glyph",
+    "ja": "点から字",
+    "tags": [
+     "pop",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyBracketOpen",
+    "zh": "括號展開",
+    "zhHans": "括号展开",
+    "en": "Brackets Open",
+    "ja": "括弧が開く",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyRetype",
+    "zh": "打錯重打",
+    "zhHans": "打错重打",
+    "en": "Retype",
+    "ja": "打ち直し",
+    "tags": [
+     "editorial",
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyRubyDrop",
+    "zh": "從注音落下",
+    "zhHans": "从注音落下",
+    "en": "From Ruby",
+    "ja": "ルビから",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
    }
   ],
   "hold": [
@@ -5094,6 +6281,212 @@
     "flags": [
      "extra"
     ]
+   },
+   {
+    "key": "hrTwitch",
+    "zh": "抽搐",
+    "zhHans": "抽搐",
+    "en": "Twitch",
+    "ja": "痙攣",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrStare",
+    "zh": "凝視的字",
+    "zhHans": "凝视的字",
+    "en": "Staring Glyph",
+    "ja": "見つめる字",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrLagOne",
+    "zh": "慢一拍的字",
+    "zhHans": "慢一拍的字",
+    "en": "The Late One",
+    "ja": "遅れる一字",
+    "tags": [
+     "horror",
+     "calm"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrFlickerLight",
+    "zh": "將熄的燈",
+    "zhHans": "将熄的灯",
+    "en": "Failing Light",
+    "ja": "切れかけの灯",
+    "tags": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knWordPulse",
+    "zh": "逐詞節拍",
+    "zhHans": "逐词节拍",
+    "en": "Word Pulse",
+    "ja": "語ごとの拍",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knCounterRock",
+    "zh": "反向搖擺",
+    "zhHans": "反向摇摆",
+    "en": "Counter Rock",
+    "ja": "逆回転ゆれ",
+    "tags": [
+     "pop",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knWordRide",
+    "zh": "詞語衝浪",
+    "zhHans": "词语冲浪",
+    "en": "Word Surf",
+    "ja": "語の波乗り",
+    "tags": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knTickShift",
+    "zh": "滴答位移",
+    "zhHans": "滴答位移",
+    "en": "Tick Shift",
+    "ja": "刻みシフト",
+    "tags": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knBeatLean",
+    "zh": "隨拍傾斜",
+    "zhHans": "随拍倾斜",
+    "en": "Beat Lean",
+    "ja": "拍で傾く",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knGapBreath",
+    "zh": "詞間呼吸",
+    "zhHans": "词间呼吸",
+    "en": "Breathing Gaps",
+    "ja": "語間の呼吸",
+    "tags": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "tyKeyPulse",
+    "zh": "主字脈動",
+    "zhHans": "主字脉动",
+    "en": "Key Glyph Pulse",
+    "ja": "一字の鼓動",
+    "tags": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyReadCursor",
+    "zh": "閱讀游標",
+    "zhHans": "阅读光标",
+    "en": "Reading Cursor",
+    "ja": "読み送り",
+    "tags": [
+     "calm",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyOutlineBlink",
+    "zh": "空心閃爍",
+    "zhHans": "空心闪烁",
+    "en": "Outline Blink",
+    "ja": "白抜き明滅",
+    "tags": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyTrackStep",
+    "zh": "字距跳段",
+    "zhHans": "字距跳段",
+    "en": "Tracking Steps",
+    "ja": "字間ステップ",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
    }
   ],
   "exit": [
@@ -5126,7 +6519,8 @@
     "ja": "崩落",
     "tags": [
      "glitch",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -5139,7 +6533,8 @@
     "tags": [
      "calm",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -5190,7 +6585,8 @@
      "calm",
      "pop",
      "editorial",
-     "emotional"
+     "emotional",
+     "horror"
     ],
     "flags": []
    },
@@ -5224,7 +6620,8 @@
     "en": "Glitch",
     "ja": "グリッチ退場",
     "tags": [
-     "glitch"
+     "glitch",
+     "horror"
     ],
     "flags": []
    },
@@ -6209,6 +7606,344 @@
     ],
     "flags": [
      "extra"
+    ]
+   },
+   {
+    "key": "hrPulledDown",
+    "zh": "被拖下去",
+    "zhHans": "被拖下去",
+    "en": "Pulled Under",
+    "ja": "引きずり込み",
+    "tags": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrLookBack",
+    "zh": "留下一字",
+    "zhHans": "留下一字",
+    "en": "One Remains",
+    "ja": "一字残る",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrTurnAway",
+    "zh": "轉身背對",
+    "zhHans": "转身背对",
+    "en": "Turn Away",
+    "ja": "背を向ける",
+    "tags": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrShiver",
+    "zh": "顫抖消失",
+    "zhHans": "颤抖消失",
+    "en": "Shiver Out",
+    "ja": "震えて消える",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrSwallow",
+    "zh": "被黑暗吞沒",
+    "zhHans": "被黑暗吞没",
+    "en": "Swallowed",
+    "ja": "闇に呑まれる",
+    "tags": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrFlickerDie",
+    "zh": "閃爍熄滅",
+    "zhHans": "闪烁熄灭",
+    "en": "Dying Flicker",
+    "ja": "明滅して消える",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDrain",
+    "zh": "滴落",
+    "zhHans": "滴落",
+    "en": "Drain",
+    "ja": "滴り落ちる",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knWordKick",
+    "zh": "逐詞踢飛",
+    "zhHans": "逐词踢飞",
+    "en": "Word Kick",
+    "ja": "語ごと蹴り出し",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knPushOut",
+    "zh": "推出退場",
+    "zhHans": "推出退场",
+    "en": "Push Out",
+    "ja": "押し出し退場",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knDiveGlyph",
+    "zh": "衝入一字",
+    "zhHans": "冲入一字",
+    "en": "Dive Into Letter",
+    "ja": "一字へ突入",
+    "tags": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knLaunch",
+    "zh": "急起步",
+    "zhHans": "急起步",
+    "en": "Launch",
+    "ja": "急発進",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knWordBlink",
+    "zh": "逐詞熄滅",
+    "zhHans": "逐词熄灭",
+    "en": "Words Blink Out",
+    "ja": "一語ずつ消灯",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knCloseGap",
+    "zh": "收攏消失",
+    "zhHans": "收拢消失",
+    "en": "Close the Gaps",
+    "ja": "詰めて消える",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knJumpCutOut",
+    "zh": "跳切",
+    "zhHans": "跳切",
+    "en": "Jump Cut",
+    "ja": "ジャンプカット",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knStackAway",
+    "zh": "疊起落下",
+    "zhHans": "叠起落下",
+    "en": "Stack and Drop",
+    "ja": "積んで落とす",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "tyStrike",
+    "zh": "劃線刪除",
+    "zhHans": "划线删除",
+    "en": "Strike Out",
+    "ja": "線で消す",
+    "tags": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyToDot",
+    "zh": "縮回圓點",
+    "zhHans": "缩回圆点",
+    "en": "Back to Dots",
+    "ja": "点に戻る",
+    "tags": [
+     "calm",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyLineFeed",
+    "zh": "換行送出",
+    "zhHans": "换行送出",
+    "en": "Line Feed",
+    "ja": "改行送り",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyBracketClose",
+    "zh": "括號合上",
+    "zhHans": "括号合上",
+    "en": "Brackets Close",
+    "ja": "括弧閉じ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyToIndex",
+    "zh": "化為編號",
+    "zhHans": "化为编号",
+    "en": "Turn to Numbers",
+    "ja": "番号に変わる",
+    "tags": [
+     "editorial",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyKeyLast",
+    "zh": "留下一字",
+    "zhHans": "留下一字",
+    "en": "Key Glyph Last",
+    "ja": "一字残し",
+    "tags": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyUnderSink",
+    "zh": "沉入底線",
+    "zhHans": "沉入底线",
+    "en": "Sink into Underline",
+    "ja": "下線へ沈む",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyFoldVert",
+    "zh": "折成直排",
+    "zhHans": "折成竖排",
+    "en": "Fold to Vertical",
+    "ja": "縦組に折れる",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
     ]
    }
   ],
@@ -7792,6 +9527,224 @@
     "flags": [
      "extra"
     ]
+   },
+   {
+    "key": "hrScratches",
+    "zh": "抓痕",
+    "zhHans": "抓痕",
+    "en": "Claw Scratches",
+    "ja": "引っ掻き傷",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrSigil",
+    "zh": "魔法陣",
+    "zhHans": "魔法阵",
+    "en": "Sigil",
+    "ja": "魔法陣",
+    "tags": [
+     "horror",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrWatchEye",
+    "zh": "注視之眼",
+    "zhHans": "注视之眼",
+    "en": "Watching Eye",
+    "ja": "見ている目",
+    "tags": [
+     "horror",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrStaticPatch",
+    "zh": "雜訊碎片",
+    "zhHans": "杂讯碎片",
+    "en": "Static Patches",
+    "ja": "砂嵐の欠片",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDustBeam",
+    "zh": "光束與塵埃",
+    "zhHans": "光束与尘埃",
+    "en": "Dusty Light Beam",
+    "ja": "光の筋と埃",
+    "tags": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDrips",
+    "zh": "垂落的墨",
+    "zhHans": "垂落的墨",
+    "en": "Ink Drips",
+    "ja": "垂れる墨",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrCracks",
+    "zh": "裂痕",
+    "zhHans": "裂痕",
+    "en": "Cracks",
+    "ja": "ひび割れ",
+    "tags": [
+     "horror",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knSpeedTrail",
+    "zh": "跟隨速度線",
+    "zhHans": "跟随速度线",
+    "en": "Trailing Speed Lines",
+    "ja": "追従スピード線",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knWordTicks",
+    "zh": "詞數計數器",
+    "zhHans": "词数计数器",
+    "en": "Word Counter",
+    "ja": "語カウンター",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "tyColophon",
+    "zh": "版權頁",
+    "zhHans": "版权页",
+    "en": "Colophon",
+    "ja": "奥付",
+    "tags": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyRunningHead",
+    "zh": "書眉頁碼",
+    "zhHans": "书眉页码",
+    "en": "Running Head & Folio",
+    "ja": "柱とノンブル",
+    "tags": [
+     "editorial",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyGlyphBody",
+    "zh": "字身分割線",
+    "zhHans": "字身分割线",
+    "en": "Glyph Body Lines",
+    "ja": "字割り線",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyTextRule",
+    "zh": "文字線條",
+    "zhHans": "文字线条",
+    "en": "Text Rule",
+    "ja": "文字罫",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyTypeScale",
+    "zh": "字級樣本",
+    "zhHans": "字级样本",
+    "en": "Type Scale",
+    "ja": "級数見本",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyBigPunct",
+    "zh": "巨大引號",
+    "zhHans": "巨大引号",
+    "en": "Big Quote Marks",
+    "ja": "大きな約物",
+    "tags": [
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
    }
   ],
   "treat": [
@@ -7803,6 +9756,95 @@
     "ja": "なし",
     "tags": [],
     "flags": []
+   },
+   {
+    "key": "hrInkBleed",
+    "zh": "暈染滴落",
+    "zhHans": "晕染滴落",
+    "en": "Bleeding Ink",
+    "ja": "滲み垂れ",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrEroded",
+    "zh": "風化",
+    "zhHans": "风化",
+    "en": "Eroded",
+    "ja": "風化",
+    "tags": [
+     "horror",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrRedact",
+    "zh": "塗黑",
+    "zhHans": "涂黑",
+    "en": "Redacted",
+    "ja": "黒塗り",
+    "tags": [
+     "horror",
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDoubleExp",
+    "zh": "雙重曝光",
+    "zhHans": "双重曝光",
+    "en": "Double Exposure",
+    "ja": "二重露光",
+    "tags": [
+     "horror",
+     "emotional",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knWordScale",
+    "zh": "大小詞",
+    "zhHans": "大小词",
+    "en": "Big and Small Words",
+    "ja": "大小語",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knWordPlate",
+    "zh": "逐詞反白",
+    "zhHans": "逐词反白",
+    "en": "Word Knockout",
+    "ja": "語ごと反転",
+    "tags": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "flags": [
+     "kinetic"
+    ]
    },
    {
     "key": "outline",
@@ -8505,6 +10547,65 @@
     "flags": [
      "extra"
     ]
+   },
+   {
+    "key": "tyHollowKey",
+    "zh": "單字鏤空",
+    "zhHans": "单字镂空",
+    "en": "Hollow Key Glyph",
+    "ja": "一字抜き",
+    "tags": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyHeadRules",
+    "zh": "天地線",
+    "zhHans": "天地线",
+    "en": "Head & Foot Rules",
+    "ja": "天地罫",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyHeadBig",
+    "zh": "首字放大",
+    "zhHans": "首字放大",
+    "en": "Large Initial",
+    "ja": "頭字強調",
+    "tags": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyIndexSup",
+    "zh": "字序號",
+    "zhHans": "字序号",
+    "en": "Glyph Numbers",
+    "ja": "字番号",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
+    ]
    }
   ],
   "bg": [
@@ -9071,6 +11172,63 @@
     ]
    },
    {
+    "key": "hrFailingLamp",
+    "zh": "將熄的燈",
+    "zhHans": "将熄的灯",
+    "en": "Failing Lamp",
+    "ja": "切れかけの灯",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrCorridor",
+    "zh": "昏暗走廊",
+    "zhHans": "昏暗走廊",
+    "en": "Dark Corridor",
+    "ja": "暗い廊下",
+    "tags": [
+     "horror",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrMold",
+    "zh": "蔓延的污漬",
+    "zhHans": "蔓延的污渍",
+    "en": "Spreading Stains",
+    "ja": "広がる染み",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDeadTrees",
+    "zh": "枯樹林",
+    "zhHans": "枯树林",
+    "en": "Dead Forest",
+    "ja": "枯れ木の森",
+    "tags": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
     "key": "sunburst",
     "zh": "放射",
     "zhHans": "放射",
@@ -9570,6 +11728,125 @@
     ],
     "flags": [
      "extra"
+    ]
+   },
+   {
+    "key": "hrNervous",
+    "zh": "驚恐手持",
+    "zhHans": "惊恐手持",
+    "en": "Frightened Handheld",
+    "ja": "怯えた手持ち",
+    "tags": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrDutchSnap",
+    "zh": "突然傾斜",
+    "zhHans": "突然倾斜",
+    "en": "Sudden Tilt",
+    "ja": "不意の傾き",
+    "tags": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knReadPan",
+    "zh": "隨讀平移",
+    "zhHans": "随读平移",
+    "en": "Reading Pan",
+    "ja": "読み追い",
+    "tags": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knTiltKick",
+    "zh": "逐詞傾斜",
+    "zhHans": "逐词倾斜",
+    "en": "Tilt Kick",
+    "ja": "語で傾く",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knCardFlip",
+    "zh": "翻牌",
+    "zhHans": "翻牌",
+    "en": "Card Flip",
+    "ja": "カード返し",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knShearKick",
+    "zh": "斜切彈動",
+    "zhHans": "斜切弹动",
+    "en": "Shear Kick",
+    "ja": "シアーキック",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knJumpCut",
+    "zh": "跳切",
+    "zhHans": "跳切",
+    "en": "Jump Cut",
+    "ja": "ジャンプカット",
+    "tags": [
+     "pop",
+     "glitch",
+     "editorial"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knRushIn",
+    "zh": "從遠處衝來",
+    "zhHans": "从远处冲来",
+    "en": "Rush In",
+    "ja": "奥から突進",
+    "tags": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "flags": [
+     "kinetic"
     ]
    },
    {
@@ -10368,6 +12645,49 @@
     ]
    },
    {
+    "key": "hrSubliminal",
+    "zh": "潛意識閃現",
+    "zhHans": "潜意识闪现",
+    "en": "Subliminal",
+    "ja": "サブリミナル",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrSignalLoss",
+    "zh": "訊號中斷",
+    "zhHans": "信号中断",
+    "en": "Signal Loss",
+    "ja": "映像の途切れ",
+    "tags": [
+     "horror",
+     "glitch",
+     "editorial"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrPassingShadow",
+    "zh": "掠過的影子",
+    "zhHans": "掠过的影子",
+    "en": "Passing Shadow",
+    "ja": "横切る影",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
     "key": "panelWipe",
     "zh": "面板擦除",
     "zhHans": "面板擦除",
@@ -10665,6 +12985,77 @@
   ],
   "trans": [
    {
+    "key": "hrStaticCut",
+    "zh": "雜訊轉場",
+    "zhHans": "杂讯转场",
+    "en": "Static Cut",
+    "ja": "砂嵐カット",
+    "tags": [
+     "horror",
+     "glitch"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "hrBlink",
+    "zh": "眨眼",
+    "zhHans": "眨眼",
+    "en": "Blink",
+    "ja": "まばたき",
+    "tags": [
+     "horror",
+     "emotional"
+    ],
+    "flags": [
+     "horror"
+    ]
+   },
+   {
+    "key": "knCornerSwing",
+    "zh": "轉角迴旋",
+    "zhHans": "转角回旋",
+    "en": "Corner Swing",
+    "ja": "コーナースイング",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knStutterCut",
+    "zh": "節奏跳切",
+    "zhHans": "节奏跳切",
+    "en": "Stutter Cut",
+    "ja": "刻みカット",
+    "tags": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
+    "key": "knStripSlam",
+    "zh": "條幅落下",
+    "zhHans": "条幅落下",
+    "en": "Strip Slam",
+    "ja": "短冊スラム",
+    "tags": [
+     "pop",
+     "graphic"
+    ],
+    "flags": [
+     "kinetic"
+    ]
+   },
+   {
     "key": "wipe",
     "zh": "邊緣擦除",
     "zhHans": "边缘擦除",
@@ -10956,6 +13347,35 @@
     ],
     "flags": [
      "extra"
+    ]
+   },
+   {
+    "key": "tyRuleWipe",
+    "zh": "格線擦換",
+    "zhHans": "格线擦换",
+    "en": "Ruled Line Wipe",
+    "ja": "罫線ワイプ",
+    "tags": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "flags": [
+     "typo"
+    ]
+   },
+   {
+    "key": "tyGridCells",
+    "zh": "稿紙格填入",
+    "zhHans": "稿纸格填入",
+    "en": "Grid Cell Fill",
+    "ja": "升目送り",
+    "tags": [
+     "editorial",
+     "graphic"
+    ],
+    "flags": [
+     "typo"
     ]
    }
   ]

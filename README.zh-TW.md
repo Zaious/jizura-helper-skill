@@ -30,7 +30,7 @@ JIZURA 是用選擇檔案的方式開啟，網頁上沒有可以直接貼上 JSO
 
 能執行程式的 AI（例如 Claude Code）會用 `scripts/finalize.js` 檢查設定檔；在聊天介面裡不能執行程式的 AI，會照 `format.md` 的檢查清單自己核對。AI 會用你的語言回覆。
 
-目前只用 Claude 測試過（能執行程式和不能執行程式兩種情況），還沒在 ChatGPT 或其他 AI 上測試。
+目前只用 Claude 測試過（能執行程式和不能執行程式兩種情況），目錄對應 JIZURA v0.9.0（`bae339e`，含恐怖套組）；還沒在 ChatGPT 或其他 AI 上測試。
 
 ## 更新目錄
 
