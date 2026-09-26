@@ -139,6 +139,14 @@ Use these to pin a line to a specific effect. The key is the **0-based line numb
 
 Available fields: `layout`, `enter`, `hold`, `exit`, `treat`, `bg`, `cam`, `trans` (one key each), `decor` (an array of keys), `single: true` (keep the whole line on one screen). A part set here is used even if it is switched off in `enabled`.
 
+**An override also skips the layout's own length check**, and some layouts were built for short Japanese lines. Checked by rendering long English lines:
+
+- `condensed` removes every space and only fits about 10 characters; `mixed` removes every space and drops characters past about 16. Use them only for short lines ("VISION", "No seat.").
+- `center` wraps about every 11 characters and can split a long word in two. Fine for short lines; avoid it for long Latin-script lines.
+- For long lines, these keep spaces and whole words: `frameBox`, `lowerThird`, `headlineDeck`, `splitScreen`, `justified`, `quote`, `poster` (also `subtitleBar`, `magazine`, `stack`, `typeSpecimen`, `warningLabel`).
+
+`finalize.js` warns when an override puts a long line into `condensed`, `mixed` or `center`.
+
 ## 7. Colours
 
 ```json

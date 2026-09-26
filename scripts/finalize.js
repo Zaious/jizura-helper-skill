@@ -84,10 +84,24 @@ for (const [g, map] of Object.entries(p.enabled || {})) {
 }
 
 // ---- overrides ----
+// the lyric lines as JIZURA numbers them: no blank lines, # comments, [ti:]-style tags or bare [間奏]; LRC order
+const lyricLines = String(p.lyrics || '').split('\n').map(s => s.trim())
+  .filter(s => s && !s.startsWith('#') && !/^\[(ti|ar|al|by|offset):.*\]$/i.test(s))
+  .map(s => { const t = []; let m; while ((m = s.match(/^\[(\d+):(\d+(?:[.:]\d+)?)\]/))) { t.push(+m[1] * 60 + parseFloat(m[2].replace(':', '.'))); s = s.slice(m[0].length); } return { t: t.length ? t[0] : null, s: s.trim() }; })
+  .filter(l => l.s && !/^\[\s*(間奏|间奏|interlude|instrumental|inst|간주)/i.test(l.s));
+if (lyricLines.some(l => l.t != null)) lyricLines.sort((a, b) => (a.t ?? 1e9) - (b.t ?? 1e9));
+// an override skips the layout's own length check (fits); these layouts were built for short Japanese lines
+const LONG_LINE_RISK = {
+  condensed: s => s.replace(/\s+/g, '').length > 10 && 'removes every space and squeezes more than 10 characters',
+  mixed: s => s.replace(/\s+/g, '').length > 16 && 'removes every space and drops characters beyond ~16',
+  center: s => /[A-Za-z]/.test(s) && (s.length > 22 || Math.max(...s.split(/\s+/).map(w => w.length)) > 8) && 'wraps about every 11 characters and can split long words',
+};
 for (const [line, o] of Object.entries(p.overrides || {})) {
   if (!/^\d+$/.test(line)) errors.push(`overrides."${line}": key must be a 0-based line number`);
   for (const g of ['layout', 'enter', 'hold', 'exit', 'treat', 'bg', 'cam', 'trans']) if (o[g] !== undefined && !partOf(g, o[g])) errors.push(`overrides.${line}.${g}: unknown part "${o[g]}"`);
   if (o.decor !== undefined) { if (!Array.isArray(o.decor)) errors.push(`overrides.${line}.decor: must be an array`); else for (const k of o.decor) if (!partOf('decor', k)) errors.push(`overrides.${line}.decor: unknown part "${k}"`); }
+  const text = (lyricLines[+line] || {}).s;
+  if (text && LONG_LINE_RISK[o.layout]) { const why = LONG_LINE_RISK[o.layout](text.replace(/\*/g, '').replace(/[!|].*$/, '')); if (why) warns.push(`overrides.${line}.layout "${o.layout}" ${why} ("${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"); for long lines use frameBox, lowerThird, headlineDeck, splitScreen, justified, quote or poster`); }
 }
 
 // ---- colors / fonts ----
